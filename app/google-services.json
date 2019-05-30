@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "813544942472",
+    "firebase_url": "https://iiit-app.firebaseio.com",
+    "project_id": "iiit-app",
+    "storage_bucket": "iiit-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:813544942472:android:82ce3d578e5ae59f",
+        "android_client_info": {
+          "package_name": "govind.iiita.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "813544942472-ct0a5pt9sk5dphfcv5clb6cm9620kqq7.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "govind.iiita.app",
+            "certificate_hash": "b0c0587159561e70b79b9ecd4c468402ebdfff29"
+          }
+        },
+        {
+          "client_id": "813544942472-k3rr81ugs06n6rptdtiq61c77a94vc8k.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDQ__5l0t-aXtXwjDbly3Zdni6WVFZa6ag"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "813544942472-k3rr81ugs06n6rptdtiq61c77a94vc8k.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

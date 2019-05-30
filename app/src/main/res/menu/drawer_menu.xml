@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group
+        android:id="@+id/group1"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_TimeTable"
+            android:title="Class Time Table">
+
+        </item>
+        <item
+            android:id="@+id/nav_library"
+            android:title="Library">
+
+        </item>
+        <item
+            android:id="@+id/nav_geekhaven"
+            android:title="GeekHaven">
+
+        </item>
+
+        <item
+            android:id="@+id/nav_gymkhana"
+            android:title="Gymkhana">
+
+        </item>
+        <item
+            android:id="@+id/nav_albums"
+            android:title="Albums">
+
+        </item>
+        <item
+            android:id="@+id/nav_extras"
+            android:title="Extras">
+
+        </item>
+
+    </group>
+
+    <group
+        android:id="@+id/group3"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/Submit_article"
+            android:title="Submit your article">
+
+        </item>
+    </group>
+
+    <group
+        android:id="@+id/group2"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_logOut"
+            android:title="Log Out">
+
+        </item>
+        <item
+            android:id="@+id/nav_aboutus"
+            android:title="About Us">
+
+        </item>
+    </group>
+
+</menu>

@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">IIITA</string>
+    <string name="app_name">IIITL</string>
     <string name="hello">hello</string>
     <string name="drawer_menu">Drawer Menu</string>
     <string name="title_activity_flutter">flutter</string>

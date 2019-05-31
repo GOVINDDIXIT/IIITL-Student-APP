@@ -112,7 +112,7 @@
                     android:layout_marginStart="32dp"
                     android:paddingBottom="8dp"
                     android:paddingTop="8dp"
-                    android:text="Star IIITA APP On Github"
+                    android:text="Star IIITL APP On Github"
                     android:textAppearance="@style/TextAppearance.AppCompat.Subhead" />
 
             </LinearLayout>

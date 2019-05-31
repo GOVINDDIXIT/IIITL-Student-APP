@@ -23,7 +23,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="-135dp"
         android:fontFamily="@font/qs"
-        android:text="IIITA APP"
+        android:text="IIITL APP"
         android:textColor="#FFDF00"
         android:textSize="32sp"
         android:textStyle="bold" />

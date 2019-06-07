@@ -25,7 +25,7 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="325dp"
-        android:text="Visit IIITA Blog"
+        android:text="Visit IIITL Blog"
         android:textColor="#1B5E20" />
 
     <ImageView

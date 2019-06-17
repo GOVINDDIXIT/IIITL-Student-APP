@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="govind.iiita.app">
+    package="govind.iiitl.app">
 
     <uses-permission android:name="android.permission.INTERNET" />
 
@@ -16,17 +16,17 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".SplashActivity">
+        <activity android:name="govind.iiitl.app.SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MainActivity" />
-        <activity android:name=".DetailActivity" />
+        <activity android:name="govind.iiitl.app.MainActivity" />
+        <activity android:name="govind.iiitl.app.DetailActivity" />
 
-        <service android:name=".MessagingService">
+        <service android:name="govind.iiitl.app.MessagingService">
             <intent-filter>
                 <action android:name="com.google.firebase.MESSAGING_EVENT" />
             </intent-filter>
@@ -43,22 +43,16 @@
             android:name="com.google.firebase.messaging.default_notification_color"
             android:resource="@color/colorAccent" />
 
-        <activity android:name=".AboutPage" />
-        <activity android:name=".Labels.Gymkhana" />
-        <activity android:name=".Labels.Library" />
-        <activity android:name=".Labels.Geekhaven" />
-        <activity android:name=".Labels.React" />
-        <activity android:name=".SignIn.Login" />
-        <activity android:name=".SignIn.LogOut" />
-        <activity android:name=".Labels.Album" />
-        <activity android:name=".Labels.Registration_IIITA" />
-        <activity android:name=".TimeTable" />
-        <activity android:name=".Faculty" />
-        <activity android:name=".ECEdept" />
-        <activity android:name=".Extra" />
-        <activity android:name=".Ece" />
-        <activity android:name=".It" />
-        <activity android:name=".Guide"></activity>
+        <activity android:name="govind.iiitl.app.AboutPage" />
+        <activity android:name="govind.iiitl.app.Labels.Gymkhana" />
+        <activity android:name="govind.iiitl.app.Labels.Library" />
+        <activity android:name="govind.iiitl.app.SignIn.Login" />
+        <activity android:name="govind.iiitl.app.SignIn.LogOut" />
+        <activity android:name="govind.iiitl.app.Labels.Album" />
+        <activity android:name="govind.iiitl.app.TimeTable" />
+        <activity android:name="govind.iiitl.app.Extra" />
+
+        <activity android:name="govind.iiitl.app.Guide"></activity>
     </application>
 
 </manifest>

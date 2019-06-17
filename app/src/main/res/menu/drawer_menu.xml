@@ -14,8 +14,8 @@
 
         </item>
         <item
-            android:id="@+id/nav_geekhaven"
-            android:title="GeekHaven">
+            android:id="@+id/nav_axios"
+            android:title="Axios">
 
         </item>
 

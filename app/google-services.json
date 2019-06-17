@@ -1,52 +1,45 @@
 {
   "project_info": {
-    "project_number": "813544942472",
-    "firebase_url": "https://iiit-app.firebaseio.com",
-    "project_id": "iiit-app",
-    "storage_bucket": "iiit-app.appspot.com"
+    "project_number": "205156740979",
+    "firebase_url": "https://iiitl-student-app.firebaseio.com",
+    "project_id": "iiitl-student-app",
+    "storage_bucket": "iiitl-student-app.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:813544942472:android:82ce3d578e5ae59f",
+        "mobilesdk_app_id": "1:205156740979:android:013f8db3398f439b",
         "android_client_info": {
-          "package_name": "govind.iiita.app"
+          "package_name": "govind.iiitl.app"
         }
       },
       "oauth_client": [
         {
-          "client_id": "813544942472-ct0a5pt9sk5dphfcv5clb6cm9620kqq7.apps.googleusercontent.com",
+          "client_id": "205156740979-fhrmmo1sljmnq1mn8qhsimuodvk9bsrq.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
-            "package_name": "govind.iiita.app",
-            "certificate_hash": "b0c0587159561e70b79b9ecd4c468402ebdfff29"
+            "package_name": "govind.iiitl.app",
+            "certificate_hash": "73a8a0dd7ed721d7804e0747d745b75bfb6265bf"
           }
         },
         {
-          "client_id": "813544942472-k3rr81ugs06n6rptdtiq61c77a94vc8k.apps.googleusercontent.com",
+          "client_id": "205156740979-7c87g3aeig9ol02aalhpt602oiou2vt4.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyDQ__5l0t-aXtXwjDbly3Zdni6WVFZa6ag"
+          "current_key": "AIzaSyCzlm_SSfSeowL4PfzZUlltLrVjRkGDmNE"
         }
       ],
       "services": {
-        "analytics_service": {
-          "status": 1
-        },
         "appinvite_service": {
-          "status": 2,
           "other_platform_oauth_client": [
             {
-              "client_id": "813544942472-k3rr81ugs06n6rptdtiq61c77a94vc8k.apps.googleusercontent.com",
+              "client_id": "205156740979-7c87g3aeig9ol02aalhpt602oiou2vt4.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
-        },
-        "ads_service": {
-          "status": 2
         }
       }
     }

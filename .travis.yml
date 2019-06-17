@@ -1,0 +1,43 @@
+language: android
+jdk: oraclejdk8
+sudo: required
+
+android:
+  components:
+  # Uncomment the lines below if you want to
+  # use the latest revision of Android SDK Tools
+  - tools
+  - platform-tools
+  # The BuildTools version used by your project
+  - build-tools-27.0.3
+  # The SDK version used to compile your project
+  - android-27
+  - add-on
+  # Additional components
+  - extra-google-google_play_services
+  - extra-android-support
+  - extra-google-m2repository
+  - extra-android-m2repository
+
+  licenses:
+  - 'android-sdk-preview-license-52d11cd2'
+  - 'android-sdk-license-.+'
+  - 'google-gdk-license-.+'
+
+before_cache:
+- rm -f  $HOME/.gradle/caches/modules-2/modules-2.lock
+- rm -fr $HOME/.gradle/caches/*/plugin-resolution/
+
+cache:
+  directories:
+    - $HOME/.gradle/caches/
+    - $HOME/.gradle/wrapper/
+    - $HOME/.android/build-cache
+
+before_install:
+- yes | sdkmanager "build-tools;27.0.3"
+- chmod +x gradlew
+
+script:
+- ./gradlew build
+- ./gradlew assembleDebug

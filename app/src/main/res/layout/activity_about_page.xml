@@ -185,9 +185,6 @@
             </LinearLayout>
 
 
-
-
-
             <LinearLayout
                 android:id="@+id/write_an_email"
                 android:layout_width="match_parent"

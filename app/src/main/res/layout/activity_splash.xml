@@ -22,7 +22,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="-135dp"
         android:fontFamily="@font/qs"
-        android:text="IIITL APP"
+        android:text="IIITL Student App"
         android:textColor="#FFDF00"
         android:textSize="32sp"
         android:textStyle="bold" />

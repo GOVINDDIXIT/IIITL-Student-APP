@@ -44,7 +44,7 @@ public class LogOut extends AppCompatActivity {
         LinkToBlogBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                openWebPage(getResources().getString(R.string.Website));
+                openWebPage("http://iiitlblog.blogspot.com/");
             }
         });
 

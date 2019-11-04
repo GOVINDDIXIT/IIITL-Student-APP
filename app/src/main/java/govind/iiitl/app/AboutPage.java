@@ -53,7 +53,7 @@ public class AboutPage extends AppCompatActivity implements View.OnClickListener
                 sendArticle();
                 break;
             case R.id.website:
-                 openWebPage(getResources().getString(R.string.Website));
+                 openWebPage("http://iiitlblog.blogspot.com/");
                  break;
             default:
                 break;

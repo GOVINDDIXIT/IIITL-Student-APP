@@ -1,0 +1,57 @@
+{
+  "Dr. Arun Mohan Sherry": {
+    "imgSrc": "https://iiitl.ac.in/static/media/dr-arun-sherry.a367afb6.jpg",
+    "description": "DIRECTOR, IIITL, M.SC. (GOLD MEDALIST), M.TECH. (COMPUTER SCIENCE -IIT KHARAGPUR), PH.D.",
+    "ResearchAreas": "Higher Education and Research, CGI, eLearning Industry"
+  },
+  "Dr. Abhishek Pandey": {
+    "imgSrc": "https://iiitl.ac.in/static/media/AP.e7eed11b.jpg",
+    "description": "PH. D. FROM IIIT ALLAHABAD",
+    "ResearchAreas": "Computer Networks, Wireless N/W and Sensor Networks"
+  },
+  "Dr. Ashutosh Mishra": {
+    "imgSrc": "ImageNotOnTheWebsite",
+    "description": "PH. D. (OLD DOMINION UNIVERSITY, NORFOLK)",
+    "ResearchAreas": "Bioelectrics, Biomechanics, Machine Learning"
+  },
+  "Dr. Brijesh Kumar Chaurasia": {
+    "imgSrc": "https://iiitl.ac.in/static/media/BKC.8bd092b4.jpg",
+    "description": "PH. D. FROM IIIT ALLAHABAD INTERIM HEAD",
+    "ResearchAreas": "Network Security, Vehicular Ad hoc Networks, Sensor Ad hoc Networks, Trust Management in Wireless Ad-hoc Networks, Internet of Vehicles, Cloud Computing etc."
+  },
+  "Dr. Dipanjan Roy": {
+    "imgSrc": "https://roydipanjan.files.wordpress.com/2019/03/img_20190123_223256_719.jpg?w=240&h=240",
+    "description": "PH. D. FROM IIT INDORE",
+    "ResearchAreas": "Electronic Design Automation, High-Level Synthesis, Hardware Security, CAD-VLSI"
+  },
+  "Dr. Mary Samuel": {
+    "imgSrc": "https://iiitl.ac.in/static/media/mary.541b1a4e.jpg",
+    "description": "PH.D FROM MAHATMA GANDHI UNIVERSITY, KERALA, FACULTY IN-CHARGE STUDENT ACTIVITIES",
+    "ResearchAreas": "Fractal Geometry"
+  },
+  "Dr. Niharika Anand": {
+    "imgSrc": "https://iiitl.ac.in/static/media/niharikha.58179151.JPG",
+    "description": "PH. D. FROM IIIT ALLAHABAD, FACULTY INCHARGE LIBRARY",
+    "ResearchAreas": "Wireless Sensor Networks,4G and 5G technologies,Internet of Things,Security in Wireless Sensor Networks,Distributed Networks"
+  },
+  "Dr. Shikha Gautam": {
+    "imgSrc": "https://iiitl.ac.in/static/media/Shikha.dd87ddb7.jpg",
+    "description": "PH.D. (CS), UNIVERSITY OF LUCKNOW, LUCKNOW",
+    "ResearchAreas": "Software Engineering, Software Quality, and Software Reliability/Usability"
+  },
+  "Dr. Soumendu Chakraborty": {
+    "imgSrc": "https://iiitl.ac.in/static/media/somendu.4e40d9bc.jpg",
+    "description": "PH. D. FROM IIIT ALLAHABAD, FACULTY IN-CHARGE TECHNICAL COMMITTEE",
+    "ResearchAreas": "Image processing, Computer Vision, Pattern recognition, Steganography, Machine Learning."
+  },
+  "Mr. Sushil Tiwari": {
+    "imgSrc": "https://iiitl.ac.in/static/media/Sushil.cafd4d5a.jpg",
+    "description": "PH. D. FROM IIITDM, JABALPUR",
+    "ResearchAreas": "Wireless Indoor Localization, Machine Learning, Ad-hoc Network"
+  },
+  "Dr. Vishal Krishna Singh": {
+    "imgSrc": "https://images.ctfassets.net/e6ot1k2ihxg2/4VirhRAiSdcabNouCglotN/d9e2445e949c0f0e12e752963ca639cf/VKS.jpg",
+    "description": "PH. D. FROM IIIT ALLAHABAD, FACULTY IN-CHARGE TRAINING AND PLACEMENTS",
+    "ResearchAreas": "RESEARCH AREAS: Wireless Sensor Networks, In-network Inference, Data Mining Database Management, Data Analytics, Internet of Things"
+  }
+}

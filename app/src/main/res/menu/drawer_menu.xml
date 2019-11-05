@@ -18,6 +18,10 @@
             android:title="Axios">
 
         </item>
+         <item
+            android:id="@+id/nav_GetSetFoss"
+            android:title="Get Set FOSS" >
+        </item>
 
         <item
             android:id="@+id/nav_gymkhana"

@@ -61,6 +61,9 @@ public class MainActivity extends AppCompatActivity {
                     case R.id.nav_axios:
                         openWebPage(getResources().getString(R.string.axios_website));
                         break;
+                    case R.id.nav_GetSetFoss:
+                        openWebPage(getResources().getString(R.string.GetSetFOSS_website));
+                        break;
                     case R.id.nav_gymkhana:
                         startActivity(new Intent(MainActivity.this, Gymkhana.class));
                         break;

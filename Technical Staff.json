@@ -1,0 +1,147 @@
+{
+  "Axios": {
+    "Coordinator": {
+      "Divy Khare": {
+        "RollNumber": "LIT2017001",
+        "Position": "Coordinator",
+        "PhoneNumber": "9161212100"
+      }
+    },
+    "Competitive Coding": {
+      "Hidayat Khan": {
+        "RollNumber": "LIT2017029",
+        "Position": "Coordinator",
+        "PhoneNumber": ""
+      },
+      "Akshat Singh": {
+        "RollNumber": "LIT2018008",
+        "Position": "Member",
+        "PhoneNumber": "8565960260"
+      },
+      "Chahat Agarwal": {
+        "RollNumber": "LIT2018024",
+        "Position": "Member",
+        "PhoneNumber": "9784439569"
+      },
+      "Dev Sharma": {
+        "RollNumber": "LIT2018025",
+        "Position": "Member",
+        "PhoneNumber": "8384096265"
+      },
+      "Jai Raj Srivastava": {
+        "RollNumber": "LIT2018018",
+        "Position": "Member",
+        "PhoneNumber": "8765333838"
+      },
+      "Nishant Raj Lather": {
+        "RollNumber": "LIT2018038",
+        "Position": "Member",
+        "PhoneNumber": "7988283176"
+      },
+      "Praveen Fulera": {
+        "RollNumber": "LIT2012012",
+        "Position": "Member",
+        "PhoneNumber": "9759326118"
+      }
+      
+    },
+    "Cyber Security": {
+      "Shivendra Singh": {
+        "RollNumber": "LIT2017007",
+        "Position": "Coordinator",
+        "PhoneNumber": "7784816220"
+      },
+      "Ojas Kumar Dubey": {
+        "RollNumber": "LIT2018060",
+        "Position": "Member",
+        "PhoneNumber": "7985218601"
+      },
+      "Parag Varshney": {
+        "RollNumber": "LIT2018063",
+        "Position": "Member",
+        "PhoneNumber": "9149079049"
+      },
+      "Samyak Jain": {
+        "RollNumber": "LIT2018056",
+        "Position": "Member",
+        "PhoneNumber": "7017320015"
+      },
+      "Vivek Kumar": {
+        "RollNumber": "LIT2018064",
+        "Position": "Member",
+        "PhoneNumber": "6388819562"
+      }
+      
+    },
+    "Design": {
+      "Keesari Sahiti": {
+        "RollNumber": "LIT2017005",
+        "Position": "Coordinator",
+        "PhoneNumber": ""
+      },
+      "Ayushi Dubey": {
+        "RollNumber": "LIT2018040",
+        "Position": "Member",
+        "PhoneNumber": "9532446327"
+      },
+      "Disha Gupta": {
+        "RollNumber": "LIT2018026",
+        "Position": "Member",
+        "PhoneNumber": "9039822783"
+      },
+      "Ram Bharos": {
+        "RollNumber": "LIT2017023",
+        "Position": "Member",
+        "PhoneNumber": "8107367196"
+      }
+      
+    },
+    "Machine Learning": {
+      "Swastik Singh": {
+        "RollNumber": "LIT2017021",
+        "Position": "Coordinator",
+        "PhoneNumber": ""
+      },
+      "Aryan Sharma": {
+        "RollNumber": "LIT2018042",
+        "Position": "Member",
+        "PhoneNumber": "9340358653"
+      },
+      "Samyak Jain": {
+        "RollNumber": "LIT2018056",
+        "Position": "Member",
+        "PhoneNumber": "7017320015"
+      },
+      "Saksham Varshney": {
+        "RollNumber": "LIT2018029",
+        "Position": "Member",
+        "PhoneNumber": "8094123615"
+      }
+    },
+    "Software and App Development": {
+      "Govind Dixit": {
+        "RollNumber": "LIT2017018",
+        "Position": "Coordinator",
+        "PhoneNumber": ""
+      },
+      "Rohit Verma": {
+        "RollNumber": "LIT2018068",
+        "Position": "Member",
+        "PhoneNumber": "7007229338"
+      }
+      
+    },
+    "Web Developement": {
+      "Vaibhav Gupta": {
+        "RollNumber": "LIT2017003",
+        "Position": "Coordinator",
+        "PhoneNumber": ""
+      },
+      "Rishabh Shukla": {
+        "RollNumber": "LIT2017006",
+        "Position": "Member",
+        "PhoneNumber": "9454111724"
+      }
+    }
+  }
+}

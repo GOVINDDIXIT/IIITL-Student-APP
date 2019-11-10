@@ -9,13 +9,8 @@
 
         </item>
         <item
-            android:id="@+id/nav_library"
-            android:title="Library">
-
-        </item>
-        <item
             android:id="@+id/nav_axios"
-            android:title="Axios">
+            android:title="Technical Club">
 
         </item>
          <item
@@ -23,16 +18,6 @@
             android:title="Get Set FOSS" >
         </item>
 
-        <item
-            android:id="@+id/nav_gymkhana"
-            android:title="Gymkhana">
-
-        </item>
-        <item
-            android:id="@+id/nav_albums"
-            android:title="Albums">
-
-        </item>
         <item
             android:id="@+id/nav_extras"
             android:title="Extras">

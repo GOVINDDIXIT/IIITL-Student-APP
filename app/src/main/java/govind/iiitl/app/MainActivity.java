@@ -55,17 +55,11 @@ public class MainActivity extends AppCompatActivity {
                     case R.id.nav_TimeTable:
                         startActivity(new Intent(MainActivity.this, TimeTable.class));
                         break;
-                    case R.id.nav_library:
-                        startActivity(new Intent(MainActivity.this, Library.class));
-                        break;
                     case R.id.nav_axios:
                         openWebPage(getResources().getString(R.string.axios_website));
                         break;
                     case R.id.nav_GetSetFoss:
                         openWebPage(getResources().getString(R.string.GetSetFOSS_website));
-                        break;
-                    case R.id.nav_gymkhana:
-                        startActivity(new Intent(MainActivity.this, Gymkhana.class));
                         break;
                     case R.id.nav_logOut:
                         startActivity(new Intent(MainActivity.this, LogOut.class));
@@ -75,9 +69,6 @@ public class MainActivity extends AppCompatActivity {
                         break;
                     case R.id.nav_extras:
                         startActivity(new Intent(MainActivity.this, Extra.class));
-                        break;
-                    case R.id.nav_albums:
-                        startActivity(new Intent(MainActivity.this, Album.class));
                         break;
                     case R.id.nav_aboutus: {
                         startActivity(new Intent(MainActivity.this, AboutPage.class));

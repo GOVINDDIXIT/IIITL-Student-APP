@@ -23,6 +23,25 @@ There are a number of issues opened for participants to solve marked as:
 - Hard
 - Pro
 
+
+# Screenshots
+<table>
+   <tr>
+      <td><img src="static/1.png" height = "480" width="270"></td>
+      <td><img src="static/2.png" height = "480" width="270"></td>
+      <td><img src="static/3.png" height = "480" width="270"></td>
+  </tr>
+   <tr>
+      <td><img src="static/4.png" height = "480" width="270"></td>
+      <td><img src="static/5.png" height = "480" width="270"></td>
+      <td><img src="static/6.png" height = "480" width="270"></td>     
+  </tr>
+  <tr>
+      <td><img src="static/7.png" height = "480" width="270"></td>
+         
+  </tr>
+</table>
+
 *Whenever a PR to an issue gets merged, the contributor will get the points according to the label attached.*
 
 <a href="https://github.com/lukesampson/scoop">

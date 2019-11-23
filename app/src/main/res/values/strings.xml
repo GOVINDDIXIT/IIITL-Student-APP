@@ -17,6 +17,7 @@
     <string name="Website">https://iiitlblog.blogspot.com/</string>
     <string name="title_activity_login">Sign in</string>
     <string name="axios_website">https://axios.iiitl.ac.in/</string>
+    <string name="dsc_website">https://dsciiitl.netlify.com/</string>
     <string name="GetSetFOSS_website">https://getsetfoss.tech</string>
 
     <!-- Strings related to login -->

@@ -13,6 +13,11 @@
             android:title="Technical Club">
 
         </item>
+        <item
+            android:id="@+id/nav_dsc"
+            android:title="DSC IIITL">
+
+        </item>
          <item
             android:id="@+id/nav_GetSetFoss"
             android:title="Get Set FOSS" >

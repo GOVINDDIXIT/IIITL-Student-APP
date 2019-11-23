@@ -2,4 +2,4 @@
 
 [App Widgets](https://medium.com/@muskan2001july/app-widgets-2c9c877ea94c) By Muskan Kumari
 
-[App Widgets](https://medium.com/@harsh.tiwari.1242001/xml-layout-files-for-android-17678647dd60) By Harsh Tiwari
+[Formatting XML Layout](https://medium.com/@harsh.tiwari.1242001/xml-layout-files-for-android-17678647dd60) By Harsh Tiwari

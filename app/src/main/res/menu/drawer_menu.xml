@@ -9,20 +9,29 @@
 
         </item>
         <item
-            android:id="@+id/nav_axios"
-            android:title="Technical Club">
+            android:id="@+id/nav_dsc"
+            android:title="DSC IIITL">
 
         </item>
-         <item
-            android:id="@+id/nav_GetSetFoss"
-            android:title="Get Set FOSS" >
-        </item>
-
         <item
             android:id="@+id/nav_extras"
             android:title="Extras">
 
         </item>
+        <item
+            android:id="@+id/nav_GetSetFoss"
+            android:title="Get Set FOSS" >
+            
+        </item>
+        <item
+            android:id="@+id/nav_axios"
+            android:title="Technical Club">
+
+        </item>
+
+
+
+
 
     </group>
 
@@ -40,15 +49,16 @@
         android:id="@+id/group2"
         android:checkableBehavior="single">
         <item
-            android:id="@+id/nav_logOut"
-            android:title="Log Out">
-
-        </item>
-        <item
             android:id="@+id/nav_aboutus"
             android:title="About Us">
 
         </item>
+        <item
+            android:id="@+id/nav_logOut"
+            android:title="Log Out">
+
+        </item>
+
     </group>
 
 </menu>

@@ -14,6 +14,11 @@
 
         </item>
         <item
+            android:id="@+id/nav_equinox"
+            android:title="Equinox-IIITL">
+
+        </item>
+        <item
             android:id="@+id/nav_extras"
             android:title="Extras">
 

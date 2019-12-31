@@ -61,6 +61,9 @@ public class MainActivity extends AppCompatActivity {
                     case R.id.nav_dsc:
                         openWebPage(getResources().getString(R.string.dsc_website));
                         break;
+                    case R.id.nav_equinox:
+                        openWebPage(getResources().getString(R.string.equinox_website));
+                        break;
                     case R.id.nav_GetSetFoss:
                         openWebPage(getResources().getString(R.string.GetSetFOSS_website));
                         break;

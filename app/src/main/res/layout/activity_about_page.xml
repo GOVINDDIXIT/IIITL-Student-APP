@@ -3,14 +3,17 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:layout_marginTop="20dp"
     android:layout_height="match_parent"
     android:orientation="vertical"
     >
 
-    <android.support.v7.widget.CardView xmlns:tools="http://schemas.android.com/tools"
+    <android.support.v7.widget.CardView
+        xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="8dp"
+        app:cardCornerRadius="8dp"
         app:cardUseCompatPadding="true">
 
         <LinearLayout
@@ -127,6 +130,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_margin="8dp"
+        app:cardCornerRadius="8dp"
         app:cardUseCompatPadding="true">
 
         <LinearLayout
@@ -258,6 +262,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_margin="8dp"
+        app:cardCornerRadius="8dp"
         app:cardUseCompatPadding="true">
 
         <LinearLayout

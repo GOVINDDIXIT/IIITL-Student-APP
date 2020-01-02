@@ -53,7 +53,7 @@ public class MainActivity extends AppCompatActivity {
             public boolean onNavigationItemSelected(MenuItem item) {
                 switch (item.getItemId()) {
                     case R.id.nav_TimeTable:
-                        startActivity(new Intent(MainActivity.this, TimeTable.class));
+                        startActivity(new Intent(MainActivity.this, AskDetail.class));
                         break;
                     case R.id.nav_axios:
                         openWebPage(getResources().getString(R.string.axios_website));

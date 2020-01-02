@@ -43,14 +43,10 @@
             android:resource="@color/colorAccent" />
 
         <activity android:name=".AboutPage" />
-        <activity android:name=".Labels.Gymkhana" />
-        <activity android:name=".Labels.Library" />
         <activity android:name=".SignIn.Login" />
         <activity android:name=".SignIn.LogOut" />
-        <activity android:name=".Labels.Album" />
         <activity android:name=".TimeTable" />
         <activity android:name=".Extra" />
-        <activity android:name=".Guide" />
     </application>
 
 </manifest>

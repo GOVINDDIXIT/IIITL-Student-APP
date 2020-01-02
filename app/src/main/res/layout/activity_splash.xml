@@ -8,8 +8,8 @@
 
     <ImageView
         android:id="@+id/logo"
-        android:layout_width="241dp"
-        android:layout_height="284dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="57dp"
@@ -23,7 +23,7 @@
         android:layout_marginTop="-135dp"
         android:fontFamily="@font/qs"
         android:text="IIITL Student App"
-        android:textColor="#E92D2D"
+        android:textColor="#FFD700"
         android:textSize="32sp"
         android:textStyle="bold" />
 
@@ -36,7 +36,7 @@
         android:layout_marginBottom="135dp"
         android:fontFamily="@font/pr"
         android:text="Welcome To"
-        android:textColor="#E92D2D"
+        android:textColor="#FFD700"
         android:textSize="38sp" />
 
 </RelativeLayout>

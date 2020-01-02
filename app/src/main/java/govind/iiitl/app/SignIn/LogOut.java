@@ -3,9 +3,11 @@ package govind.iiitl.app.SignIn;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.graphics.Color;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
+import android.support.customtabs.CustomTabsIntent;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
@@ -44,22 +46,19 @@ public class LogOut extends AppCompatActivity {
         LinkToBlogBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                openWebPage(getResources().getString(R.string.Website));
+                cromeCustomTabs(getResources().getString(R.string.Website));
             }
         });
 
         mAuth = FirebaseAuth.getInstance();
-        mAuthListener = new FirebaseAuth.AuthStateListener() {
-            @Override
-            public void onAuthStateChanged(@NonNull FirebaseAuth firebaseAuth) {
-                if (firebaseAuth.getCurrentUser() == null) {
-                    sp = getSharedPreferences("login", Context.MODE_PRIVATE);
-                    SharedPreferences.Editor editor = sp.edit();
-                    editor.clear();
-                    editor.apply();
-                    startActivity(new Intent(LogOut.this, Login.class));
-                    finish();
-                }
+        mAuthListener = firebaseAuth -> {
+            if (firebaseAuth.getCurrentUser() == null) {
+                sp = getSharedPreferences("login", Context.MODE_PRIVATE);
+                SharedPreferences.Editor editor = sp.edit();
+                editor.clear();
+                editor.apply();
+                startActivity(new Intent(LogOut.this, Login.class));
+                finish();
             }
         };
 
@@ -97,13 +96,11 @@ public class LogOut extends AppCompatActivity {
         mAuth.addAuthStateListener(mAuthListener);
     }
 
-    public void openWebPage(String url) {
-        Toast.makeText(LogOut.this, "Wait a while....", Toast.LENGTH_SHORT).show();
-        Intent implicit = new Intent(Intent.ACTION_VIEW, Uri.parse(url));
-        startActivity(implicit);
+    private void cromeCustomTabs(String url){
+        CustomTabsIntent.Builder builder = new CustomTabsIntent.Builder();
+        builder.setToolbarColor(Color.parseColor("#000000"));
+        CustomTabsIntent intent = builder.build();
+        intent.launchUrl(this,Uri.parse(url));
     }
 
-    private void goToLogin() {
-        startActivity(new Intent(this, Login.class));
-    }
 }

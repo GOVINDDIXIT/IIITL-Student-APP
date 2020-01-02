@@ -4,6 +4,7 @@ import android.content.ActivityNotFoundException;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
+import android.support.customtabs.CustomTabsIntent;
 import android.support.design.widget.NavigationView;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
@@ -17,9 +18,6 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import govind.iiitl.app.Adapter.PostAdapter;
-import govind.iiitl.app.Labels.Album;
-import govind.iiitl.app.Labels.Gymkhana;
-import govind.iiitl.app.Labels.Library;
 import govind.iiitl.app.Models.PostList;
 import govind.iiitl.app.SignIn.LogOut;
 import retrofit2.Call;
@@ -84,16 +82,13 @@ public class MainActivity extends AppCompatActivity {
                 return false;
             }
         });
-
-
         getData();
-
     }
 
     private void openWebPage(String url) {
-        Toast.makeText(MainActivity.this, "Wait a while....", Toast.LENGTH_SHORT).show();
-        Intent implicit = new Intent(Intent.ACTION_VIEW, Uri.parse(url));
-        startActivity(implicit);
+        CustomTabsIntent.Builder builder = new CustomTabsIntent.Builder();
+        CustomTabsIntent customTabsIntent = builder.build();
+        customTabsIntent.launchUrl(this, Uri.parse(url));
     }
 
     private void sendArticle() {
@@ -139,6 +134,4 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
-
-
 }

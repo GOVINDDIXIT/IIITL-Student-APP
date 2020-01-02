@@ -34,4 +34,24 @@
         completions."
     </string>
 
+
+
+    <string-array name="year">
+        <item> 1-Year</item>
+        <item> 2-Year</item>
+        <item> 3-Year</item>
+        <item> 4-Year</item>
+    </string-array>
+
+    <string-array name="mtech">
+        <item> 1-Year</item>
+        <item> 2-Year</item>
+    </string-array>
+
+    <string-array name="branch">
+        <item>CSE(B.Tech)</item>
+        <item>IT(B.Tech)</item>
+        <item>CSE (M.Tech)</item>
+    </string-array>
+
 </resources>

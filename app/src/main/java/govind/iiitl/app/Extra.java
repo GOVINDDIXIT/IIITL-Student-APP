@@ -1,16 +1,15 @@
 package govind.iiitl.app;
 
-import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
+import android.support.customtabs.CustomTabsIntent;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
-import android.widget.Toast;
 
 public class Extra extends AppCompatActivity {
-    Button btnIT, btnECE, btnGuide;
-
+    Button btnGuide;
+    String URL = "https://medium.com/@thelittlewonder/dear-junior-6d78a13048cb";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,17 +17,13 @@ public class Extra extends AppCompatActivity {
         setContentView(R.layout.activity_extra);
         btnGuide = findViewById(R.id.btnVisit);
 
-          btnGuide.setOnClickListener(new View.OnClickListener() {
+        btnGuide.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-            startActivity(new Intent(Extra.this, Guide.class));
-
-        }
+                CustomTabsIntent.Builder builder = new CustomTabsIntent.Builder();
+                CustomTabsIntent customTabsIntent = builder.build();
+                customTabsIntent.launchUrl(getApplicationContext(), Uri.parse(URL));
+            }
         });
-    }
-    private void openWebPage(String url) {
-        Toast.makeText(Extra.this, "Wait a while....", Toast.LENGTH_SHORT).show();
-        Intent implicit = new Intent(Intent.ACTION_VIEW, Uri.parse(url));
-        startActivity(implicit);
     }
 }

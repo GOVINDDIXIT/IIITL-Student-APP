@@ -36,7 +36,7 @@ public class AskDetail extends AppCompatActivity implements AdapterView.OnItemSe
 
 
         String branchselect = adapterView.getItemAtPosition(i).toString();
-        if(branchselect.equals("CSE (M.Tech)")){
+        if("CSE (M.Tech)".equals(branchselect)){
             Spinner yearone = findViewById(R.id.year);
             ArrayAdapter<CharSequence> yearadapter = ArrayAdapter.createFromResource(getApplicationContext(), R.array.mtech,android.R.layout.simple_spinner_item);
             yearadapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);

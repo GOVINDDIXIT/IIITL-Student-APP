@@ -15,7 +15,6 @@ public class AboutPage extends AppCompatActivity implements View.OnClickListener
 
     private LinearLayout fork;
     private LinearLayout GovindGithub;
-    private LinearLayout email;
     private LinearLayout sendArticle;
     private LinearLayout website;
     private LinearLayout other_devs;

@@ -18,6 +18,7 @@ public class AboutPage extends AppCompatActivity implements View.OnClickListener
     private LinearLayout email;
     private LinearLayout sendArticle;
     private LinearLayout website;
+    private LinearLayout other_devs;
 
 
     @Override
@@ -27,14 +28,14 @@ public class AboutPage extends AppCompatActivity implements View.OnClickListener
         setContentView(R.layout.activity_about_page);
         fork = findViewById(R.id.Star_on_github);
         GovindGithub = findViewById(R.id.Govind_about);
-        email = findViewById(R.id.write_an_email);
         sendArticle=findViewById(R.id.Submit_article);
         website=findViewById(R.id.website);
+        other_devs=findViewById(R.id.other_devs);
         fork.setOnClickListener(this);
         GovindGithub.setOnClickListener(this);
-        email.setOnClickListener(this);
         sendArticle.setOnClickListener(this);
         website.setOnClickListener(this);
+        other_devs.setOnClickListener(this);
         }
 
 
@@ -48,32 +49,21 @@ public class AboutPage extends AppCompatActivity implements View.OnClickListener
             case R.id.Govind_about:
                 cromeCustomTabs(getResources().getString(R.string.Govind_github_link));
                 break;
-            case R.id.write_an_email:
-                sendMail();
-                break;
             case R.id.Submit_article:
                 sendArticle();
                 break;
             case R.id.website:
                  cromeCustomTabs(getResources().getString(R.string.Website));
                  break;
+            case R.id.other_devs:
+                cromeCustomTabs(getResources().getString(R.string.other_devs));
+                break;
             default:
                 break;
         }
     }
 
-    private void sendMail() {
 
-        String mailto = "mailto:developer8work@gmail.com";
-
-        Intent emailIntent = new Intent(Intent.ACTION_SENDTO);
-        emailIntent.setData(Uri.parse(mailto));
-        try {
-            startActivity(emailIntent);
-        } catch (ActivityNotFoundException e) {
-            //TODO: Handle case where no email app is available
-        }
-    }
 
     private void sendArticle() {
 

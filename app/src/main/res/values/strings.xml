@@ -15,6 +15,7 @@
     <string name="Star_on_github">https://github.com/GOVINDDIXIT/IIITL-Student-APP</string>
     <string name="Govind_github_link">https://github.com/GOVINDDIXIT</string>
     <string name="Website">https://iiitlblog.blogspot.com/</string>
+    <string name="other_devs">"https://github.com/GOVINDDIXIT/IIITL-Student-APP/graphs/contributors?from=2019-05-26&amp;to=2019-12-31&amp;type=c"</string>
     <string name="title_activity_login">Sign in</string>
     <string name="axios_website">https://axios.iiitl.ac.in/</string>
     <string name="dsc_website">https://dsciiitl.netlify.com/</string>

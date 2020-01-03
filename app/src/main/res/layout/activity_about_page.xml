@@ -189,37 +189,7 @@
             </LinearLayout>
 
 
-            <LinearLayout
-                android:id="@+id/write_an_email"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:clickable="true"
-                android:gravity="center_vertical"
-                android:orientation="horizontal"
-                android:background="@drawable/background"
-                android:paddingLeft="16dp"
-                android:paddingRight="16dp"
-                android:focusable="true"
-                android:minHeight="@dimen/md_listitem_height">
 
-                <ImageView
-                    android:id="@+id/icon_email"
-                    android:layout_width="24dp"
-                    android:layout_height="24dp"
-                    app:srcCompat="@drawable/ic_email"
-                    tools:ignore="ContentDescription,UnusedAttribute" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="32dp"
-                    android:layout_marginStart="32dp"
-                    android:paddingBottom="8dp"
-                    android:paddingTop="8dp"
-                    android:text="Email"
-                    android:textAppearance="@style/TextAppearance.AppCompat.Subhead" />
-
-            </LinearLayout>
             <LinearLayout
                 android:id="@+id/website"
                 android:layout_width="match_parent"
@@ -248,6 +218,39 @@
                     android:paddingBottom="8dp"
                     android:paddingTop="8dp"
                     android:text="Website"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Subhead" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/other_devs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:background="@drawable/background"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:focusable="true"
+                android:minHeight="@dimen/md_listitem_height">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:tint="#000"
+                    app:srcCompat="@drawable/ic_person"
+                    tools:ignore="ContentDescription,UnusedAttribute" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="32dp"
+                    android:layout_marginStart="32dp"
+                    android:paddingBottom="8dp"
+                    android:paddingTop="8dp"
+                    android:text="Other Developers"
                     android:textAppearance="@style/TextAppearance.AppCompat.Subhead" />
 
             </LinearLayout>

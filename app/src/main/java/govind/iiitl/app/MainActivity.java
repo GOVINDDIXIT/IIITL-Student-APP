@@ -28,9 +28,7 @@ import retrofit2.Response;
 public class MainActivity extends AppCompatActivity {
 
     DrawerLayout drawerLayout;
-    TextView textView;
     Toolbar toolbar;
-    WebView webview;
     ActionBarDrawerToggle actionBarDrawerToggle;
     NavigationView navigationView;
     RecyclerView recyclerView;

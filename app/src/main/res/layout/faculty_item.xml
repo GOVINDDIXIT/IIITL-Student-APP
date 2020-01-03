@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        app:cardUseCompatPadding="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.015">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="16dp">
+
+            <LinearLayout
+                android:id="@+id/info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/faculty_image"
+                    android:layout_width="98dp"
+                    android:layout_height="86dp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@mipmap/ic_launcher_round"
+                    tools:ignore="ContentDescription" />
+
+
+                <TextView
+                    android:id="@+id/faculty_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="32dp"
+                    android:layout_toEndOf="@+id/faculty_image"
+                    android:layout_toRightOf="@+id/faculty_image"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
+                    android:text="Dr. Arun Mohan Sherry"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/faculty_research_areas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/info"
+                android:layout_marginTop="24dp"
+                android:text="DIRECTOR, IIITL, M.SC. (GOLD MEDALIST), M.TECH. (CS -IIT Kgp), PH.D." />
+
+            <TextView
+                android:id="@+id/faculty_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/faculty_research_areas"
+                android:layout_marginTop="16dp"
+                android:text="Higher Education and Research, CGI, eLearning Industry" />
+
+        </RelativeLayout>
+
+
+    </android.support.v7.widget.CardView>
+
+
+</android.support.constraint.ConstraintLayout>

@@ -46,7 +46,7 @@ public class LogOut extends AppCompatActivity {
         LinkToBlogBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                cromeCustomTabs(getResources().getString(R.string.Website));
+                chromeCustomTabs(getResources().getString(R.string.Website));
             }
         });
 
@@ -96,7 +96,7 @@ public class LogOut extends AppCompatActivity {
         mAuth.addAuthStateListener(mAuthListener);
     }
 
-    private void cromeCustomTabs(String url){
+    private void chromeCustomTabs(String url){
         CustomTabsIntent.Builder builder = new CustomTabsIntent.Builder();
         builder.setToolbarColor(Color.parseColor("#000000"));
         CustomTabsIntent intent = builder.build();

@@ -92,8 +92,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void sendArticle() {
-
-        String mailto = "mailto:developer8work@gmail.com?subject=Article Submission";
+        String mailto = "mailto:dsc@iiitl.ac.in?subject=Article submission for Student App";
 
         Intent emailIntent = new Intent(Intent.ACTION_SENDTO);
         emailIntent.setData(Uri.parse(mailto));

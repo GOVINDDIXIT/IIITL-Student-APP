@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#223344"
+    android:background="#202020"
     android:gravity="center_horizontal"
     android:orientation="vertical"
     tools:context=".SignIn.LogOut">
@@ -19,6 +19,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="user_name"
+        android:fontFamily="@font/ps"
         android:layout_marginTop="20dp"
         android:textColor="#FFD700"
         android:textSize="28sp" />
@@ -28,6 +29,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="user_email"
+        android:fontFamily="@font/roboto"
         android:textColor="#FFD700"
         android:textSize="20sp" />
     <Button
@@ -35,15 +37,9 @@
         android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:text="LogOut"
+        android:fontFamily="@font/ps"
         android:layout_marginTop="30dp"
         android:textColor="#880E4F" />
 
-    <Button
-        android:id="@+id/linktoBlogBtn"
-        android:layout_width="200dp"
-        android:layout_marginTop="10dp"
-        android:layout_height="wrap_content"
-        android:text="Visit IIITL Blog"
-        android:textColor="#1B5E20" />
 
 </LinearLayout>

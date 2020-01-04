@@ -28,7 +28,6 @@ public class LogOut extends AppCompatActivity {
 
     SharedPreferences sp;
     private Button mLogOutButton;
-    private Button LinkToBlogBtn;
     private FirebaseAuth mAuth;
     private FirebaseAuth.AuthStateListener mAuthListener;
     private FirebaseUser currentFirebaseUser;
@@ -42,13 +41,6 @@ public class LogOut extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_log_out);
         setupUserProfile();
-        LinkToBlogBtn = findViewById(R.id.linktoBlogBtn);
-        LinkToBlogBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                chromeCustomTabs(getResources().getString(R.string.Website));
-            }
-        });
 
         mAuth = FirebaseAuth.getInstance();
         mAuthListener = firebaseAuth -> {
@@ -95,12 +87,4 @@ public class LogOut extends AppCompatActivity {
         super.onStart();
         mAuth.addAuthStateListener(mAuthListener);
     }
-
-    private void chromeCustomTabs(String url){
-        CustomTabsIntent.Builder builder = new CustomTabsIntent.Builder();
-        builder.setToolbarColor(Color.parseColor("#000000"));
-        CustomTabsIntent intent = builder.build();
-        intent.launchUrl(this,Uri.parse(url));
-    }
-
 }

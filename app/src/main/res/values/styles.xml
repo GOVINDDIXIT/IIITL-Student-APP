@@ -16,4 +16,8 @@
         <item name="android:windowBackground">@android:color/white</item>
     </style>
 
+    <style name="navigation_view" parent="AppTheme">
+        <item name="android:fontFamily">@font/ps</item>
+    </style>
+
 </resources>

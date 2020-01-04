@@ -9,15 +9,13 @@ import android.support.customtabs.CustomTabsIntent;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.LinearLayout;
-import android.widget.Toast;
 
 public class AboutPage extends AppCompatActivity implements View.OnClickListener {
 
     private LinearLayout fork;
-    private LinearLayout GovindGithub;
+    private LinearLayout developers;
     private LinearLayout email;
     private LinearLayout sendArticle;
-    private LinearLayout website;
 
 
     @Override
@@ -26,16 +24,14 @@ public class AboutPage extends AppCompatActivity implements View.OnClickListener
         setTitle("About");
         setContentView(R.layout.activity_about_page);
         fork = findViewById(R.id.Star_on_github);
-        GovindGithub = findViewById(R.id.Govind_about);
+        developers = findViewById(R.id.developers);
         email = findViewById(R.id.write_an_email);
-        sendArticle=findViewById(R.id.Submit_article);
-        website=findViewById(R.id.website);
+        sendArticle = findViewById(R.id.Submit_article);
         fork.setOnClickListener(this);
-        GovindGithub.setOnClickListener(this);
+        developers.setOnClickListener(this);
         email.setOnClickListener(this);
         sendArticle.setOnClickListener(this);
-        website.setOnClickListener(this);
-        }
+    }
 
 
     @Override
@@ -43,10 +39,10 @@ public class AboutPage extends AppCompatActivity implements View.OnClickListener
         int id = view.getId();
         switch (id) {
             case R.id.Star_on_github:
-                cromeCustomTabs(getResources().getString(R.string.Star_on_github));
+                chromeCustomTabs(getResources().getString(R.string.Star_on_github));
                 break;
-            case R.id.Govind_about:
-                cromeCustomTabs(getResources().getString(R.string.Govind_github_link));
+            case R.id.developers:
+                chromeCustomTabs(getResources().getString(R.string.developers_github_link));
                 break;
             case R.id.write_an_email:
                 sendMail();
@@ -54,17 +50,13 @@ public class AboutPage extends AppCompatActivity implements View.OnClickListener
             case R.id.Submit_article:
                 sendArticle();
                 break;
-            case R.id.website:
-                 cromeCustomTabs(getResources().getString(R.string.Website));
-                 break;
             default:
                 break;
         }
     }
 
     private void sendMail() {
-
-        String mailto = "mailto:developer8work@gmail.com";
+        String mailto = "mailto:dsc@iiitl.ac.in?subject=Feedback Submission";
 
         Intent emailIntent = new Intent(Intent.ACTION_SENDTO);
         emailIntent.setData(Uri.parse(mailto));
@@ -76,8 +68,7 @@ public class AboutPage extends AppCompatActivity implements View.OnClickListener
     }
 
     private void sendArticle() {
-
-        String mailto = "mailto:developer8work@gmail.com?subject=Article Submission";
+        String mailto = "mailto:dsc@iiitl.ac.in?subject=Article submission for Student App";
 
         Intent emailIntent = new Intent(Intent.ACTION_SENDTO);
         emailIntent.setData(Uri.parse(mailto));
@@ -88,10 +79,10 @@ public class AboutPage extends AppCompatActivity implements View.OnClickListener
         }
     }
 
-    private void cromeCustomTabs(String url){
+    private void chromeCustomTabs(String url) {
         CustomTabsIntent.Builder builder = new CustomTabsIntent.Builder();
         builder.setToolbarColor(Color.parseColor("#000000"));
         CustomTabsIntent intent = builder.build();
-        intent.launchUrl(this,Uri.parse(url));
+        intent.launchUrl(this, Uri.parse(url));
     }
 }

@@ -3,16 +3,16 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_marginTop="20dp"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    >
+    android:background="#202020"
+    android:orientation="vertical">
 
-    <android.support.v7.widget.CardView
-        xmlns:tools="http://schemas.android.com/tools"
+    <android.support.v7.widget.CardView xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="8dp"
         app:cardCornerRadius="8dp"
         app:cardUseCompatPadding="true">
 
@@ -39,6 +39,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_vertical"
+                    android:fontFamily="@font/ps"
                     android:paddingLeft="16dp"
                     android:paddingRight="16dp"
                     android:text="@string/app_name"
@@ -61,20 +62,21 @@
                     android:layout_width="24dp"
                     android:layout_height="24dp"
                     app:srcCompat="@drawable/ic_about"
-                    tools:ignore="ContentDescription,UnusedAttribute" />
+                    tools:ignore="ContentDescription,UnusedAttribute,VectorDrawableCompat" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="32dp"
                     android:layout_marginStart="32dp"
+                    android:layout_marginLeft="32dp"
                     android:orientation="vertical"
-                    android:paddingBottom="8dp"
-                    android:paddingTop="8dp">
+                    android:paddingTop="8dp"
+                    android:paddingBottom="8dp">
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto"
                         android:text="@string/version"
                         android:textAppearance="@style/TextAppearance.AppCompat.Subhead" />
 
@@ -93,12 +95,12 @@
                 android:id="@+id/Star_on_github"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:background="@drawable/background"
                 android:clickable="true"
+                android:focusable="true"
                 android:gravity="center_vertical"
                 android:orientation="horizontal"
-                android:background="@drawable/background"
                 android:paddingLeft="16dp"
-                android:focusable="true"
                 android:paddingRight="16dp">
 
                 <ImageView
@@ -106,20 +108,21 @@
                     android:layout_width="24dp"
                     android:layout_height="24dp"
                     app:srcCompat="@drawable/ic_github_circle_white_24dp"
-                    tools:ignore="ContentDescription,UnusedAttribute" />
+                    tools:ignore="ContentDescription,UnusedAttribute,VectorDrawableCompat" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="32dp"
                     android:layout_marginStart="32dp"
-                    android:paddingBottom="8dp"
+                    android:layout_marginLeft="32dp"
+                    android:fontFamily="@font/qs"
                     android:paddingTop="8dp"
-                    android:text="Star IIITL APP On Github"
+                    android:paddingBottom="8dp"
+
+                    android:text="Star IIITL Student APP On Github"
                     android:textAppearance="@style/TextAppearance.AppCompat.Subhead" />
 
             </LinearLayout>
-
 
         </LinearLayout>
 
@@ -139,27 +142,17 @@
             android:layout_marginBottom="8dp"
             android:orientation="vertical">
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="start|center_vertical"
-                android:paddingBottom="16dp"
-                android:paddingLeft="16dp"
-                android:paddingRight="16dp"
-                android:paddingTop="24dp"
-                android:text="Developers"
-                android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
 
             <LinearLayout
-                android:id="@+id/Govind_about"
+                android:id="@+id/developers"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:gravity="center_vertical"
-                android:orientation="horizontal"
-                android:paddingLeft="16dp"
                 android:background="@drawable/background"
                 android:clickable="true"
+                android:gravity="center_vertical"
                 android:minHeight="@dimen/md_listitem_height"
+                android:orientation="horizontal"
+                android:paddingLeft="16dp"
                 android:paddingRight="16dp">
 
                 <ImageView
@@ -167,21 +160,23 @@
                     android:layout_height="24dp"
                     android:tint="#000"
                     app:srcCompat="@drawable/ic_person"
-                    tools:ignore="ContentDescription,UnusedAttribute" />
+                    tools:ignore="ContentDescription,UnusedAttribute,VectorDrawableCompat" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="32dp"
                     android:layout_marginStart="32dp"
+                    android:layout_marginLeft="32dp"
                     android:orientation="vertical"
-                    android:paddingBottom="8dp"
-                    android:paddingTop="8dp">
+                    android:paddingTop="8dp"
+                    android:paddingBottom="8dp">
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/Govind"
+                        android:fontFamily="@font/qs"
+
+                        android:text="@string/developers"
                         android:textAppearance="@style/TextAppearance.AppCompat.Subhead" />
                 </LinearLayout>
 
@@ -193,61 +188,31 @@
                 android:id="@+id/write_an_email"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:clickable="true"
-                android:gravity="center_vertical"
-                android:orientation="horizontal"
                 android:background="@drawable/background"
-                android:paddingLeft="16dp"
-                android:paddingRight="16dp"
+                android:clickable="true"
                 android:focusable="true"
-                android:minHeight="@dimen/md_listitem_height">
+                android:gravity="center_vertical"
+                android:minHeight="@dimen/md_listitem_height"
+                android:orientation="horizontal"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp">
 
                 <ImageView
                     android:id="@+id/icon_email"
                     android:layout_width="24dp"
                     android:layout_height="24dp"
                     app:srcCompat="@drawable/ic_email"
-                    tools:ignore="ContentDescription,UnusedAttribute" />
+                    tools:ignore="ContentDescription,UnusedAttribute,VectorDrawableCompat" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="32dp"
                     android:layout_marginStart="32dp"
-                    android:paddingBottom="8dp"
-                    android:paddingTop="8dp"
-                    android:text="Email"
-                    android:textAppearance="@style/TextAppearance.AppCompat.Subhead" />
-
-            </LinearLayout>
-            <LinearLayout
-                android:id="@+id/website"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:clickable="true"
-                android:gravity="center_vertical"
-                android:orientation="horizontal"
-                android:background="@drawable/background"
-                android:paddingLeft="16dp"
-                android:paddingRight="16dp"
-                android:focusable="true"
-                android:minHeight="@dimen/md_listitem_height">
-
-                <ImageView
-                    android:id="@+id/icon_website"
-                    android:layout_width="24dp"
-                    android:layout_height="24dp"
-                    app:srcCompat="@drawable/ic_public_black_24dp"
-                    tools:ignore="ContentDescription,UnusedAttribute" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
                     android:layout_marginLeft="32dp"
-                    android:layout_marginStart="32dp"
-                    android:paddingBottom="8dp"
+                    android:fontFamily="@font/qs"
                     android:paddingTop="8dp"
-                    android:text="Website"
+                    android:paddingBottom="8dp"
+                    android:text="Feedback Submission"
                     android:textAppearance="@style/TextAppearance.AppCompat.Subhead" />
 
             </LinearLayout>
@@ -272,15 +237,14 @@
             android:orientation="vertical">
 
 
-
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="32dp"
                 android:layout_marginStart="32dp"
+                android:layout_marginLeft="32dp"
                 android:orientation="vertical"
-                android:paddingBottom="8dp"
-                android:paddingTop="8dp">
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp">
 
 
             </LinearLayout>
@@ -289,29 +253,30 @@
                 android:id="@+id/Submit_article"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:clickable="true"
-                android:gravity="center_vertical"
-                android:orientation="horizontal"
                 android:background="@drawable/background"
-                android:paddingLeft="16dp"
-                android:paddingRight="16dp"
+                android:clickable="true"
                 android:focusable="true"
-                android:minHeight="@dimen/md_listitem_height">
+                android:gravity="center_vertical"
+                android:minHeight="@dimen/md_listitem_height"
+                android:orientation="horizontal"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp">
 
                 <ImageView
                     android:id="@+id/Submit_email_image"
                     android:layout_width="24dp"
                     android:layout_height="24dp"
                     app:srcCompat="@drawable/ic_email"
-                    tools:ignore="ContentDescription,UnusedAttribute" />
+                    tools:ignore="ContentDescription,UnusedAttribute,VectorDrawableCompat" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="32dp"
                     android:layout_marginStart="32dp"
-                    android:paddingBottom="8dp"
+                    android:layout_marginLeft="32dp"
+                    android:fontFamily="@font/qs"
                     android:paddingTop="8dp"
+                    android:paddingBottom="8dp"
                     android:text="Submit Your Aricle here"
                     android:textAppearance="@style/TextAppearance.AppCompat.Subhead" />
 

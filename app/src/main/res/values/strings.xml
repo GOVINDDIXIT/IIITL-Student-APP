@@ -11,9 +11,9 @@
     <string name="version">Version</string>
     <string name="action_settings">Settings</string>
     <string name="version_no">1.0.0</string>
-    <string name="Govind">Govind Dixit</string>
+    <string name="developers">Developers</string>
     <string name="Star_on_github">https://github.com/GOVINDDIXIT/IIITL-Student-APP</string>
-    <string name="Govind_github_link">https://github.com/GOVINDDIXIT</string>
+    <string name="developers_github_link">https://github.com/GOVINDDIXIT/IIITL-Student-APP/graphs/contributors?from=2019-05-26&amp;to=2020-01-04&amp;type=a</string>
     <string name="Website">https://iiitlblog.blogspot.com/</string>
     <string name="title_activity_login">Sign in</string>
     <string name="axios_website">https://axios.iiitl.ac.in/</string>
@@ -35,7 +35,6 @@
     </string>
 
 
-
     <string-array name="year">
         <item> 1-Year</item>
         <item> 2-Year</item>
@@ -53,5 +52,8 @@
         <item>IT (B.Tech)</item>
         <item>CSE (M.Tech)</item>
     </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 </resources>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FacultyActivity">
+
+   <TextView
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:text="Faculty"
+       android:textColor="#ffffff"
+       android:textAlignment="center"
+       android:textSize="24sp"
+       android:fontFamily="@font/roboto"
+       android:background="#000000"
+       android:padding="10dp"
+       android:id="@+id/txtfac"
+       />
+   <android.support.v7.widget.RecyclerView
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:padding="10dp"
+       android:layout_below="@id/txtfac"
+       android:id="@+id/recyclerview"/>
+
+</RelativeLayout>

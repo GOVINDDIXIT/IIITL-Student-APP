@@ -29,6 +29,11 @@
             
         </item>
         <item
+            android:id="@+id/nav_mess_menu"
+            android:title="Mess Menu" >
+
+        </item>
+        <item
             android:id="@+id/nav_axios"
             android:title="Technical Club">
 

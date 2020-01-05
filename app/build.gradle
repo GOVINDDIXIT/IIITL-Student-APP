@@ -55,6 +55,9 @@ dependencies {
     //Chrome tabs
     implementation 'com.android.support:customtabs:27.1.1'
 
+    //PDF Viewer
+    implementation 'com.github.barteksc:android-pdf-viewer:2.8.2'
+
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
 

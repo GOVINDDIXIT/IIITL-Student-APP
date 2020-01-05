@@ -59,6 +59,11 @@ public class MainActivity extends AppCompatActivity {
                 case R.id.nav_GetSetFoss:
                     openWebPage(getResources().getString(R.string.GetSetFOSS_website));
                     break;
+                case R.id.nav_mess_menu:
+                    Intent intent = new Intent(this, MessMenuActivity.class);
+                    intent.putExtra("ViewType", "assets");
+                    startActivity(intent);
+                    break;
                 case R.id.nav_logOut:
                     startActivity(new Intent(MainActivity.this, LogOut.class));
                     break;

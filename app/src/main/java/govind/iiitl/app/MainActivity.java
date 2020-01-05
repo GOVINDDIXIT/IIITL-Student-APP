@@ -1,8 +1,10 @@
 package govind.iiitl.app;
 
 import android.content.ActivityNotFoundException;
+import android.content.Context;
 import android.content.Intent;
 import android.graphics.Color;
+import android.net.ConnectivityManager;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.customtabs.CustomTabsIntent;
@@ -13,6 +15,9 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
+import android.view.View;
+import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.Toast;
 
 import govind.iiitl.app.Adapter.PostAdapter;
@@ -29,17 +34,29 @@ public class MainActivity extends AppCompatActivity {
     ActionBarDrawerToggle actionBarDrawerToggle;
     NavigationView navigationView;
     RecyclerView recyclerView;
+    ImageView noNetworkImageView;
+    Button retryButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        noNetworkImageView = findViewById(R.id.no_network_image_view);
+        retryButton = findViewById(R.id.retry_button);
+
+        boolean network = isNetworkConnected();
+
+        retryButton.setOnClickListener((View v) -> getData());
+
+        if (network) {
+            noNetworkImageView.setVisibility(View.GONE);
+            retryButton.setVisibility(View.GONE);
+        }
 
         recyclerView = findViewById(R.id.postList);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
         setUpToolbar();
-
 
         navigationView = findViewById(R.id.navigation_menu);
         navigationView.setNavigationItemSelectedListener(item -> {
@@ -68,7 +85,7 @@ public class MainActivity extends AppCompatActivity {
                     startActivity(new Intent(MainActivity.this, LogOut.class));
                     break;
                 case R.id.nav_faculty:
-                    startActivity((new Intent(MainActivity.this,FacultyActivity.class)));
+                    startActivity((new Intent(MainActivity.this, FacultyActivity.class)));
                     break;
                 case R.id.Submit_article:
                     sendArticle();
@@ -76,6 +93,10 @@ public class MainActivity extends AppCompatActivity {
                 case R.id.nav_extras:
                     startActivity(new Intent(MainActivity.this, Extra.class));
                     break;
+                case R.id.retry_button: {
+                    getData();
+                    break;
+                }
                 case R.id.nav_aboutus: {
                     startActivity(new Intent(MainActivity.this, AboutPage.class));
                     break;
@@ -84,6 +105,12 @@ public class MainActivity extends AppCompatActivity {
             return false;
         });
         getData();
+    }
+
+    private boolean isNetworkConnected() {
+        ConnectivityManager cm = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
+        assert cm != null;
+        return cm.getActiveNetworkInfo() != null && cm.getActiveNetworkInfo().isConnected();
     }
 
     private void openWebPage(String url) {
@@ -124,8 +151,13 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onResponse(Call<PostList> call, Response<PostList> response) {
                 PostList list = response.body();
-                recyclerView.setAdapter(new PostAdapter(MainActivity.this, list.getItems()));
-                //Toast.makeText(MainActivity.this,"Success",Toast.LENGTH_SHORT).show();
+                PostAdapter adapter = new PostAdapter(MainActivity.this, list.getItems());
+                recyclerView.setAdapter(adapter);
+
+                if (adapter.getItemCount() != 0) {
+                    noNetworkImageView.setVisibility(View.GONE);
+                    retryButton.setVisibility(View.GONE);
+                }
             }
 
             @Override

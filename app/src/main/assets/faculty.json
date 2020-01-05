@@ -12,7 +12,7 @@
     "ResearchAreas": "Computer Networks, Wireless N/W and Sensor Networks"
   },
   {
-   "name": "Dr. Ashutosh Mishra",
+    "name": "Dr. Ashutosh Mishra",
     "imgSrc": "ImageNotOnTheWebsite",
     "description": "PH. D. (OLD DOMINION UNIVERSITY, NORFOLK)",
     "ResearchAreas": "Bioelectrics, Biomechanics, Machine Learning"
@@ -54,7 +54,7 @@
     "ResearchAreas": "Image processing, Computer Vision, Pattern recognition, Steganography, Machine Learning."
   },
   {
-    "name":  "Mr. Sushil Tiwari",
+    "name": "Mr. Sushil Tiwari",
     "imgSrc": "https://iiitl.ac.in/wp-content/uploads/2019/09/sushil-e1569765104867-300x300.jpg",
     "description": "PH. D. FROM IIITDM, JABALPUR",
     "ResearchAreas": "Wireless Indoor Localization, Machine Learning, Ad-hoc Network"

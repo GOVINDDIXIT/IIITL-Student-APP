@@ -13,9 +13,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
-import android.view.MenuItem;
-import android.webkit.WebView;
-import android.widget.TextView;
 import android.widget.Toast;
 
 import govind.iiitl.app.Adapter.PostAdapter;

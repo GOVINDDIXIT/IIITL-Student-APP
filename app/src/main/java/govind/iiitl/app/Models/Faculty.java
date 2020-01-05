@@ -31,7 +31,6 @@ public class Faculty {
     }
 
 
-
     public String getImgSrc() {
         return imgSrc;
     }

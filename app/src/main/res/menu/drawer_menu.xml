@@ -33,6 +33,11 @@
             android:title="Technical Club">
 
         </item>
+        <item
+            android:id="@+id/nav_faculty"
+            android:title="Faculty">
+
+        </item>
 
 
 

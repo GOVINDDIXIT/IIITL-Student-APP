@@ -45,41 +45,41 @@ public class MainActivity extends AppCompatActivity {
 
 
         navigationView = findViewById(R.id.navigation_menu);
-        navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
-            @Override
-            public boolean onNavigationItemSelected(MenuItem item) {
-                switch (item.getItemId()) {
-                    case R.id.nav_TimeTable:
-                        startActivity(new Intent(MainActivity.this, AskDetail.class));
-                        break;
-                    case R.id.nav_axios:
-                        openWebPage(getResources().getString(R.string.axios_website));
-                        break;
-                    case R.id.nav_dsc:
-                        openWebPage(getResources().getString(R.string.dsc_website));
-                        break;
-                    case R.id.nav_equinox:
-                        openWebPage(getResources().getString(R.string.equinox_website));
-                        break;
-                    case R.id.nav_GetSetFoss:
-                        openWebPage(getResources().getString(R.string.GetSetFOSS_website));
-                        break;
-                    case R.id.nav_logOut:
-                        startActivity(new Intent(MainActivity.this, LogOut.class));
-                        break;
-                    case R.id.Submit_article:
-                        sendArticle();
-                        break;
-                    case R.id.nav_extras:
-                        startActivity(new Intent(MainActivity.this, Extra.class));
-                        break;
-                    case R.id.nav_aboutus: {
-                        startActivity(new Intent(MainActivity.this, AboutPage.class));
-                        break;
-                    }
+        navigationView.setNavigationItemSelectedListener(item -> {
+            switch (item.getItemId()) {
+                case R.id.nav_TimeTable:
+                    startActivity(new Intent(MainActivity.this, AskDetail.class));
+                    break;
+                case R.id.nav_axios:
+                    openWebPage(getResources().getString(R.string.axios_website));
+                    break;
+                case R.id.nav_dsc:
+                    openWebPage(getResources().getString(R.string.dsc_website));
+                    break;
+                case R.id.nav_equinox:
+                    openWebPage(getResources().getString(R.string.equinox_website));
+                    break;
+                case R.id.nav_GetSetFoss:
+                    openWebPage(getResources().getString(R.string.GetSetFOSS_website));
+                    break;
+                case R.id.nav_logOut:
+                    startActivity(new Intent(MainActivity.this, LogOut.class));
+                    break;
+                case R.id.nav_faculty:
+                    startActivity((new Intent(MainActivity.this,FacultyActivity.class)));
+                    break;
+                case R.id.Submit_article:
+                    sendArticle();
+                    break;
+                case R.id.nav_extras:
+                    startActivity(new Intent(MainActivity.this, Extra.class));
+                    break;
+                case R.id.nav_aboutus: {
+                    startActivity(new Intent(MainActivity.this, AboutPage.class));
+                    break;
                 }
-                return false;
             }
+            return false;
         });
         getData();
     }

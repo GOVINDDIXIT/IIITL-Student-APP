@@ -1,8 +1,7 @@
 {
   "Monday": {
-    "9:00-10:00": "Lorem Ipsum",
+    "9:00-10:00": "IT sem 4",
     "10:00-11:00": "Lorem Ipsum",
-    "11:00-11:15": "Break",
     "11:15-12:15": "Lorem Ipsum",
     "12:15-1:15": "Lorem Ipsum",
     "3:00-6:00": "Lorem Ipsum"
@@ -10,7 +9,6 @@
   "Tuesday": {
     "9:00-10:00": "Lorem Ipsum",
     "10:00-11:00": "Lorem Ipsum",
-    "11:00-11:15": "Break",
     "11:15-12:15": "Lorem Ipsum",
     "12:15-1:15": "Lorem Ipsum",
     "3:00-6:00": "Lorem Ipsum"
@@ -18,7 +16,6 @@
   "Wednesday": {
     "9:00-10:00": "Lorem Ipsum",
     "10:00-11:00": "Lorem Ipsum",
-    "11:00-11:15": "Break",
     "11:15-12:15": "Lorem Ipsum",
     "12:15-1:15": "Lorem Ipsum",
     "3:00-6:00": "Lorem Ipsum"
@@ -26,7 +23,6 @@
   "Thursday": {
     "9:00-10:00": "Lorem Ipsum",
     "10:00-11:00": "Lorem Ipsum",
-    "11:00-11:15": "Break",
     "11:15-12:15": "Lorem Ipsum",
     "12:15-1:15": "Lorem Ipsum",
     "3:00-6:00": "Lorem Ipsum"
@@ -34,6 +30,8 @@
   "Friday": {
     "9:00-10:00": "Lorem Ipsum",
     "10:00-11:00": "Lorem Ipsum",
-    "11:00-11:15": "Break"
+    "11:15-12:15": "Lorem Ipsum",
+    "12:15-1:15": "Lorem Ipsum",
+    "3:00-6:00": "Lorem Ipsum"
   }
 }

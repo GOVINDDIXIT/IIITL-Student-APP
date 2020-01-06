@@ -1,5 +1,6 @@
 package govind.iiitl.app;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
@@ -13,7 +14,10 @@ public class TimeTable extends AppCompatActivity {
     ViewPager viewPager;
     TextView Mon,Tue,Wed,Thu,Fri;
 
+
     PagerViewAdapter pagerViewAdapter;
+    Intent intent;
+    String s = null;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,7 +30,8 @@ public class TimeTable extends AppCompatActivity {
         Thu = findViewById(R.id.Thu);
         Fri = findViewById(R.id.Fri);
 
-
+        intent = getIntent();
+        s = intent.getStringExtra("cs2sem.json");
         pagerViewAdapter = new PagerViewAdapter(getSupportFragmentManager());
 
         viewPager.setAdapter(pagerViewAdapter);
@@ -148,5 +153,9 @@ public class TimeTable extends AppCompatActivity {
 
             }
         });
+    }
+
+    public String SendData() {
+        return s;
     }
 }

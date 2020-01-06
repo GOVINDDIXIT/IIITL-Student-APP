@@ -1,4 +1,3 @@
-
 package govind.iiitl.app.Models;
 
 import com.google.gson.annotations.Expose;

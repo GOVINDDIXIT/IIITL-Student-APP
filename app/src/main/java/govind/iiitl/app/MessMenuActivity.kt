@@ -2,9 +2,9 @@ package govind.iiitl.app
 
 import android.graphics.Color
 import android.os.Bundle
-import android.support.v7.app.AppCompatActivity
 import android.text.TextUtils
 import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
 import com.github.barteksc.pdfviewer.PDFView
 
 class MessMenuActivity : AppCompatActivity() {

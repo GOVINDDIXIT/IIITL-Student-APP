@@ -8,43 +8,65 @@
             android:title="Class Time Table">
 
         </item>
-        <item
-            android:id="@+id/nav_dsc"
-            android:title="DSC IIITL">
 
-        </item>
-        <item
-            android:id="@+id/nav_equinox"
-            android:title="Equinox-IIITL">
 
-        </item>
         <item
             android:id="@+id/nav_extras"
             android:title="Extras">
 
         </item>
-        <item
-            android:id="@+id/nav_GetSetFoss"
-            android:title="Get Set FOSS" >
-            
-        </item>
+
         <item
             android:id="@+id/nav_mess_menu"
             android:title="Mess Menu" >
 
         </item>
-        <item
-            android:id="@+id/nav_axios"
-            android:title="Technical Club">
 
-        </item>
         <item
             android:id="@+id/nav_faculty"
             android:title="Faculty">
 
         </item>
 
+        <item android:title="College Events">
+            <menu>
 
+                <item
+                    android:id="@+id/nav_equinox"
+                    android:icon="@drawable/equinox_logo_white"
+                    android:title="Equinox-IIITL">
+
+                </item>
+                
+                <item
+                    android:id="@+id/nav_GetSetFoss"
+                    android:icon="@drawable/get_set_foss"
+                    android:title="Get Set FOSS" >
+
+                </item>
+            </menu>
+        </item>
+
+        <item android:title="College Clubs">
+            <menu>
+                <item
+                    android:id="@+id/nav_dsc"
+                    android:icon="@drawable/dsc_logo"
+                    android:title="DSC IIITL" />
+                <item
+                    android:id="@+id/nav_axios"
+                    android:icon="@drawable/axios_logo"
+                    android:title="Technical Club">
+                </item>
+
+                <item
+                    android:id="@+id/nav_ecell"
+                    android:icon="@drawable/ecell"
+                    android:title="E-CELL">
+                </item>
+
+            </menu>
+        </item>
 
 
 

@@ -61,6 +61,7 @@ public class MainActivity extends AppCompatActivity {
         setUpToolbar();
 
         navigationView = findViewById(R.id.navigation_menu);
+        navigationView.setItemIconTintList(null);
         navigationView.setNavigationItemSelectedListener(item -> {
             switch (item.getItemId()) {
                 case R.id.nav_TimeTable:
@@ -82,6 +83,9 @@ public class MainActivity extends AppCompatActivity {
                     Intent intent = new Intent(this, MessMenuActivity.class);
                     intent.putExtra("ViewType", "assets");
                     startActivity(intent);
+                    break;
+                case R.id.nav_ecell:
+                    openWebPage(getResources().getString(R.string.ecellwebsite));
                     break;
                 case R.id.nav_logOut:
                     startActivity(new Intent(MainActivity.this, LogOut.class));

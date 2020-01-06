@@ -33,13 +33,15 @@
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
 
-                <ImageView
-                    android:id="@+id/faculty_image"
+                <de.hdodenhof.circleimageview.CircleImageView
                     android:layout_width="98dp"
-                    android:layout_height="86dp"
+                    android:layout_height="90dp"
+                    android:id="@+id/faculty_image"
                     android:layout_gravity="center_vertical"
                     android:src="@mipmap/ic_launcher_round"
-                    tools:ignore="ContentDescription" />
+                    tools:ignore="ContentDescription"
+                    app:civ_circle_background_color="#000000"
+                    />
 
 
                 <TextView

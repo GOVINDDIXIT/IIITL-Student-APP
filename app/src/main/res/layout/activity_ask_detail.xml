@@ -40,7 +40,7 @@
         android:layout_marginTop="30dp"
         android:layout_marginRight="30dp"
         android:fontFamily="@font/qs"
-        android:text="Select Your Year"
+        android:text="Select Your Semester"
         android:textAlignment="center"
         android:textColor="#ffffff"
         android:textSize="24sp"

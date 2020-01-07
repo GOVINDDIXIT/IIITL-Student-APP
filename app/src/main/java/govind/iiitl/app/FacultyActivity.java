@@ -18,7 +18,7 @@ import java.util.ArrayList;
 import govind.iiitl.app.Adapter.FacultyAdapter;
 import govind.iiitl.app.Models.Faculty;
 
-public class FacultyActivity extends AppCompatActivity {
+public class  FacultyActivity extends AppCompatActivity {
 
     String json;
 

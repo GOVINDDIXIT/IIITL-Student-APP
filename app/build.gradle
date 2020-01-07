@@ -18,12 +18,16 @@ android {
     buildTypes {
         release {
             multiDexEnabled true
-            minifyEnabled false
+            minifyEnabled true
+            shrinkResources true
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
         debug {
             multiDexEnabled true
+            minifyEnabled true
             testCoverageEnabled true
+            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
     sourceSets {
@@ -71,6 +75,7 @@ dependencies {
     //circleimageview
     implementation 'de.hdodenhof:circleimageview:3.0.1'
 
+    //about page
     implementation 'com.github.medyo:android-about-page:1.2.4'
 
     //Lottie Animation

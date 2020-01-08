@@ -13,10 +13,10 @@
     <string name="version_no">1.0.0</string>
     <string name="developers">Developers</string>
     <string name="Star_on_github">https://github.com/GOVINDDIXIT/IIITL-Student-APP</string>
-    <string name="developers_github_link">https://github.com/GOVINDDIXIT/IIITL-Student-APP/graphs/contributors?from=2019-05-26&amp;to=2020-01-04&amp;type=a</string>
+    <string name="developers_github_link">https://github.com/GOVINDDIXIT/IIITL-Student-APP/graphs/contributors?type=a</string>
     <string name="Website">https://iiitlblog.blogspot.com/</string>
     <string name="title_activity_login">Sign in</string>
-    <string name="axios_website">https://axios.iiitl.ac.in/</string>
+    <string name="axios_website">https://axios-iiitl.github.io/</string>
     <string name="dsc_website">https://dsciiitl.netlify.com/</string>
     <string name="equinox_website">http://equinox-iiitl.tech/</string>
     <string name="GetSetFOSS_website">https://getsetfoss.tech</string>

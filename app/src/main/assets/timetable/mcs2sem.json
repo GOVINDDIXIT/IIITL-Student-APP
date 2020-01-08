@@ -1,37 +1,153 @@
 {
   "Monday": {
-    "9:00-10:00": "Mtech sem2 ",
-    "10:00-11:00": "Lorem Ipsum",
-    "11:15-12:15": "Lorem Ipsum",
-    "12:15-1:15": "Lorem Ipsum",
-    "3:00-6:00": "Lorem Ipsum"
+    "9:00-10:00": {
+      "course": "",
+      "staff": ""
+    },
+    "10:00-11:00":  {
+      "course": "",
+      "staff": ""
+    },
+    "11:15-12:15":  {
+      "course": "",
+      "staff": ""
+    },
+    "12:15-1:15":  {
+      "course": "",
+      "staff": ""
+    },
+    "3:00-4:00":  {
+      "course": "MML140",
+      "staff": "AM"
+    },
+    "4:00-5:00":  {
+      "course": "ELECTIVE 2 Computer Vision",
+      "staff": "SC"
+    },
+    "5:00-6:00":  {
+      "course": "",
+      "staff": ""
+    }
   },
   "Tuesday": {
-    "9:00-10:00": "Lorem Ipsum",
-    "10:00-11:00": "Lorem Ipsum",
-    "11:15-12:15": "Lorem Ipsum",
-    "12:15-1:15": "Lorem Ipsum",
-    "3:00-6:00": "Lorem Ipsum"
+    "9:00-10:00": {
+      "course": "",
+      "staff": ""
+    },
+    "10:00-11:00":  {
+      "course": "",
+      "staff": ""
+    },
+    "11:15-12:15":  {
+      "course": "",
+      "staff": ""
+    },
+    "12:15-1:15":  {
+      "course": "",
+      "staff": ""
+    },
+    "3:00-4:00":  {
+      "course": "ELECTIVE 2 Computer Vision",
+      "staff": "SC"
+    },
+    "4:00-5:00":  {
+      "course": "ELECTIVE-1  ML",
+      "staff": "AM"
+    },
+    "5:00-6:00":  {
+      "course": "",
+      "staff": ""
+    }
   },
   "Wednesday": {
-    "9:00-10:00": "Lorem Ipsum",
-    "10:00-11:00": "Lorem Ipsum",
-    "11:15-12:15": "Lorem Ipsum",
-    "12:15-1:15": "Lorem Ipsum",
-    "3:00-6:00": "Lorem Ipsum"
+    "9:00-10:00": {
+      "course": "",
+      "staff": ""
+    },
+    "10:00-11:00":  {
+      "course": "",
+      "staff": ""
+    },
+    "11:15-12:15":  {
+      "course": "",
+      "staff": ""
+    },
+    "12:15-1:15":  {
+      "course": "",
+      "staff": ""
+    },
+    "3:00-4:00":  {
+      "course": "ELECTIVE 2 Computer Vision",
+      "staff": "SC"
+    },
+    "4:00-5:00":  {
+      "course": "ELECTIVE-1 ML",
+      "staff": "AM"
+    },
+    "5:00-6:00":  {
+      "course": "",
+      "staff": ""
+    }
   },
   "Thursday": {
-    "9:00-10:00": "Lorem Ipsum",
-    "10:00-11:00": "Lorem Ipsum",
-    "11:15-12:15": "Lorem Ipsum",
-    "12:15-1:15": "Lorem Ipsum",
-    "3:00-6:00": "Lorem Ipsum"
+    "9:00-10:00": {
+      "course": "",
+      "staff": ""
+    },
+    "10:00-11:00":  {
+      "course": "",
+      "staff": ""
+    },
+    "11:15-12:15":  {
+      "course": "",
+      "staff": ""
+    },
+    "12:15-1:15":  {
+      "course": "",
+      "staff": ""
+    },
+    "3:00-4:00":  {
+      "course": "ELECTIVE 2 Computer Vision",
+      "staff": "SC"
+    },
+    "4:00-5:00":  {
+      "course": "ELECTIVE-1 ML",
+      "staff": "AM"
+    },
+    "5:00-6:00":  {
+      "course": "ELECTIVE-1 ML",
+      "staff": "AM"
+    }
+    
   },
   "Friday": {
-    "9:00-10:00": "Lorem Ipsum",
-    "10:00-11:00": "Lorem Ipsum",
-    "11:15-12:15": "Lorem Ipsum",
-    "12:15-1:15": "Lorem Ipsum",
-    "3:00-6:00": "Lorem Ipsum"
+    "9:00-10:00": {
+      "course": "",
+      "staff": ""
+    },
+    "10:00-11:00":  {
+      "course": "",
+      "staff": ""
+    },
+    "11:15-12:15":  {
+      "course": "",
+      "staff": ""
+    },
+    "12:15-1:15":  {
+      "course": "",
+      "staff": ""
+    },
+    "3:00-4:00":  {
+      "course": "",
+      "staff": ""
+    },
+    "4:00-5:00":  {
+      "course": "",
+      "staff": ""
+    },
+    "5:00-6:00":  {
+      "course": "",
+      "staff": ""
+    }
   }
 }

@@ -1,37 +1,152 @@
 {
   "Monday": {
-    "9:00-10:00": "IT sem 1",
-    "10:00-11:00": "Lorem Ipsum",
-    "11:15-12:15": "Lorem Ipsum",
-    "12:15-1:15": "Lorem Ipsum",
-    "3:00-6:00": "Lorem Ipsum"
+    "9:00-10:00": {
+      "course": "LA130",
+      "staff": "MS"
+    },
+    "10:00-11:00": {
+      "course": "IITP132",
+      "staff": "AP"
+    },
+    "11:15-12:15": {
+      "course": "SM130",
+      "staff": "ST"
+    },
+    "12:15-1:15": {
+      "course": "FEE132",
+      "staff": "NA"
+    },
+    "3:00-4:00":  {
+      "course": "",
+      "staff": ""
+    },
+    "4:00-5:00":  {
+      "course": "",
+      "staff": ""
+    },
+    "5:00-6:00":  {
+      "course": "",
+      "staff": ""
+    }
   },
   "Tuesday": {
-    "9:00-10:00": "Lorem Ipsum",
-    "10:00-11:00": "Lorem Ipsum",
-    "11:15-12:15": "Lorem Ipsum",
-    "12:15-1:15": "Lorem Ipsum",
-    "3:00-6:00": "Lorem Ipsum"
+    "9:00-10:00": {
+      "course": "FEE132",
+      "staff": "NA"
+    },
+    "10:00-11:00":  {
+      "course": "PC130",
+      "staff": "SM"
+    },
+    "11:15-12:15": {
+      "course": "IITP132",
+      "staff": "AP"
+    },
+    "12:15-1:15": {
+      "course": "SM130",
+      "staff": "ST"
+    },
+    "3:00-4:00": {
+      "course": "IITP132 LAB",
+      "staff": "AP"
+    },
+    "4:00-5:00":  {
+      "course": "IITP132 LAB",
+      "staff": "AP"
+    },
+    "5:00-6:00":  {
+      "course": "IITP132 LAB",
+      "staff": "AP"
+    }
   },
   "Wednesday": {
-    "9:00-10:00": "Lorem Ipsum",
-    "10:00-11:00": "Lorem Ipsum",
-    "11:15-12:15": "Lorem Ipsum",
-    "12:15-1:15": "Lorem Ipsum",
-    "3:00-6:00": "Lorem Ipsum"
+    "9:00-10:00": {
+      "course": "LA130",
+      "staff": "MS"
+    },
+    "10:00-11:00": {
+      "course": "FEE132",
+      "staff": "NA"
+    },
+    "11:15-12:15": {
+      "course": "SM130",
+      "staff": "ST"
+    },
+    "12:15-1:15": {
+      "course": "IITP132",
+      "staff": "AP"
+    },
+    "3:00-4:00": {
+      "course": "FEE132 LAB",
+      "staff": "NA"
+    },
+    "4:00-5:00":  {
+      "course": "FEE132 LAB",
+      "staff": "NA"
+    },
+    "5:00-6:00":  {
+      "course": "FEE132 LAB",
+      "staff": "NA"
+    }
   },
   "Thursday": {
-    "9:00-10:00": "Lorem Ipsum",
-    "10:00-11:00": "Lorem Ipsum",
-    "11:15-12:15": "Lorem Ipsum",
-    "12:15-1:15": "Lorem Ipsum",
-    "3:00-6:00": "Lorem Ipsum"
+    "9:00-10:00": {
+      "course": "LA130",
+      "staff": "MS"
+    },
+    "10:00-11:00": {
+      "course": "PC130",
+      "staff": "SM"
+    },
+    "11:15-12:15": {
+      "course": "",
+      "staff": ""
+    },
+    "12:15-1:15": {
+      "course": "",
+      "staff": ""
+    },
+    "3:00-4:00":  {
+      "course": "",
+      "staff": ""
+    },
+    "4:00-5:00":  {
+      "course": "",
+      "staff": ""
+    },
+    "5:00-6:00":  {
+      "course": "",
+      "staff": ""
+    }
   },
   "Friday": {
-    "9:00-10:00": "Lorem Ipsum",
-    "10:00-11:00": "Lorem Ipsum",
-    "11:15-12:15": "Lorem Ipsum",
-    "12:15-1:15": "Lorem Ipsum",
-    "3:00-6:00": "Lorem Ipsum"
+    "9:00-10:00": {
+      "course": "",
+      "staff": ""
+    },
+    "10:00-11:00": {
+      "course": "PC130",
+      "staff": "SM"
+    },
+    "11:15-12:15": {
+      "course": "",
+      "staff": ""
+    },
+    "12:15-1:15": {
+      "course": "",
+      "staff": ""
+    },
+    "3:00-4:00":  {
+      "course": "",
+      "staff": ""
+    },
+    "4:00-5:00":  {
+      "course": "",
+      "staff": ""
+    },
+    "5:00-6:00":  {
+      "course": "",
+      "staff": ""
+    }
   }
 }

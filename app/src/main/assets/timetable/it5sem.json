@@ -1,37 +1,152 @@
 {
   "Monday": {
-    "9:00-10:00": "IT sem 5",
-    "10:00-11:00": "Lorem Ipsum",
-    "11:15-12:15": "Lorem Ipsum",
-    "12:15-1:15": "Lorem Ipsum",
-    "3:00-6:00": "Lorem Ipsum"
+    "9:00-10:00": {
+      "course": "",
+      "staff": ""
+    },
+    "10:00-11:00": {
+      "course": "ISOE532",
+      "staff": "SG"
+    },
+    "11:15-12:15": {
+      "course": "ICNE532",
+      "staff": "BC"
+    },
+    "12:15-1:15": {
+      "course": "IGVC532",
+      "staff": "NF"
+    },
+    "3:00-4:00":  {
+      "course": "IGVC532",
+      "staff": "NF"
+    },
+    "4:00-5:00":  {
+      "course": "IGVC532 LAB",
+      "staff": "NF"
+    },
+    "5:00-6:00":  {
+      "course": "IGVC532 LAB",
+      "staff": "NF"
+    }
   },
-  "Tuesday": {
-    "9:00-10:00": "Lorem Ipsum",
-    "10:00-11:00": "Lorem Ipsum",
-    "11:15-12:15": "Lorem Ipsum",
-    "12:15-1:15": "Lorem Ipsum",
-    "3:00-6:00": "Lorem Ipsum"
+  "Tuesday":{
+    "9:00-10:00": {
+      "course": "",
+      "staff": ""
+    },
+    "10:00-11:00": {
+      "course": "ICNE532",
+      "staff": "BC"
+    },
+    "11:15-12:15": {
+      "course": "ISOE532",
+      "staff": "SG"
+    },
+    "12:15-1:15": {
+      "course": "IGVC532",
+      "staff": "NF"
+    },
+    "3:00-4:00":  {
+      "course": "ISOE532 LAB",
+      "staff": "SG"
+    },
+    "4:00-5:00":  {
+      "course": "ISOE532 LAB",
+      "staff": "SG"
+    },
+    "5:00-6:00":  {
+      "course": "ISOE532 LAB",
+      "staff": "SG"
+    }
   },
   "Wednesday": {
-    "9:00-10:00": "Lorem Ipsum",
-    "10:00-11:00": "Lorem Ipsum",
-    "11:15-12:15": "Lorem Ipsum",
-    "12:15-1:15": "Lorem Ipsum",
-    "3:00-6:00": "Lorem Ipsum"
+    "9:00-10:00": {
+      "course": "",
+      "staff": ""
+    },
+    "10:00-11:00": {
+      "course": "ICNE532",
+      "staff": "BC"
+    },
+    "11:15-12:15": {
+      "course": "ISOE532",
+      "staff": "SG"
+    },
+    "12:15-1:15": {
+      "course": "IAIN532",
+      "staff": "SC"
+    },
+    "3:00-4:00":  {
+      "course": "IAIN532 LAB",
+      "staff": "SC"
+    },
+    "4:00-5:00":  {
+      "course": "IAIN532 LAB",
+      "staff": "SC"
+    },
+    "5:00-6:00":  {
+      "course": "IAIN532 LAB",
+      "staff": "SC"
+    }
   },
   "Thursday": {
-    "9:00-10:00": "Lorem Ipsum",
-    "10:00-11:00": "Lorem Ipsum",
-    "11:15-12:15": "Lorem Ipsum",
-    "12:15-1:15": "Lorem Ipsum",
-    "3:00-6:00": "Lorem Ipsum"
+    "9:00-10:00": {
+      "course": "",
+      "staff": ""
+    },
+    "10:00-11:00": {
+      "course": "IAIN532",
+      "staff": "SC"
+    },
+    "11:15-12:15": {
+      "course": "MPOE530",
+      "staff": "NF"
+    },
+    "12:15-1:15": {
+      "course": "",
+      "staff": ""
+    },
+    "3:00-4:00":  {
+      "course": "",
+      "staff": ""
+    },
+    "4:00-5:00":  {
+      "course": "",
+      "staff": ""
+    },
+    "5:00-6:00":  {
+      "course": "",
+      "staff": ""
+    }
   },
   "Friday": {
-    "9:00-10:00": "Lorem Ipsum",
-    "10:00-11:00": "Lorem Ipsum",
-    "11:15-12:15": "Lorem Ipsum",
-    "12:15-1:15": "Lorem Ipsum",
-    "3:00-6:00": "Lorem Ipsum"
+    "9:00-10:00": {
+      "course": "MPOE530",
+      "staff": "NF"
+    },
+    "10:00-11:00": {
+      "course": "MPOE530",
+      "staff": "NF"
+    },
+    "11:15-12:15": {
+      "course": "IAIN532",
+      "staff": "SC"
+    },
+    "12:15-1:15": {
+      "course": "",
+      "staff": ""
+    },
+    "3:00-4:00":  {
+      "course": "ICNE532 LAB",
+      "staff": "BC"
+    },
+    "4:00-5:00":  {
+      "course": "ICNE532 LAB",
+      "staff": "BC"
+    },
+    "5:00-6:00":  {
+      "course": "ICNE532 LAB",
+      "staff": "BC"
+    }
   }
 }

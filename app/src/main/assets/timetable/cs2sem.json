@@ -1,37 +1,153 @@
 {
   "Monday": {
-    "9:00-10:00": "CS B.Tech sem 2",
-    "10:00-11:00": "Lorem Ipsum",
-    "11:15-12:15": "Lorem Ipsum",
-    "12:15-1:15": "Lorem Ipsum",
-    "3:00-6:00": "Lorem Ipsum"
+    "9:00-10:00": {
+      "course": "DS232",
+      "staff": "ST"
+    },
+    "10:00-11:00":  {
+      "course": "",
+      "staff": ""
+    },
+    "11:15-12:15":  {
+      "course": "PS230",
+      "staff": "MS"
+    },
+    "12:15-1:15":  {
+      "course": "DLC232",
+      "staff": "NF"
+    },
+   
+    "3:00-4:00":  {
+      "course": "DLC232 LAB",
+      "staff": "NF"
+    },
+    "4:00-5:00":  {
+      "course": "DLC232 LAB",
+      "staff": "NF"
+    },
+    "5:00-6:00":  {
+      "course": "DLC232 LAB",
+      "staff": "NF"
+    }
   },
   "Tuesday": {
-    "9:00-10:00": "Lorem Ipsum",
-    "10:00-11:00": "Lorem Ipsum",
-    "11:15-12:15": "Lorem Ipsum",
-    "12:15-1:15": "Lorem Ipsum",
-    "3:00-6:00": "Lorem Ipsum"
+    "9:00-10:00": {
+      "course": "DS232",
+      "staff": "ST"
+    },
+    "10:00-11:00":  {
+      "course": "PS230",
+      "staff": "MS"
+    },
+    "11:15-12:15":  {
+      "course": "",
+      "staff": ""
+    },
+    "12:15-1:15":  {
+      "course": "DLC232",
+      "staff": "NF"
+    },
+    "3:00-4:00":  {
+      "course": "",
+      "staff": ""
+    },
+    "4:00-5:00":  {
+      "course": "",
+      "staff": ""
+    },
+    "5:00-6:00":  {
+      "course": "",
+      "staff": ""
+    }
   },
   "Wednesday": {
-    "9:00-10:00": "Lorem Ipsum",
-    "10:00-11:00": "Lorem Ipsum",
-    "11:15-12:15": "Lorem Ipsum",
-    "12:15-1:15": "Lorem Ipsum",
-    "3:00-6:00": "Lorem Ipsum"
+    "9:00-10:00": {
+      "course": "DLC232",
+      "staff": "NF"
+    },
+    "10:00-11:00":  {
+      "course": "PCE230",
+      "staff": "NA"
+    },
+    "11:15-12:15":  {
+      "course": "PS230",
+      "staff": "MS"
+    },
+    "12:15-1:15":  {
+      "course": "PC230",
+      "staff": "SM"
+    },
+    "3:00-4:00":  {
+      "course": "",
+      "staff": ""
+    },
+    "4:00-5:00":  {
+      "course": "",
+      "staff": ""
+    },
+    "5:00-6:00":  {
+      "course": "",
+      "staff": ""
+    }
   },
   "Thursday": {
-    "9:00-10:00": "Lorem Ipsum",
-    "10:00-11:00": "Lorem Ipsum",
-    "11:15-12:15": "Lorem Ipsum",
-    "12:15-1:15": "Lorem Ipsum",
-    "3:00-6:00": "Lorem Ipsum"
+    "9:00-10:00": {
+      "course": "PC230",
+      "staff": "SM"
+    },
+    "10:00-11:00":  {
+      "course": "DS232",
+      "staff": "ST"
+    },
+    "11:15-12:15":  {
+      "course": "PCE230",
+      "staff": "NA"
+    },
+    "12:15-1:15":  {
+      "course": "",
+      "staff": ""
+    },
+    "3:00-4:00":  {
+      "course": "DS232 LAB",
+      "staff": "ST"
+    },
+    "4:00-5:00":  {
+      "course": "DS232 LAB",
+      "staff": "ST"
+    },
+    "5:00-6:00":  {
+      "course": "DS232 LAB",
+      "staff": "ST"
+    }
   },
   "Friday": {
-    "9:00-10:00": "Lorem Ipsum",
-    "10:00-11:00": "Lorem Ipsum",
-    "11:15-12:15": "Lorem Ipsum",
-    "12:15-1:15": "Lorem Ipsum",
-    "3:00-6:00": "Lorem Ipsum"
+    "9:00-10:00": {
+      "course": "PC230",
+      "staff": "SM"
+    },
+    "10:00-11:00":  {
+      "course": "PCE230",
+      "staff": "NA"
+    },
+    "11:15-12:15":  {
+      "course": "",
+      "staff": ""
+    },
+    "12:15-1:15":  {
+      "course": "PS230 Tute",
+      "staff": "MS"
+    },
+    "3:00-4:00":  {
+      "course": "",
+      "staff": ""
+    },
+    "4:00-5:00":  {
+      "course": "",
+      "staff": ""
+    },
+    "5:00-6:00":  {
+      "course": "",
+      "staff": ""
+    }
   }
 }

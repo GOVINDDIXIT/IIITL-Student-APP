@@ -16,7 +16,6 @@ public class TimeTable extends AppCompatActivity {
 
 
     PagerViewAdapter pagerViewAdapter;
-    Intent intent;
     String s = null;
 
     @Override
@@ -30,42 +29,17 @@ public class TimeTable extends AppCompatActivity {
         Thu = findViewById(R.id.Thu);
         Fri = findViewById(R.id.Fri);
 
-        intent = getIntent();
+        Intent intent = getIntent();
         s = intent.getStringExtra("cs2sem.json");
         pagerViewAdapter = new PagerViewAdapter(getSupportFragmentManager());
 
         viewPager.setAdapter(pagerViewAdapter);
 
-        Mon.setOnClickListener(new View.OnClickListener(){
-            @Override
-            public void onClick(View view) {
-                viewPager.setCurrentItem(0);
-            }
-        });
-        Tue.setOnClickListener(new View.OnClickListener(){
-            @Override
-            public void onClick(View view) {
-                viewPager.setCurrentItem(0);
-            }
-        });
-        Wed.setOnClickListener(new View.OnClickListener(){
-            @Override
-            public void onClick(View view) {
-                viewPager.setCurrentItem(0);
-            }
-        });
-        Thu.setOnClickListener(new View.OnClickListener(){
-            @Override
-            public void onClick(View view) {
-                viewPager.setCurrentItem(0);
-            }
-        });
-        Fri.setOnClickListener(new View.OnClickListener(){
-            @Override
-            public void onClick(View view) {
-                viewPager.setCurrentItem(0);
-            }
-        });
+        Mon.setOnClickListener( (View view) -> viewPager.setCurrentItem(0));
+        Tue.setOnClickListener( (View view) -> viewPager.setCurrentItem(0));
+        Wed.setOnClickListener( (View view) -> viewPager.setCurrentItem(0));
+        Thu.setOnClickListener( (View view) -> viewPager.setCurrentItem(0));
+        Fri.setOnClickListener( (View view) -> viewPager.setCurrentItem(0));
 
 
         viewPager.addOnPageChangeListener(new ViewPager.OnPageChangeListener() {

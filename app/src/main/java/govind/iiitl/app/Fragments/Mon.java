@@ -1,8 +1,6 @@
 package govind.iiitl.app.Fragments;
 
 import android.os.Bundle;
-
-import android.util.JsonReader;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -11,19 +9,11 @@ import android.widget.TextView;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
-import com.google.gson.JsonObject;
-
-import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.io.InputStream;
-import java.util.HashMap;
-import java.util.Iterator;
-import java.util.List;
-import java.util.Map;
 import java.util.Objects;
-import java.util.Set;
 
 import govind.iiitl.app.R;
 import govind.iiitl.app.TimeTable;

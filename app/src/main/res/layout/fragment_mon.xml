@@ -34,9 +34,9 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginTop="18dp"
-                android:fontFamily="@font/roboto"
+                android:fontFamily="@font/ps"
                 android:text="Monday"
-                android:textSize="35dp"
+                android:textSize="40dp"
                 android:textStyle="bold"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -51,7 +51,7 @@
                 android:layout_centerHorizontal="true"
                 android:layout_gravity="center"
                 android:layout_marginTop="20dp"
-                android:fontFamily="@font/roboto"
+                android:fontFamily="@font/qs"
                 android:text="9:00 - 10:00"
                 android:textSize="20dp"
                 android:textStyle="bold" />
@@ -62,7 +62,7 @@
                 android:layout_height="wrap_content"
                 android:layout_centerHorizontal="true"
                 android:layout_gravity="center"
-                android:fontFamily="@font/roboto"
+                android:fontFamily="@font/qs"
                 android:text="SMAT330C"
                 android:textSize="20dp" />
 
@@ -72,7 +72,7 @@
                 android:layout_centerHorizontal="true"
                 android:layout_gravity="center"
                 android:layout_marginTop="20dp"
-                android:fontFamily="@font/roboto"
+                android:fontFamily="@font/qs"
                 android:text="10:00 - 11:00"
                 android:textSize="20dp"
                 android:textStyle="bold" />
@@ -83,7 +83,7 @@
                 android:layout_height="wrap_content"
                 android:layout_centerHorizontal="true"
                 android:layout_gravity="center"
-                android:fontFamily="@font/roboto"
+                android:fontFamily="@font/qs"
                 android:text="SMAT330C"
                 android:textSize="20dp" />
             <TextView
@@ -92,7 +92,7 @@
                 android:layout_centerHorizontal="true"
                 android:layout_gravity="center"
                 android:layout_marginTop="20dp"
-                android:fontFamily="@font/roboto"
+                android:fontFamily="@font/qs"
                 android:text="Break"
                 android:textSize="24dp"
                 android:textStyle="bold" />
@@ -102,7 +102,7 @@
                 android:layout_centerHorizontal="true"
                 android:layout_gravity="center"
                 android:layout_marginTop="20dp"
-                android:fontFamily="@font/roboto"
+                android:fontFamily="@font/qs"
                 android:text="11:15 - 12:15"
                 android:textSize="20dp"
                 android:textStyle="bold" />
@@ -113,7 +113,7 @@
                 android:layout_height="wrap_content"
                 android:layout_centerHorizontal="true"
                 android:layout_gravity="center"
-                android:fontFamily="@font/roboto"
+                android:fontFamily="@font/qs"
                 android:text="SMAT330C"
                 android:textSize="20dp" />
             <TextView
@@ -122,7 +122,7 @@
                 android:layout_centerHorizontal="true"
                 android:layout_gravity="center"
                 android:layout_marginTop="20dp"
-                android:fontFamily="@font/roboto"
+                android:fontFamily="@font/qs"
                 android:text="12:15 - 1:15"
                 android:textSize="20dp"
                 android:textStyle="bold" />
@@ -133,7 +133,7 @@
                 android:layout_height="wrap_content"
                 android:layout_centerHorizontal="true"
                 android:layout_gravity="center"
-                android:fontFamily="@font/roboto"
+                android:fontFamily="@font/qs"
                 android:text="SMAT330C"
                 android:textSize="20dp" />
             <TextView
@@ -142,7 +142,7 @@
                 android:layout_centerHorizontal="true"
                 android:layout_gravity="center"
                 android:layout_marginTop="20dp"
-                android:fontFamily="@font/roboto"
+                android:fontFamily="@font/qs"
                 android:text="Lunch"
                 android:textSize="24dp"
                 android:textStyle="bold" />
@@ -153,7 +153,7 @@
                 android:layout_centerHorizontal="true"
                 android:layout_gravity="center"
                 android:layout_marginTop="20dp"
-                android:fontFamily="@font/roboto"
+                android:fontFamily="@font/qs"
                 android:text="3:00 - 6:00"
                 android:textSize="20dp"
                 android:textStyle="bold" />
@@ -164,7 +164,7 @@
                 android:layout_height="wrap_content"
                 android:layout_centerHorizontal="true"
                 android:layout_gravity="center"
-                android:fontFamily="@font/roboto"
+                android:fontFamily="@font/qs"
                 android:text="SMAT330C"
                 android:textSize="20dp" />
 

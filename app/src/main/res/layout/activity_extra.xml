@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:background="#223344"
+    android:background="#202020"
     android:layout_height="match_parent"
     tools:context=".Extra">
 
@@ -13,41 +13,47 @@
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="45dp"
+        android:layout_marginTop="48dp"
         android:text="Extras"
-        android:fontFamily="@font/slabo"
+        android:fontFamily="@font/ps"
         android:textColor="#FFD700"
         android:textSize="30sp"
         android:textStyle="bold"
         tools:layout_editor_absoluteX="162dp"
         tools:layout_editor_absoluteY="81dp" />
 
-    <Button
-        android:id="@+id/btnVisit"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/textView8"
-        android:layout_centerHorizontal="true"
-        android:text="visit" />
 
-    <TextView
-        android:id="@+id/textView8"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="221dp"
-        android:fontFamily="@font/roboto"
-        android:text="A Guide for Freshman"
-        android:textColor="#FFD700"
-        android:textSize="20sp" />
+
+<!--    <ImageView-->
+<!--        android:id="@+id/imageView3"-->
+<!--        android:layout_width="122dp"-->
+<!--        android:layout_height="97dp"-->
+<!--        android:layout_alignParentTop="true"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:layout_marginTop="108dp"-->
+<!--        app:srcCompat="@drawable/cap" />-->
+
 
     <ImageView
-        android:id="@+id/imageView3"
-        android:layout_width="122dp"
-        android:layout_height="97dp"
-        android:layout_alignParentTop="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_under_construction" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView6"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="108dp"
-        app:srcCompat="@drawable/cap" />
+        android:layout_marginTop="446dp"
+        android:layout_marginBottom="144dp"
+        android:fontFamily="@font/qs"
+        android:gravity="center"
+        android:text="Under Construction"
+        android:textColor="#FFD700"
+        android:textSize="20sp" />
 </RelativeLayout>

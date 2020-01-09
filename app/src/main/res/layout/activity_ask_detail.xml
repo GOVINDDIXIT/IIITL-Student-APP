@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/bg_color"
+    android:background="#202020"
     android:orientation="vertical"
     tools:context=".AskDetail">
 
@@ -11,13 +11,11 @@
         android:id="@+id/year_heading"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="30dp"
-        android:layout_marginTop="228dp"
-        android:layout_marginRight="30dp"
+        android:layout_marginTop="216dp"
         android:fontFamily="@font/qs"
         android:text="Select Your Branch"
         android:textAlignment="center"
-        android:textColor="#ffffff"
+        android:textColor="#FFB72D"
         android:textSize="24sp"
         android:textStyle="bold" />
 
@@ -28,21 +26,20 @@
         android:layout_marginLeft="30dp"
         android:layout_marginTop="20dp"
         android:layout_marginRight="30dp"
+        android:background="#fff"
         android:fontFamily="@font/qs"
-        android:popupBackground="@drawable/bg_color"
+        android:popupBackground="#fff"
         android:textColor="#ffffff" />
 
     <TextView
         android:id="@+id/textView9"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="30dp"
-        android:layout_marginTop="30dp"
-        android:layout_marginRight="30dp"
+        android:layout_marginTop="36dp"
         android:fontFamily="@font/qs"
         android:text="Select Your Semester"
         android:textAlignment="center"
-        android:textColor="#ffffff"
+        android:textColor="#FFB72D"
         android:textSize="24sp"
         android:textStyle="bold" />
 
@@ -53,8 +50,9 @@
         android:layout_marginLeft="30dp"
         android:layout_marginTop="20dp"
         android:layout_marginRight="30dp"
+        android:background="#fff"
         android:fontFamily="@font/qs"
-        android:popupBackground="@drawable/bg_color"
+        android:popupBackground="#fff"
         android:textColor="#ffffff" />
 
     <Button
@@ -62,10 +60,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:layout_marginTop="50dp"
-        android:background="@drawable/fragment_bg"
+        android:layout_marginTop="54dp"
+        android:background="@drawable/border_button"
         android:text="Submit"
         android:textColor="#FFB72D" />
-
 
 </LinearLayout>

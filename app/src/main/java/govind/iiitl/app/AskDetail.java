@@ -19,8 +19,8 @@ public class AskDetail extends AppCompatActivity implements AdapterView.OnItemSe
         setContentView(R.layout.activity_ask_detail);
 
         Spinner branch = findViewById(R.id.branch);
-        ArrayAdapter<CharSequence> yearadapter = ArrayAdapter.createFromResource(getApplicationContext(), R.array.branch, android.R.layout.simple_spinner_item);
-        yearadapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        ArrayAdapter<CharSequence> yearadapter = ArrayAdapter.createFromResource(getApplicationContext(), R.array.branch, R.layout.spinner_item);
+        yearadapter.setDropDownViewResource(R.layout.spinner_item);
         branch.setAdapter(yearadapter);
         branch.setOnItemSelectedListener(this);
 
@@ -118,13 +118,13 @@ public class AskDetail extends AppCompatActivity implements AdapterView.OnItemSe
         String branchselect = adapterView.getItemAtPosition(i).toString();
         if ("CSE (M.Tech)".equals(branchselect) || "CSE (B.Tech)".equals(branchselect)) {
             Spinner yearone = findViewById(R.id.year);
-            ArrayAdapter<CharSequence> yearadapter = ArrayAdapter.createFromResource(getApplicationContext(), R.array.mtech, android.R.layout.simple_spinner_item);
-            yearadapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+            ArrayAdapter<CharSequence> yearadapter = ArrayAdapter.createFromResource(getApplicationContext(), R.array.mtech, R.layout.spinner_item);
+            yearadapter.setDropDownViewResource(R.layout.spinner_item);
             yearone.setAdapter(yearadapter);
         } else {
 
-            ArrayAdapter<CharSequence> yearadapter = ArrayAdapter.createFromResource(getApplicationContext(), R.array.year, android.R.layout.simple_spinner_item);
-            yearadapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+            ArrayAdapter<CharSequence> yearadapter = ArrayAdapter.createFromResource(getApplicationContext(), R.array.year, R.layout.spinner_item);
+            yearadapter.setDropDownViewResource(R.layout.spinner_item);
             yearone.setAdapter(yearadapter);
         }
     }

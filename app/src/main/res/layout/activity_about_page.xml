@@ -277,7 +277,7 @@
                     android:fontFamily="@font/qs"
                     android:paddingTop="8dp"
                     android:paddingBottom="8dp"
-                    android:text="Submit Your Aricle here"
+                    android:text="Submit Your Aricles here"
                     android:textAppearance="@style/TextAppearance.AppCompat.Subhead" />
 
             </LinearLayout>

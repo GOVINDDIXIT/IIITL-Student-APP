@@ -1,6 +1,5 @@
 package govind.iiitl.app;
 
-import android.content.ActivityNotFoundException;
 import android.content.Context;
 import android.content.Intent;
 import android.graphics.Color;
@@ -93,9 +92,6 @@ public class MainActivity extends AppCompatActivity {
                 case R.id.nav_faculty:
                     startActivity((new Intent(MainActivity.this, FacultyActivity.class)));
                     break;
-                case R.id.Submit_article:
-                    sendArticle();
-                    break;
                 case R.id.nav_extras:
                     startActivity(new Intent(MainActivity.this, Extra.class));
                     break;
@@ -124,18 +120,6 @@ public class MainActivity extends AppCompatActivity {
         builder.setToolbarColor(Color.parseColor("#000000"));
         CustomTabsIntent customTabsIntent = builder.build();
         customTabsIntent.launchUrl(this, Uri.parse(url));
-    }
-
-    private void sendArticle() {
-        String mailto = "mailto:dsc@iiitl.ac.in?subject=Article submission for Student App";
-
-        Intent emailIntent = new Intent(Intent.ACTION_SENDTO);
-        emailIntent.setData(Uri.parse(mailto));
-        try {
-            startActivity(emailIntent);
-        } catch (ActivityNotFoundException e) {
-            //TODO: Handle case where no email app is available
-        }
     }
 
     private void setUpToolbar() {

@@ -1,6 +1,8 @@
 package govind.iiitl.app.SignIn;
 
+import android.app.AlertDialog;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.net.Uri;
@@ -51,7 +53,34 @@ public class LogOut extends AppCompatActivity {
         };
 
         mLogOutButton = findViewById(R.id.LogOutBtn);
-        mLogOutButton.setOnClickListener(view -> mAuth.signOut());
+        mLogOutButton.setOnClickListener(view ->
+                showLogoutDialog()
+        );
+    }
+
+    private void showLogoutDialog() {
+        AlertDialog.Builder builder = new AlertDialog.Builder(LogOut.this);
+        builder.setMessage("Are you sure want to logout?");
+        builder.setCancelable(true);
+
+        builder.setPositiveButton(
+                "Yes",
+                new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int id) {
+                        mAuth.signOut();
+                    }
+                });
+
+        builder.setNegativeButton(
+                "No",
+                new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int id) {
+                        dialog.cancel();
+                    }
+                });
+
+        AlertDialog alert = builder.create();
+        alert.show();
     }
 
     //To set the user profile, fetch email, image, Name of the user

@@ -10,11 +10,7 @@
         </item>
 
 
-        <item
-            android:id="@+id/nav_extras"
-            android:title="Extras">
 
-        </item>
 
         <item
             android:id="@+id/nav_mess_menu"
@@ -76,8 +72,8 @@
         android:id="@+id/group3"
         android:checkableBehavior="single">
         <item
-            android:id="@+id/Submit_article"
-            android:title="Submit your article">
+            android:id="@+id/nav_extras"
+            android:title="Extras">
 
         </item>
     </group>

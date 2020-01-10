@@ -8,14 +8,21 @@ import android.widget.TextView;
 
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.io.InputStream;
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.List;
 import java.util.Objects;
 
+import govind.iiitl.app.Adapter.ListingAdapter;
 import govind.iiitl.app.R;
+import govind.iiitl.app.Schedule;
 import govind.iiitl.app.TimeTable;
 
 public class Thu extends Fragment {
@@ -26,28 +33,28 @@ public class Thu extends Fragment {
         TimeTable activity = (TimeTable) getActivity();
         assert activity != null;
         String s = activity.SendData();
-        TextView txt1 = v.findViewById(R.id.textView1);
-        TextView txt2 = v.findViewById(R.id.textView2);
-        TextView txt3 = v.findViewById(R.id.textView3);
-        TextView txt4 = v.findViewById(R.id.textView4);
-        TextView txt5 = v.findViewById(R.id.textView5);
 
         try {
             JSONObject obj = new JSONObject(loadJsonFromAsset(s));
             JSONObject thu = obj.getJSONObject("Thursday");
-            for(int i=0;i<thu.length();i++){
-                String morning9 = thu.getString("9:00-10:00");
-                String morning10 = thu.getString("10:00-11:00");
-                String morning12 = thu.getString("11:15-12:15");
-                String morning2 = thu.getString("12:15-1:15");
-                String morning = thu.getString("3:00-6:00");
-
-                txt1.setText(morning9);
-                txt2.setText(morning10);
-                txt3.setText(morning12);
-                txt4.setText(morning2);
-                txt5.setText(morning);
+            RecyclerView recyclerView = v.findViewById(R.id.rec_timetable);
+            ArrayList<Schedule> list = new ArrayList<>();
+            Iterator keysToCopyIterator = thu.keys();
+            List<String> keysList = new ArrayList<>();
+            while(keysToCopyIterator.hasNext()) {
+                String key = (String) keysToCopyIterator.next();
+                keysList.add(key);
             }
+
+            for(int i=0;i<keysList.size();i++) {
+                String morning9 = thu.getString(keysList.get(i));
+                //  txt = txt + keysList.get(i)+ morning9 + "\n";
+                list.add(new Schedule(keysList.get(i), morning9));
+            }
+            ListingAdapter adapter = new ListingAdapter(getContext(), list);
+            recyclerView.setHasFixedSize(true);
+            recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
+            recyclerView.setAdapter(adapter);
 
         } catch (JSONException e) {
             e.printStackTrace();

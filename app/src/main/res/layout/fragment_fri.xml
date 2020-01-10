@@ -92,8 +92,8 @@
                 android:layout_centerHorizontal="true"
                 android:layout_gravity="center"
                 android:layout_marginTop="20dp"
-                android:fontFamily="@font/qs"
-                android:text="Break"
+                android:fontFamily="@font/ps"
+                android:text="Short Break"
                 android:textSize="24dp"
                 android:textStyle="bold" />
             <TextView
@@ -136,14 +136,15 @@
                 android:fontFamily="@font/qs"
                 android:text="SMAT330C"
                 android:textSize="20dp" />
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerHorizontal="true"
                 android:layout_gravity="center"
                 android:layout_marginTop="20dp"
-                android:fontFamily="@font/qs"
-                android:text="Lunch"
+                android:fontFamily="@font/ps"
+                android:text="Lunch Break"
                 android:textSize="24dp"
                 android:textStyle="bold" />
 

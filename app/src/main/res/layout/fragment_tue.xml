@@ -92,8 +92,8 @@
                 android:layout_centerHorizontal="true"
                 android:layout_gravity="center"
                 android:layout_marginTop="20dp"
-                android:fontFamily="@font/qs"
-                android:text="Break"
+                android:fontFamily="@font/ps"
+                android:text="Short Break"
                 android:textSize="24dp"
                 android:textStyle="bold" />
             <TextView
@@ -142,8 +142,8 @@
                 android:layout_centerHorizontal="true"
                 android:layout_gravity="center"
                 android:layout_marginTop="20dp"
-                android:fontFamily="@font/qs"
-                android:text="Lunch"
+                android:fontFamily="@font/ps"
+                android:text="Lunch Break"
                 android:textSize="24dp"
                 android:textStyle="bold" />
 
@@ -153,7 +153,7 @@
                 android:layout_centerHorizontal="true"
                 android:layout_gravity="center"
                 android:layout_marginTop="20dp"
-                android:fontFamily="@font/qs"
+                android:fontFamily="@font/ps"
                 android:text="3:00 - 6:00"
                 android:textSize="20dp"
                 android:textStyle="bold" />

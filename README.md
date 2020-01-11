@@ -1,28 +1,23 @@
 # IIITL Student APP
-The Complete App for IIITL Students.
+_The Complete App for IIITL Students._
 
 ### Roadmap
-- [x] Authentication (Email Only)
+- [x] Authentication (Google + Email based)
 - [x] Link IIIT-L blog to the App
-- [x] Add feature to submit article 
-- [ ] Add details of faculty member
-- [ ] Timetable for students (every year)
+- [x] Add feature to submit articles 
+- [x] Add details of faculty members
+- [x] Complete Timetable for students
+- [x] Add Mess Menu
+- [x] Add Clubs and Events
+- [ ] Add feature to access past year papers
 
 ### Blog
 Link: http://iiitlblog.blogspot.com/
 
-*The current blog contain few old events for reference and need to updated.*
-
-
-
-### How to participate
-There are a number of issues opened for participants to solve marked as:
-- Very Easy
-- Easy
-- Medium
-- Hard
-- Pro
-
+### Developers
+- [Govind Dixit](https://github.com/GOVINDDIXIT)
+- [Rohit Verma](https://github.com/refactor-droidyy)
+- [Nishan Singh](https://github.com/Retarded-Ape)
 
 # Screenshots
 <table>
@@ -41,8 +36,6 @@ There are a number of issues opened for participants to solve marked as:
          
   </tr>
 </table>
-
-*Whenever a PR to an issue gets merged, the contributor will get the points according to the label attached.*
 
 <a href="https://github.com/lukesampson/scoop">
     <img src="https://img.shields.io/github/repo-size/GOVINDDIXIT/IIITL-Student-APP.svg" alt="Repository size" />

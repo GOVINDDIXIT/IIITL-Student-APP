@@ -36,7 +36,7 @@
                 android:layout_marginTop="18dp"
                 android:fontFamily="@font/ps"
                 android:text="Wednesday"
-                android:textSize="36dp"
+                android:textSize="40dp"
                 android:textStyle="bold"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"

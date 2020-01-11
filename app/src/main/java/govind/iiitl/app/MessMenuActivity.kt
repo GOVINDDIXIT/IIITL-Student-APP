@@ -15,7 +15,7 @@ class MessMenuActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setTheme(R.style.AppTheme)
         setContentView(R.layout.activity_mess_menu)
-        pdfView = findViewById(R.id.pdf_viewer)
+        pdfView = this.findViewById(R.id.pdf_viewer)
         if (intent != null)
         {
             val viewType = intent.getStringExtra("ViewType")

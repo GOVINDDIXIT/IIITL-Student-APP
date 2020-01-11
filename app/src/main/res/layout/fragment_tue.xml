@@ -25,7 +25,7 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:orientation="vertical">
 
             <TextView
@@ -45,128 +45,13 @@
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintVertical_bias="0.018" />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerHorizontal="true"
-                android:layout_gravity="center"
-                android:layout_marginTop="20dp"
-                android:fontFamily="@font/ps"
-                android:text="9:00 - 10:00"
-                android:textSize="20dp"
-                android:textStyle="bold" />
-
-            <TextView
-                android:id="@+id/textView1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerHorizontal="true"
-                android:layout_gravity="center"
-                android:fontFamily="@font/qs"
-                android:text="SMAT330C"
-                android:textSize="20dp" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerHorizontal="true"
-                android:layout_gravity="center"
-                android:layout_marginTop="20dp"
-                android:fontFamily="@font/qs"
-                android:text="10:00 - 11:00"
-                android:textSize="20dp"
-                android:textStyle="bold" />
-
-            <TextView
-                android:id="@+id/textView2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerHorizontal="true"
-                android:layout_gravity="center"
-                android:fontFamily="@font/qs"
-                android:text="SMAT330C"
-                android:textSize="20dp" />
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerHorizontal="true"
-                android:layout_gravity="center"
-                android:layout_marginTop="20dp"
-                android:fontFamily="@font/ps"
-                android:text="Short Break"
-                android:textSize="24dp"
-                android:textStyle="bold" />
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerHorizontal="true"
-                android:layout_gravity="center"
-                android:layout_marginTop="20dp"
-                android:fontFamily="@font/qs"
-                android:text="11:15 - 12:15"
-                android:textSize="20dp"
-                android:textStyle="bold" />
-
-            <TextView
-                android:id="@+id/textView3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerHorizontal="true"
-                android:layout_gravity="center"
-                android:fontFamily="@font/qs"
-                android:text="SMAT330C"
-                android:textSize="20dp" />
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerHorizontal="true"
-                android:layout_gravity="center"
-                android:layout_marginTop="20dp"
-                android:fontFamily="@font/qs"
-                android:text="12:15 - 1:15"
-                android:textSize="20dp"
-                android:textStyle="bold" />
-
-            <TextView
-                android:id="@+id/textView4"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerHorizontal="true"
-                android:layout_gravity="center"
-                android:fontFamily="@font/qs"
-                android:text="SMAT330C"
-                android:textSize="20dp" />
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerHorizontal="true"
-                android:layout_gravity="center"
-                android:layout_marginTop="20dp"
-                android:fontFamily="@font/ps"
-                android:text="Lunch Break"
-                android:textSize="24dp"
-                android:textStyle="bold" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerHorizontal="true"
-                android:layout_gravity="center"
-                android:layout_marginTop="20dp"
-                android:fontFamily="@font/ps"
-                android:text="3:00 - 6:00"
-                android:textSize="20dp"
-                android:textStyle="bold" />
-
-            <TextView
-                android:id="@+id/textView5"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerHorizontal="true"
-                android:layout_gravity="center"
-                android:fontFamily="@font/qs"
-                android:text="SMAT330C"
-                android:textSize="20dp" />
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/rec_timetable"
+                android:padding="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"/>
 
         </LinearLayout>
 

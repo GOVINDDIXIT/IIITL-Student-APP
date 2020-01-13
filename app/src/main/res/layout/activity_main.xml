@@ -38,12 +38,21 @@
             android:fontFamily="@font/ps"
             android:text="Retry" />
 
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/postList"
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
             android:layout_width="match_parent"
-            android:background="@android:color/black"
+            android:id="@+id/swipe_refresh"
             android:layout_height="match_parent">
-        </androidx.recyclerview.widget.RecyclerView>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/postList"
+                android:layout_width="match_parent"
+                android:background="@android:color/black"
+                android:layout_height="match_parent">
+            </androidx.recyclerview.widget.RecyclerView>
+
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+
 
     </LinearLayout>
 

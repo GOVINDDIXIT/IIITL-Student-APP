@@ -18,8 +18,11 @@ import androidx.browser.customtabs.CustomTabsIntent;
 import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
+import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 
 import com.google.android.material.navigation.NavigationView;
+
+import java.lang.ref.Reference;
 
 import govind.iiitl.app.Adapter.PostAdapter;
 import govind.iiitl.app.Models.PostList;
@@ -37,6 +40,7 @@ public class MainActivity extends AppCompatActivity {
     RecyclerView recyclerView;
     ImageView noNetworkImageView;
     Button retryButton;
+    SwipeRefreshLayout swipeRefreshLayout;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -54,6 +58,8 @@ public class MainActivity extends AppCompatActivity {
             noNetworkImageView.setVisibility(View.GONE);
             retryButton.setVisibility(View.GONE);
         }
+
+        swipeRefreshLayout = findViewById(R.id.swipe_refresh);
 
         recyclerView = findViewById(R.id.postList);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
@@ -148,6 +154,13 @@ public class MainActivity extends AppCompatActivity {
                     noNetworkImageView.setVisibility(View.GONE);
                     retryButton.setVisibility(View.GONE);
                 }
+                swipeRefreshLayout.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
+                    @Override
+                    public void onRefresh() {
+                        adapter.notifyDataSetChanged();
+                        swipeRefreshLayout.setRefreshing(false);
+                    }
+                });
             }
 
             @Override

@@ -6,6 +6,7 @@ import android.graphics.Color;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -17,6 +18,7 @@ public class AboutPage extends AppCompatActivity implements View.OnClickListener
     private LinearLayout developers;
     private LinearLayout email;
     private LinearLayout sendArticle;
+    private ImageView dsc_about;
 
 
     @Override
@@ -27,11 +29,14 @@ public class AboutPage extends AppCompatActivity implements View.OnClickListener
         fork = findViewById(R.id.Star_on_github);
         developers = findViewById(R.id.developers);
         email = findViewById(R.id.write_an_email);
+        dsc_about= findViewById(R.id.dsc_about);
         sendArticle = findViewById(R.id.Submit_article);
         fork.setOnClickListener(this);
         developers.setOnClickListener(this);
         email.setOnClickListener(this);
         sendArticle.setOnClickListener(this);
+        dsc_about.setOnClickListener(this);
+
     }
 
 
@@ -50,6 +55,9 @@ public class AboutPage extends AppCompatActivity implements View.OnClickListener
                 break;
             case R.id.Submit_article:
                 sendArticle();
+                break;
+            case R.id.dsc_about:
+                chromeCustomTabs(getResources().getString(R.string.dsc_website));
                 break;
             default:
                 break;

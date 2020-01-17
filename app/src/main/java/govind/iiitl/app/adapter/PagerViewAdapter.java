@@ -1,15 +1,15 @@
-package govind.iiitl.app.Adapter;
+package govind.iiitl.app.adapter;
 
 
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentPagerAdapter;
 
-import govind.iiitl.app.Fragments.Fri;
-import govind.iiitl.app.Fragments.Mon;
-import govind.iiitl.app.Fragments.Thu;
-import govind.iiitl.app.Fragments.Tue;
-import govind.iiitl.app.Fragments.Wed;
+import govind.iiitl.app.fragments.Fri;
+import govind.iiitl.app.fragments.Mon;
+import govind.iiitl.app.fragments.Thu;
+import govind.iiitl.app.fragments.Tue;
+import govind.iiitl.app.fragments.Wed;
 
 
 public class PagerViewAdapter extends FragmentPagerAdapter {

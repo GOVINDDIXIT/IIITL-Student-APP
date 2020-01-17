@@ -1,4 +1,4 @@
-package govind.iiitl.app.Adapter;
+package govind.iiitl.app.adapter;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -12,7 +12,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import java.util.List;
 
 import govind.iiitl.app.R;
-import govind.iiitl.app.Schedule;
+import govind.iiitl.app.models.Schedule;
 
 public class ListingAdapter extends RecyclerView.Adapter<ListingAdapter.ViewHolder> {
 

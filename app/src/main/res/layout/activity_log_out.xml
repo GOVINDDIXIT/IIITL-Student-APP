@@ -6,7 +6,7 @@
     android:background="#202020"
     android:gravity="center_horizontal"
     android:orientation="vertical"
-    tools:context=".SignIn.LogOut">
+    tools:context=".signIn.LogOut">
 
     <ImageView
         android:id="@+id/user_image"

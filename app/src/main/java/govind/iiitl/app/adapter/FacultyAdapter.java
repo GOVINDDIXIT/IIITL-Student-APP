@@ -1,4 +1,4 @@
-package govind.iiitl.app.Adapter;
+package govind.iiitl.app.adapter;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
@@ -15,8 +15,8 @@ import com.bumptech.glide.Glide;
 
 import java.util.ArrayList;
 
-import govind.iiitl.app.Models.Faculty;
 import govind.iiitl.app.R;
+import govind.iiitl.app.models.Faculty;
 
 public class FacultyAdapter extends RecyclerView.Adapter<FacultyAdapter.ViewHolder> {
 

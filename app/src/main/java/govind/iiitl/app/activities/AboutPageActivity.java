@@ -1,4 +1,4 @@
-package govind.iiitl.app;
+package govind.iiitl.app.activities;
 
 import android.content.ActivityNotFoundException;
 import android.content.Intent;
@@ -11,7 +11,9 @@ import android.widget.LinearLayout;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.browser.customtabs.CustomTabsIntent;
 
-public class AboutPage extends AppCompatActivity implements View.OnClickListener {
+import govind.iiitl.app.R;
+
+public class AboutPageActivity extends AppCompatActivity implements View.OnClickListener {
 
     private LinearLayout fork;
     private LinearLayout developers;

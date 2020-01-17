@@ -1,7 +1,6 @@
-package govind.iiitl.app;
+package govind.iiitl.app.activities;
 
 import android.os.Bundle;
-
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -15,8 +14,9 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.util.ArrayList;
 
-import govind.iiitl.app.Adapter.FacultyAdapter;
-import govind.iiitl.app.Models.Faculty;
+import govind.iiitl.app.R;
+import govind.iiitl.app.adapter.FacultyAdapter;
+import govind.iiitl.app.models.Faculty;
 
 public class  FacultyActivity extends AppCompatActivity {
 

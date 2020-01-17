@@ -1,4 +1,4 @@
-package govind.iiitl.app.Adapter;
+package govind.iiitl.app.adapter;
 
 import android.content.Context;
 import android.content.Intent;
@@ -19,9 +19,9 @@ import org.jsoup.select.Elements;
 
 import java.util.List;
 
-import govind.iiitl.app.DetailActivity;
-import govind.iiitl.app.Models.Item;
 import govind.iiitl.app.R;
+import govind.iiitl.app.activities.DetailActivity;
+import govind.iiitl.app.models.Item;
 
 public class PostAdapter extends RecyclerView.Adapter<PostAdapter.PostViewHolder> {
 

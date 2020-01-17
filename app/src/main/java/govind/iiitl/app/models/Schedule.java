@@ -1,4 +1,4 @@
-package govind.iiitl.app;
+package govind.iiitl.app.models;
 
 public class Schedule {
     private String time;

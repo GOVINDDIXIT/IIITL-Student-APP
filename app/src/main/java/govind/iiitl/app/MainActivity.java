@@ -22,11 +22,14 @@ import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 
 import com.google.android.material.navigation.NavigationView;
 
-import java.lang.ref.Reference;
-
-import govind.iiitl.app.Adapter.PostAdapter;
-import govind.iiitl.app.Models.PostList;
-import govind.iiitl.app.SignIn.LogOut;
+import govind.iiitl.app.activities.AboutPageActivity;
+import govind.iiitl.app.activities.AskDetailActivity;
+import govind.iiitl.app.activities.ExtrasActivity;
+import govind.iiitl.app.activities.FacultyActivity;
+import govind.iiitl.app.activities.MessMenuActivity;
+import govind.iiitl.app.adapter.PostAdapter;
+import govind.iiitl.app.models.PostList;
+import govind.iiitl.app.signIn.LogOut;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
@@ -70,7 +73,7 @@ public class MainActivity extends AppCompatActivity {
         navigationView.setNavigationItemSelectedListener(item -> {
             switch (item.getItemId()) {
                 case R.id.nav_TimeTable:
-                    startActivity(new Intent(MainActivity.this, AskDetail.class));
+                    startActivity(new Intent(MainActivity.this, AskDetailActivity.class));
                     break;
                 case R.id.nav_axios:
                     openWebPage(getResources().getString(R.string.axios_website));
@@ -99,14 +102,14 @@ public class MainActivity extends AppCompatActivity {
                     startActivity((new Intent(MainActivity.this, FacultyActivity.class)));
                     break;
                 case R.id.nav_extras:
-                    startActivity(new Intent(MainActivity.this, Extra.class));
+                    startActivity(new Intent(MainActivity.this, ExtrasActivity.class));
                     break;
                 case R.id.retry_button: {
                     getData();
                     break;
                 }
                 case R.id.nav_aboutus: {
-                    startActivity(new Intent(MainActivity.this, AboutPage.class));
+                    startActivity(new Intent(MainActivity.this, AboutPageActivity.class));
                     break;
                 }
             }

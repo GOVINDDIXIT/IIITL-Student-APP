@@ -2,7 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="govind.iiitl.app">
 
-    <uses-permission android:name="android.permission.INTERNET" /> <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.GET_ACCOUNTS" />
     <uses-permission android:name="android.permission.READ_PROFILE" />
     <uses-permission android:name="android.permission.READ_CONTACTS" />
@@ -18,11 +18,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MessMenuActivity"
-            android:screenOrientation="landscape"></activity>
-        <activity android:name=".FacultyActivity" />
-        <activity android:name=".AskDetail" />
-        <activity android:name=".SplashActivity">
+        <activity android:name=".activities.VerifyActivity"></activity>
+        <activity
+            android:name=".activities.MessMenuActivity"
+            android:screenOrientation="landscape" />
+        <activity android:name=".activities.FacultyActivity" />
+        <activity android:name=".activities.AskDetailActivity" />
+        <activity android:name=".activities.SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -30,7 +32,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".MainActivity" />
-        <activity android:name=".DetailActivity" />
+        <activity android:name=".activities.DetailActivity" />
 
         <service android:name=".MessagingService">
             <intent-filter>
@@ -49,11 +51,11 @@
             android:name="com.google.firebase.messaging.default_notification_color"
             android:resource="@color/colorAccent" />
 
-        <activity android:name=".AboutPage" />
-        <activity android:name=".SignIn.Login" />
-        <activity android:name=".SignIn.LogOut" />
-        <activity android:name=".TimeTable" />
-        <activity android:name=".Extra" />
+        <activity android:name=".activities.AboutPageActivity" />
+        <activity android:name=".signIn.Login" />
+        <activity android:name=".signIn.LogOut" />
+        <activity android:name=".activities.TimeTableActivity" />
+        <activity android:name=".activities.ExtrasActivity" />
     </application>
 
 </manifest>

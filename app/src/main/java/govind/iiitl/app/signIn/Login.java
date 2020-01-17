@@ -1,4 +1,4 @@
-package govind.iiitl.app.SignIn;
+package govind.iiitl.app.signIn;
 
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -68,6 +68,7 @@ public class Login extends AppCompatActivity {
                 //Get Current User
                 FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
                 //Show Email
+                assert user != null;
                 Toast.makeText(this, "Welcome " + user.getDisplayName() + "!", Toast.LENGTH_LONG).show();
                 sp.edit().putBoolean("logged", true).apply();
                 goToMainActivity();

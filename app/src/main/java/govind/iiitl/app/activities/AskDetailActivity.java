@@ -1,4 +1,4 @@
-package govind.iiitl.app;
+package govind.iiitl.app.activities;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -10,7 +10,9 @@ import android.widget.Spinner;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class AskDetail extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
+import govind.iiitl.app.R;
+
+public class AskDetailActivity extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
 
     private Spinner yearone ;
     @Override
@@ -105,7 +107,7 @@ public class AskDetail extends AppCompatActivity implements AdapterView.OnItemSe
                     }
                 }
 
-                Intent intent = new Intent(AskDetail.this, TimeTable.class);
+                Intent intent = new Intent(AskDetailActivity.this, TimeTableActivity.class);
                 intent.putExtra("cs2sem.json",conc);
                 startActivity(intent);
             }

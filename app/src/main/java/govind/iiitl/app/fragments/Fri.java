@@ -1,4 +1,4 @@
-package govind.iiitl.app.Fragments;
+package govind.iiitl.app.fragments;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -10,7 +10,6 @@ import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import org.jetbrains.annotations.NotNull;
 import org.json.JSONException;
 import org.json.JSONObject;
 
@@ -20,29 +19,26 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Objects;
 
-import govind.iiitl.app.Adapter.ListingAdapter;
-import govind.iiitl.app.Schedule;
 import govind.iiitl.app.R;
-import govind.iiitl.app.TimeTable;
+import govind.iiitl.app.activities.TimeTableActivity;
+import govind.iiitl.app.adapter.ListingAdapter;
+import govind.iiitl.app.models.Schedule;
 
-public class Mon extends Fragment {
-
+public class Fri extends Fragment {
     @Nullable
     @Override
-    public View onCreateView(@NotNull LayoutInflater inflater, @Nullable ViewGroup container, Bundle savedInstanceState) {
-
-        View v = LayoutInflater.from(getContext()).inflate(R.layout.fragment_mon,null);
-        RecyclerView recyclerView = v.findViewById(R.id.rec_timetable);
-        TimeTable activity = (TimeTable) getActivity();
+    public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, Bundle savedInstanceState) {
+        View v = LayoutInflater.from(getContext()).inflate(R.layout.fragment_fri,null);
+        TimeTableActivity activity = (TimeTableActivity) getActivity();
         assert activity != null;
         String s = activity.SendData();
 
         try {
             JSONObject obj = new JSONObject(loadJsonFromAsset(s));
-            JSONObject monday = obj.getJSONObject("Monday");
-
+            JSONObject fri = obj.getJSONObject("Friday");
+            RecyclerView recyclerView = v.findViewById(R.id.rec_timetable);
             ArrayList<Schedule> list = new ArrayList<>();
-            Iterator keysToCopyIterator = monday.keys();
+            Iterator keysToCopyIterator = fri.keys();
             List<String> keysList = new ArrayList<>();
             while(keysToCopyIterator.hasNext()) {
                 String key = (String) keysToCopyIterator.next();
@@ -50,21 +46,22 @@ public class Mon extends Fragment {
             }
 
             for(int i=0;i<keysList.size();i++) {
-                String morning9 = monday.getString(keysList.get(i));
-              //  txt = txt + keysList.get(i)+ morning9 + "\n";
+                String morning9 = fri.getString(keysList.get(i));
+                //  txt = txt + keysList.get(i)+ morning9 + "\n";
                 list.add(new Schedule(keysList.get(i), morning9));
             }
             ListingAdapter adapter = new ListingAdapter(getContext(), list);
             recyclerView.setHasFixedSize(true);
             recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
-           recyclerView.setAdapter(adapter);
+            recyclerView.setAdapter(adapter);
 
         } catch (JSONException e) {
             e.printStackTrace();
         }
-        return v;
-    }
 
+        return v;
+
+    }
     private String loadJsonFromAsset(String s){
         String json = null;
         try{

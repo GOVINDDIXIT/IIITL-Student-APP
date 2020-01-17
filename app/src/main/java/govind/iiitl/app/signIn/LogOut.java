@@ -1,4 +1,4 @@
-package govind.iiitl.app.SignIn;
+package govind.iiitl.app.signIn;
 
 import android.app.AlertDialog;
 import android.content.Context;

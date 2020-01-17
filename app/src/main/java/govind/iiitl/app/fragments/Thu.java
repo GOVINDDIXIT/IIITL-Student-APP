@@ -1,10 +1,9 @@
-package govind.iiitl.app.Fragments;
+package govind.iiitl.app.fragments;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.TextView;
 
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
@@ -20,26 +19,26 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Objects;
 
-import govind.iiitl.app.Adapter.ListingAdapter;
 import govind.iiitl.app.R;
-import govind.iiitl.app.Schedule;
-import govind.iiitl.app.TimeTable;
+import govind.iiitl.app.activities.TimeTableActivity;
+import govind.iiitl.app.adapter.ListingAdapter;
+import govind.iiitl.app.models.Schedule;
 
-public class Wed extends Fragment {
+public class Thu extends Fragment {
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, Bundle savedInstanceState) {
-        View v = LayoutInflater.from(getContext()).inflate(R.layout.fragment_wed,null);
-        TimeTable activity = (TimeTable) getActivity();
+        View v = LayoutInflater.from(getContext()).inflate(R.layout.fragment_thu,null);
+        TimeTableActivity activity = (TimeTableActivity) getActivity();
         assert activity != null;
         String s = activity.SendData();
 
         try {
             JSONObject obj = new JSONObject(loadJsonFromAsset(s));
-            JSONObject wed = obj.getJSONObject("Wednesday");
+            JSONObject thu = obj.getJSONObject("Thursday");
             RecyclerView recyclerView = v.findViewById(R.id.rec_timetable);
             ArrayList<Schedule> list = new ArrayList<>();
-            Iterator keysToCopyIterator = wed.keys();
+            Iterator keysToCopyIterator = thu.keys();
             List<String> keysList = new ArrayList<>();
             while(keysToCopyIterator.hasNext()) {
                 String key = (String) keysToCopyIterator.next();
@@ -47,7 +46,7 @@ public class Wed extends Fragment {
             }
 
             for(int i=0;i<keysList.size();i++) {
-                String morning9 = wed.getString(keysList.get(i));
+                String morning9 = thu.getString(keysList.get(i));
                 //  txt = txt + keysList.get(i)+ morning9 + "\n";
                 list.add(new Schedule(keysList.get(i), morning9));
             }

@@ -1,4 +1,4 @@
-package govind.iiitl.app
+package govind.iiitl.app.activities
 
 import android.graphics.Color
 import android.os.Bundle
@@ -6,6 +6,7 @@ import android.text.TextUtils
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.github.barteksc.pdfviewer.PDFView
+import govind.iiitl.app.R
 
 class MessMenuActivity : AppCompatActivity() {
 

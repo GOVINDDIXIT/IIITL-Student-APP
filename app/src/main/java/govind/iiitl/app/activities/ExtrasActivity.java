@@ -1,10 +1,12 @@
-package govind.iiitl.app;
+package govind.iiitl.app.activities;
 
 import android.os.Bundle;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class Extra extends AppCompatActivity {
+import govind.iiitl.app.R;
+
+public class ExtrasActivity extends AppCompatActivity {
 
 
     @Override

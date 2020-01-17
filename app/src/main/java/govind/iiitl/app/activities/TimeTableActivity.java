@@ -1,4 +1,4 @@
-package govind.iiitl.app;
+package govind.iiitl.app.activities;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -8,9 +8,10 @@ import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewpager.widget.ViewPager;
 
-import govind.iiitl.app.Adapter.PagerViewAdapter;
+import govind.iiitl.app.R;
+import govind.iiitl.app.adapter.PagerViewAdapter;
 
-public class TimeTable extends AppCompatActivity {
+public class TimeTableActivity extends AppCompatActivity {
     ViewPager viewPager;
     TextView Mon,Tue,Wed,Thu,Fri;
 

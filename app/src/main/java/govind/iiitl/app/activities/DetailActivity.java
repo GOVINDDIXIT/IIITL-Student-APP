@@ -1,4 +1,4 @@
-package govind.iiitl.app;
+package govind.iiitl.app.activities;
 
 import android.graphics.Bitmap;
 import android.os.Bundle;
@@ -11,6 +11,8 @@ import android.widget.ProgressBar;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
+
+import govind.iiitl.app.R;
 
 
 public class DetailActivity extends AppCompatActivity {

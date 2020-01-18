@@ -6,12 +6,6 @@
     "ResearchAreas": "Higher Education and Research, CGI, eLearning Industry"
   },
   {
-    "name": "Dr. Abhishek Pandey",
-    "imgSrc": "https://iiitl.ac.in/wp-content/uploads/2019/09/abhishek-pandey-e1569753255645-550x500.jpg",
-    "description": "PH. D. FROM IIIT ALLAHABAD",
-    "ResearchAreas": "Computer Networks, Wireless N/W and Sensor Networks"
-  },
-  {
     "name": "Dr. Ashutosh Mishra",
     "imgSrc": "ImageNotOnTheWebsite",
     "description": "PH. D. (OLD DOMINION UNIVERSITY, NORFOLK)",
@@ -22,12 +16,6 @@
     "imgSrc": "https://iiitl.ac.in/wp-content/uploads/2019/09/brijesh-300x270.png",
     "description": "PH. D. FROM IIIT ALLAHABAD INTERIM HEAD",
     "ResearchAreas": "Network Security, Vehicular Ad hoc Networks, Sensor Ad hoc Networks, Trust Management in Wireless Ad-hoc Networks, Internet of Vehicles, Cloud Computing etc."
-  },
-  {
-    "name": "Dr. Dipanjan Roy",
-    "imgSrc": "https://roydipanjan.files.wordpress.com/2019/03/img_20190123_223256_719.jpg?w=240&h=240",
-    "description": "PH. D. FROM IIT INDORE",
-    "ResearchAreas": "Electronic Design Automation, High-Level Synthesis, Hardware Security, CAD-VLSI"
   },
   {
     "name": "Dr. Mary Samuel",

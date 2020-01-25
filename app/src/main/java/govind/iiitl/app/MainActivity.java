@@ -1,5 +1,6 @@
 package govind.iiitl.app;
 
+import android.Manifest;
 import android.content.Context;
 import android.content.Intent;
 import android.graphics.Color;
@@ -21,6 +22,8 @@ import androidx.recyclerview.widget.RecyclerView;
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 
 import com.google.android.material.navigation.NavigationView;
+import com.nabinbhandari.android.permissions.PermissionHandler;
+import com.nabinbhandari.android.permissions.Permissions;
 
 import govind.iiitl.app.activities.AboutPageActivity;
 import govind.iiitl.app.activities.AskDetailActivity;
@@ -67,6 +70,18 @@ public class MainActivity extends AppCompatActivity {
         recyclerView = findViewById(R.id.postList);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
         setUpToolbar();
+
+        String[] permissions = {Manifest.permission.INTERNET,
+                Manifest.permission.READ_EXTERNAL_STORAGE,
+                Manifest.permission.WRITE_EXTERNAL_STORAGE,
+                Manifest.permission.ACCESS_WIFI_STATE,
+                Manifest.permission.ACCESS_NETWORK_STATE};
+        Permissions.check(this/*context*/, permissions, null/*rationale*/, null/*options*/, new PermissionHandler() {
+            @Override
+            public void onGranted() {
+
+            }
+        });
 
         navigationView = findViewById(R.id.navigation_menu);
         navigationView.setItemIconTintList(null);

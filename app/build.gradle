@@ -5,7 +5,7 @@ android {
     defaultConfig {
         applicationId "govind.iiitl.app"
         minSdkVersion 16
-        targetSdkVersion 27
+        targetSdkVersion 28
         versionCode 1
         versionName "1.0"
         compileOptions {
@@ -76,6 +76,9 @@ dependencies {
 
     //circleimageview
     implementation 'de.hdodenhof:circleimageview:3.0.1'
+
+    //permissions
+    implementation 'com.nabinbhandari.android:permissions:3.8'
 
     //about page
     implementation 'com.github.medyo:android-about-page:1.2.4'

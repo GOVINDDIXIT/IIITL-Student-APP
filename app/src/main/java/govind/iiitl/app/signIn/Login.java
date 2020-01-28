@@ -73,7 +73,7 @@ public class Login extends AppCompatActivity {
                 sp.edit().putBoolean("logged", true).apply();
                 goToMainActivity();
             } else {
-                Toast.makeText(this, "Some error occured", Toast.LENGTH_LONG).show();
+                Toast.makeText(this, "Service unavailable. Try login using email", Toast.LENGTH_LONG).show();
             }
         }
     }

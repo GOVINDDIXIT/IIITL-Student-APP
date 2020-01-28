@@ -26,7 +26,7 @@ class VerifyActivity : AppCompatActivity() {
 
     private fun submit() {
         val text = "GODREJ"
-        if (verifyText.text.toString() == text) {
+        if (verifyText.text.toString().toUpperCase() == text) {
             goToLoginActivity()
         } else {
             Toast.makeText(this, "Wrong Answer", Toast.LENGTH_LONG).show()

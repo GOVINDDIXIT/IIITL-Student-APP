@@ -189,7 +189,7 @@
 
 
                 <LinearLayout
-                    android:id="@+id/write_an_email"
+                    android:id="@+id/rate_the_app"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="@drawable/background"
@@ -205,7 +205,7 @@
                         android:id="@+id/icon_email"
                         android:layout_width="24dp"
                         android:layout_height="24dp"
-                        app:srcCompat="@drawable/ic_email"
+                        app:srcCompat="@drawable/ic_icons8_google_play"
                         tools:ignore="ContentDescription,UnusedAttribute,VectorDrawableCompat" />
 
                     <TextView
@@ -216,7 +216,7 @@
                         android:fontFamily="@font/qs"
                         android:paddingTop="8dp"
                         android:paddingBottom="8dp"
-                        android:text="Feedback Submission"
+                        android:text="Rate the App"
                         android:textAppearance="@style/TextAppearance.AppCompat.Subhead" />
 
                 </LinearLayout>

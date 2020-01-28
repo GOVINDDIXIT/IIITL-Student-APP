@@ -2,12 +2,14 @@ package govind.iiitl.app.activities;
 
 import android.content.ActivityNotFoundException;
 import android.content.Intent;
+import android.content.pm.PackageManager;
 import android.graphics.Color;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.browser.customtabs.CustomTabsIntent;
@@ -18,9 +20,12 @@ public class AboutPageActivity extends AppCompatActivity implements View.OnClick
 
     private LinearLayout fork;
     private LinearLayout developers;
-    private LinearLayout email;
+    private LinearLayout rateApp;
     private LinearLayout sendArticle;
     private ImageView dsc_about;
+    private TextView versionTextView;
+
+    String versionName = "1.0";
 
 
     @Override
@@ -30,15 +35,23 @@ public class AboutPageActivity extends AppCompatActivity implements View.OnClick
         setContentView(R.layout.activity_about_page);
         fork = findViewById(R.id.Star_on_github);
         developers = findViewById(R.id.developers);
-        email = findViewById(R.id.write_an_email);
+        rateApp = findViewById(R.id.rate_the_app);
         dsc_about = findViewById(R.id.dsc_about);
         sendArticle = findViewById(R.id.Submit_article);
+        versionTextView = findViewById(R.id.app_version);
         fork.setOnClickListener(this);
         developers.setOnClickListener(this);
-        email.setOnClickListener(this);
+        rateApp.setOnClickListener(this);
         sendArticle.setOnClickListener(this);
         dsc_about.setOnClickListener(this);
 
+        try {
+            versionName = getApplicationContext().getPackageManager()
+                    .getPackageInfo(getApplicationContext().getPackageName(), 0).versionName;
+        } catch (PackageManager.NameNotFoundException e) {
+            e.printStackTrace();
+        }
+        versionTextView.setText(versionName);
     }
 
 
@@ -52,8 +65,8 @@ public class AboutPageActivity extends AppCompatActivity implements View.OnClick
             case R.id.developers:
                 chromeCustomTabs(getResources().getString(R.string.developers_github_link));
                 break;
-            case R.id.write_an_email:
-                sendMail();
+            case R.id.rate_the_app:
+                rateApp();
                 break;
             case R.id.Submit_article:
                 sendArticle();
@@ -66,17 +79,17 @@ public class AboutPageActivity extends AppCompatActivity implements View.OnClick
         }
     }
 
-    private void sendMail() {
-        String mailto = "mailto:dsc@iiitl.ac.in?subject=Feedback Submission";
-
-        Intent emailIntent = new Intent(Intent.ACTION_SENDTO);
-        emailIntent.setData(Uri.parse(mailto));
-        try {
-            startActivity(emailIntent);
-        } catch (ActivityNotFoundException e) {
-            //TODO: Handle case where no email app is available
-        }
-    }
+//    private void sendMail() {
+//        String mailto = "mailto:dsc@iiitl.ac.in?subject=Feedback Submission";
+//
+//        Intent emailIntent = new Intent(Intent.ACTION_SENDTO);
+//        emailIntent.setData(Uri.parse(mailto));
+//        try {
+//            startActivity(emailIntent);
+//        } catch (ActivityNotFoundException e) {
+//            //TODO: Handle case where no email app is available
+//        }
+//    }
 
     private void sendArticle() {
         String mailto = "mailto:dsc@iiitl.ac.in?subject=Article submission for Student App";
@@ -95,5 +108,14 @@ public class AboutPageActivity extends AppCompatActivity implements View.OnClick
         builder.setToolbarColor(Color.parseColor("#000000"));
         CustomTabsIntent intent = builder.build();
         intent.launchUrl(this, Uri.parse(url));
+    }
+
+    private void rateApp() {
+        final String appPackageName = getPackageName();
+        try {
+            startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("market://details?id=" + appPackageName)));
+        } catch (android.content.ActivityNotFoundException anfe) {
+            startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://play.google.com/store/apps/details?id=" + appPackageName)));
+        }
     }
 }

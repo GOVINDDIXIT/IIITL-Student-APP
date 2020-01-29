@@ -54,6 +54,7 @@ hs_err_pid*
 ### Android ###
 # Built application files
 *.apk
+*.aab
 *.ap_
 app/libs
 

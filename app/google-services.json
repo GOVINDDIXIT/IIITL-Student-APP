@@ -15,6 +15,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "205156740979-3gi98g567mul7k4j8756dvqbro3v8oah.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "govind.iiitl.app",
+            "certificate_hash": "b6e92f295449f17a45ca0b5931740837a166baf0"
+          }
+        },
+        {
           "client_id": "205156740979-s80vnqvvdp0rdnmja1pu8862ebtl4uah.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {

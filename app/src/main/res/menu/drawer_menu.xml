@@ -76,6 +76,10 @@
             android:title="Extras">
 
         </item>
+        <item
+            android:id="@+id/nav_archieves"
+            android:title="Archieve">
+        </item>
     </group>
 
     <group

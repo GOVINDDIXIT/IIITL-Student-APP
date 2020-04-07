@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:padding="20dp"
+    app:cardCornerRadius="20dp"
+    android:layout_marginTop="10dp"
+    android:id="@+id/linear_question"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:id="@+id/linear_pdf"
+        android:layout_gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/pdficon"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Jee-Mains 2019 Online Paper"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:gravity="center_vertical"
+            android:id="@+id/name"
+            android:textSize="18sp"/>
+
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>

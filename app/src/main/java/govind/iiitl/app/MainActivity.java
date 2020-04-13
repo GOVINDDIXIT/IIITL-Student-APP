@@ -26,6 +26,7 @@ import com.nabinbhandari.android.permissions.PermissionHandler;
 import com.nabinbhandari.android.permissions.Permissions;
 
 import govind.iiitl.app.activities.AboutPageActivity;
+import govind.iiitl.app.activities.Archive;
 import govind.iiitl.app.activities.AskDetailActivity;
 import govind.iiitl.app.activities.ExtrasActivity;
 import govind.iiitl.app.activities.FacultyActivity;
@@ -123,6 +124,9 @@ public class MainActivity extends AppCompatActivity {
                     getData();
                     break;
                 }
+                case R.id.nav_archives:
+                    startActivity(new Intent(MainActivity.this, Archive.class));
+                    break;
                 case R.id.nav_aboutus: {
                     startActivity(new Intent(MainActivity.this, AboutPageActivity.class));
                     break;

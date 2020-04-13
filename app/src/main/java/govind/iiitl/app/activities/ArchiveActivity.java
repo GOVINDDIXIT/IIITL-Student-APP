@@ -20,7 +20,7 @@ import govind.iiitl.app.R;
 import govind.iiitl.app.adapter.QuestionPaperAdapter;
 import govind.iiitl.app.models.QuestionPaper;
 
-public class Archive extends AppCompatActivity {
+public class ArchiveActivity extends AppCompatActivity {
 
     private RecyclerView recyclerView;
     private QuestionPaperAdapter questionPaperAdapter;

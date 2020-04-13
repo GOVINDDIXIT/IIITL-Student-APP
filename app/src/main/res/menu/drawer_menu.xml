@@ -10,11 +10,9 @@
         </item>
 
 
-
-
         <item
             android:id="@+id/nav_mess_menu"
-            android:title="Mess Menu" >
+            android:title="Mess Menu">
 
         </item>
 
@@ -33,11 +31,11 @@
                     android:title="Equinox-IIITL">
 
                 </item>
-                
+
                 <item
                     android:id="@+id/nav_GetSetFoss"
                     android:icon="@drawable/get_set_foss"
-                    android:title="Get Set FOSS" >
+                    android:title="Get Set FOSS">
 
                 </item>
             </menu>
@@ -52,18 +50,15 @@
                 <item
                     android:id="@+id/nav_axios"
                     android:icon="@drawable/axios_logo"
-                    android:title="Technical Club">
-                </item>
+                    android:title="Technical Club"></item>
 
                 <item
                     android:id="@+id/nav_ecell"
                     android:icon="@drawable/ecell"
-                    android:title="E-CELL">
-                </item>
+                    android:title="E-CELL"></item>
 
             </menu>
         </item>
-
 
 
     </group>
@@ -76,6 +71,9 @@
             android:title="Extras">
 
         </item>
+        <item
+            android:id="@+id/nav_archives"
+            android:title="Archives"></item>
     </group>
 
     <group

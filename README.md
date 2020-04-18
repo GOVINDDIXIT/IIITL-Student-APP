@@ -1,3 +1,7 @@
+[![Dependabot Status](https://api.dependabot.com/badges/status?host=github&repo=GOVINDDIXIT/IIITL-Student-APP)](https://dependabot.com)    <a href="https://github.com/lukesampson/scoop">
+    <img src="https://img.shields.io/github/repo-size/GOVINDDIXIT/IIITL-Student-APP.svg" alt="Repository size" />
+</a>
+
 # IIITL Student APP
 _The Complete App for IIITL Students._
 
@@ -36,7 +40,3 @@ Link: http://iiitlblog.blogspot.com/
          
   </tr>
 </table>
-
-<a href="https://github.com/lukesampson/scoop">
-    <img src="https://img.shields.io/github/repo-size/GOVINDDIXIT/IIITL-Student-APP.svg" alt="Repository size" />
-</a>

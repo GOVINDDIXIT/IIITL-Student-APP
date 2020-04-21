@@ -17,7 +17,8 @@
         android:textAlignment="center"
         android:textColor="#FFB72D"
         android:textSize="24sp"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        android:gravity="center_horizontal" />
 
     <Spinner
         android:id="@+id/branch"
@@ -41,7 +42,8 @@
         android:textAlignment="center"
         android:textColor="#FFB72D"
         android:textSize="24sp"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        android:gravity="center_horizontal" />
 
     <Spinner
         android:id="@+id/year"

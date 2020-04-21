@@ -16,7 +16,8 @@
         android:text="Faculty"
         android:textAlignment="center"
         android:textColor="#ffffff"
-        android:textSize="28sp" />
+        android:textSize="28sp"
+        android:gravity="center_horizontal" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerview"

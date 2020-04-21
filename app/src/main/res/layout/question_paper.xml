@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/linear_question"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
@@ -27,10 +28,12 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:gravity="center_vertical"
-            android:text="Jee-Mains 2019 Online Paper"
             android:textAlignment="center"
+            android:text="Jee-Mains 2019 Online Paper"
+            android:fontFamily="@font/qs"
             android:textSize="18sp"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            tools:ignore="RtlCompat" />
 
     </LinearLayout>
 

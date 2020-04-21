@@ -3,12 +3,12 @@
     <testsuite name="fastlane.lanes">
 
 
-        <testcase classname="fastlane.lanes" name="0: default_platform" time="0.0084459">
+        <testcase classname="fastlane.lanes" name="0: default_platform" time="0.0105007">
 
         </testcase>
 
 
-        <testcase classname="fastlane.lanes" name="1: assembleRelease" time="141.810672">
+        <testcase classname="fastlane.lanes" name="1: assembleDebug" time="30.5749433">
 
         </testcase>
 

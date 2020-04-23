@@ -13,7 +13,6 @@ import androidx.annotation.NonNull;
 import androidx.cardview.widget.CardView;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.google.firebase.internal.InternalTokenProvider;
 
 import java.util.List;
 
@@ -40,15 +39,13 @@ public class QuestionPaperAdapter extends RecyclerView.Adapter<QuestionPaperAdap
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
         final QuestionPaper questionPaper = questionPaperList.get(position);
         holder.name.setText(questionPaper.name);
-        holder.pdf_click.setOnClickListener(new View.OnClickListener() {
+        holder.qPaperCView.setOnClickListener(new View.OnClickListener() {
             @SuppressLint("IntentReset")
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent();
-                intent.setType(Intent.ACTION_VIEW);
-                intent.setData(Uri.parse(questionPaper.url));
-                intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-                mContext.startActivity(intent);
+                Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(questionPaper.url));
+                browserIntent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                mContext.startActivity(browserIntent);
             }
         });
     }
@@ -59,13 +56,13 @@ public class QuestionPaperAdapter extends RecyclerView.Adapter<QuestionPaperAdap
     }
 
     static class ViewHolder extends RecyclerView.ViewHolder {
-
         TextView name;
-        CardView pdf_click;
+        CardView qPaperCView;
+
         ViewHolder(@NonNull View itemView) {
             super(itemView);
             name = itemView.findViewById(R.id.name);
-            pdf_click = itemView.findViewById(R.id.linear_question);
+            qPaperCView = itemView.findViewById(R.id.linear_question);
         }
     }
 }

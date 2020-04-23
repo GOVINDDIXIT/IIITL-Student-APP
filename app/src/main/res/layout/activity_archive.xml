@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#f00"
+    android:background="#000"
     android:orientation="vertical"
     android:padding="20dp"
     tools:context=".activities.ArchiveActivity">
@@ -12,11 +12,12 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
-        android:fontFamily="@font/roboto"
         android:text="Archive Section"
         android:textAlignment="center"
-        android:textColor="#ffffff"
-        android:textSize="24sp"
+        android:layout_gravity="center"
+        android:fontFamily="@font/ps"
+        android:textColor="#FFD700"
+        android:textSize="30sp"
         android:textStyle="bold" />
 
     <androidx.recyclerview.widget.RecyclerView

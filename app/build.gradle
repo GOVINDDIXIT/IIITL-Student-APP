@@ -67,7 +67,7 @@ dependencies {
     implementation 'com.firebaseui:firebase-ui-auth:6.2.1'
 
     //In-App Messaging and Analytics dependencies:
-    implementation 'com.google.firebase:firebase-inappmessaging-display:19.0.5'
+    implementation 'com.google.firebase:firebase-inappmessaging-display:19.0.6'
     implementation 'com.google.firebase:firebase-analytics:17.4.0'
 
     //Chrome tabs

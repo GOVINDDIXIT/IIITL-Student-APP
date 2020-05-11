@@ -7,6 +7,7 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
+import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
@@ -26,11 +27,14 @@ public class ArchiveActivity extends AppCompatActivity {
     private RecyclerView recyclerView;
     private QuestionPaperAdapter questionPaperAdapter;
     private List<QuestionPaper> questionPaperList;
+    private SwipeRefreshLayout swipeRefreshLayout;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_archive);
+
+        swipeRefreshLayout = findViewById(R.id.swipe_refresh_archive);
 
         recyclerView = findViewById(R.id.recyclerview_pdf);
         recyclerView.setHasFixedSize(true);
@@ -48,7 +52,19 @@ public class ArchiveActivity extends AppCompatActivity {
             }
         },1000);
 
-
+        swipeRefreshLayout.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
+            @Override
+            public void onRefresh() {
+                new Handler().postDelayed(new Runnable() {
+                    @Override
+                    public void run() {
+                        swipeRefreshLayout.setRefreshing(false);
+                        questionPaperAdapter.shimmer = false;
+                        questionPaperAdapter.notifyDataSetChanged();
+                    }
+                },1000);
+            }
+        });
     }
 
     private void viewQuestionPaperList() {

@@ -133,6 +133,7 @@ public class MainActivity extends AppCompatActivity {
                     break;
                 }
             }
+            drawerLayout.closeDrawers();
             return false;
         });
         getData();

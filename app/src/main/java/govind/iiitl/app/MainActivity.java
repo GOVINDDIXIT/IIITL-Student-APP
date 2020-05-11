@@ -7,6 +7,7 @@ import android.graphics.Color;
 import android.net.ConnectivityManager;
 import android.net.Uri;
 import android.os.Bundle;
+import android.os.Handler;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
@@ -171,6 +172,13 @@ public class MainActivity extends AppCompatActivity {
                 PostList list = response.body();
                 PostAdapter adapter = new PostAdapter(MainActivity.this, list.getItems());
                 recyclerView.setAdapter(adapter);
+                new Handler().postDelayed(new Runnable() {
+                    @Override
+                    public void run() {
+                        adapter.showshmmer = false;
+                        adapter.notifyDataSetChanged();
+                    }
+                },1000);
 
                 if (adapter.getItemCount() != 0) {
                     noNetworkImageView.setVisibility(View.GONE);
@@ -179,8 +187,16 @@ public class MainActivity extends AppCompatActivity {
                 swipeRefreshLayout.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
                     @Override
                     public void onRefresh() {
-                        adapter.notifyDataSetChanged();
-                        swipeRefreshLayout.setRefreshing(false);
+                        new Handler().postDelayed(new Runnable() {
+                            @Override
+                            public void run() {
+                                adapter.showshmmer = true;
+                                swipeRefreshLayout.setRefreshing(false);
+                                adapter.notifyDataSetChanged();
+                                adapter.showshmmer = false;
+                            }
+                        },1000);
+
                     }
                 });
             }

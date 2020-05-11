@@ -1,6 +1,7 @@
 package govind.iiitl.app.activities;
 
 import android.os.Bundle;
+import android.os.Handler;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -38,8 +39,15 @@ public class ArchiveActivity extends AppCompatActivity {
         questionPaperList = new ArrayList<>();
         questionPaperAdapter = new QuestionPaperAdapter(getApplicationContext(), questionPaperList);
         recyclerView.setAdapter(questionPaperAdapter);
-
         viewQuestionPaperList();
+        new Handler().postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                questionPaperAdapter.shimmer = false;
+                questionPaperAdapter.notifyDataSetChanged();
+            }
+        },1000);
+
 
     }
 

@@ -1,41 +1,47 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<com.facebook.shimmer.ShimmerFrameLayout xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/linear_question"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/shimmerlayout"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:layout_marginTop="10dp"
-    android:orientation="vertical"
-    android:padding="20dp"
-    app:cardCornerRadius="20dp">
+    android:layout_height="wrap_content">
 
-    <LinearLayout
-        android:id="@+id/linear_pdf"
+    <androidx.cardview.widget.CardView
+        android:id="@+id/linear_question"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="center_vertical"
-        android:orientation="horizontal"
-        android:padding="10dp">
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"
+        android:padding="20dp"
+        app:cardCornerRadius="20dp">
 
-        <de.hdodenhof.circleimageview.CircleImageView
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:src="@drawable/pdficon" />
-
-        <TextView
-            android:id="@+id/name"
+        <LinearLayout
+            android:id="@+id/linear_pdf"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:gravity="center_vertical"
-            android:textAlignment="center"
-            android:text="Jee-Mains 2019 Online Paper"
-            android:fontFamily="@font/qs"
-            android:textSize="18sp"
-            android:textStyle="bold"
-            tools:ignore="RtlCompat" />
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="10dp">
 
-    </LinearLayout>
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/pdficon" />
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:background="#dddddd"
+                android:textAlignment="center"
+                android:fontFamily="@font/qs"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                tools:ignore="RtlCompat" />
+
+        </LinearLayout>
 
 
-</androidx.cardview.widget.CardView>
+    </androidx.cardview.widget.CardView>
+</com.facebook.shimmer.ShimmerFrameLayout>

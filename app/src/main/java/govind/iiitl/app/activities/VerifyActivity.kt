@@ -21,16 +21,6 @@ class VerifyActivity : AppCompatActivity() {
             submit()
         }
 
-        verifyText.setOnEditorActionListener { v, actionId, event ->
-             when (actionId) {
-                EditorInfo.IME_ACTION_DONE -> {
-                    val inputMethodManager: InputMethodManager = getSystemService(Context.INPUT_METHOD_SERVICE) as InputMethodManager
-                    inputMethodManager.hideSoftInputFromWindow(v.applicationWindowToken, 0)
-                    true
-                }
-                else -> false
-            }
-        }
     }
 
     private fun goToLoginActivity() {

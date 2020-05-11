@@ -98,6 +98,10 @@ dependencies {
     annotationProcessor 'com.github.bumptech.glide:compiler:4.8.0'
 
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+
+    //shimmer effect
+
+    implementation 'com.facebook.shimmer:shimmer:0.4.0'
 }
 
 apply plugin: 'com.google.gms.google-services'

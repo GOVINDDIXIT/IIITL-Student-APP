@@ -12,6 +12,7 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
+import com.facebook.shimmer.ShimmerFrameLayout;
 
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
@@ -27,6 +28,7 @@ public class PostAdapter extends RecyclerView.Adapter<PostAdapter.PostViewHolder
 
     private Context context;
     private List<Item> items;
+    public boolean showshmmer = true;
 
     public PostAdapter(Context context, List<Item> items) {
         this.context = context;
@@ -42,46 +44,59 @@ public class PostAdapter extends RecyclerView.Adapter<PostAdapter.PostViewHolder
 
     @Override
     public void onBindViewHolder(@NonNull PostViewHolder holder, int position) {
-        final Item item =items.get(position);
-        holder.postTitle.setText(item.getTitle());
-        holder.postDescription.setText(item.getContent());
 
+        if(showshmmer){
+            holder.shimmerFrameLayout.startShimmer();
+        }else{
+            holder.shimmerFrameLayout.stopShimmer();
+            holder.shimmerFrameLayout.setShimmer(null);
 
-        //Using Jsoup to parse html in order to get images and text
-        Document document =  Jsoup.parse(item.getContent());
-        Elements elements = document.select("img");
-        holder.postDescription.setText((document.text()));
+            final Item item =items.get(position);
+            holder.postTitle.setBackground(null);
+            holder.postTitle.setText(item.getTitle());
+            holder.postDescription.setBackground(null);
+            holder.postDescription.setText(item.getContent());
 
-        //To get images
-        //Log.d("Code","image-"+elements.get(0).attr("src"));
-        //To get Text
-        //Log.d("Text",document.text());
-        Glide.with(context).load(elements.get(0).attr("src")).into(holder.postImage);
+            //Using Jsoup to parse html in order to get images and text
+            Document document =  Jsoup.parse(item.getContent());
+            Elements elements = document.select("img");
+            holder.postDescription.setText((document.text()));
 
-        holder.itemView.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent (context,DetailActivity.class);
-                intent.putExtra("url",item.getUrl());
-                context.startActivity(intent);
-            }
-        });
+            //To get images
+            //Log.d("Code","image-"+elements.get(0).attr("src"));
+            //To get Text
+            //Log.d("Text",document.text());
+            holder.postImage.setBackground(null);
+            Glide.with(context).load(elements.get(0).attr("src")).into(holder.postImage);
+
+            holder.itemView.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    Intent intent = new Intent (context,DetailActivity.class);
+                    intent.putExtra("url",item.getUrl());
+                    context.startActivity(intent);
+                }
+            });
+        }
+
 
     }
 
     @Override
     public int getItemCount() {
-        return items.size();
+        return  items.size();
     }
 
-    public class PostViewHolder extends RecyclerView.ViewHolder{
+    class PostViewHolder extends RecyclerView.ViewHolder{
+        ShimmerFrameLayout shimmerFrameLayout;
         ImageView postImage;
         TextView postTitle;
         TextView postDescription;
 
-        public PostViewHolder(View itemView){
+        PostViewHolder(View itemView){
             super(itemView);
-            postImage=itemView.findViewById(R.id.postImage);
+            shimmerFrameLayout = itemView.findViewById(R.id.shimmerlayout);
+            postImage = itemView.findViewById(R.id.postImage);
             postTitle=itemView.findViewById(R.id.postTitle);
             postDescription=itemView.findViewById(R.id.postdescription);
         }

@@ -1,6 +1,7 @@
 package govind.iiitl.app.activities;
 
 import android.os.Bundle;
+import android.os.Handler;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -52,6 +53,14 @@ public class  FacultyActivity extends AppCompatActivity {
         llm.setOrientation(LinearLayoutManager.VERTICAL);
         recyclerView.setLayoutManager(llm);
         recyclerView.setAdapter(adapter);
+
+        new Handler().postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                adapter.shimmer = false;
+                adapter.notifyDataSetChanged();
+            }
+        },1000);
     }
 
     public String loadJSONFromAsset() {

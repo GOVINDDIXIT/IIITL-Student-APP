@@ -1,8 +1,10 @@
 package govind.iiitl.app.activities
 
+import android.content.Context
 import android.content.Intent
 import android.os.Bundle
 import android.view.inputmethod.EditorInfo
+import android.view.inputmethod.InputMethodManager
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import govind.iiitl.app.R
@@ -22,7 +24,8 @@ class VerifyActivity : AppCompatActivity() {
         verifyText.setOnEditorActionListener { v, actionId, event ->
              when (actionId) {
                 EditorInfo.IME_ACTION_DONE -> {
-                    submit()
+                    val inputMethodManager: InputMethodManager = getSystemService(Context.INPUT_METHOD_SERVICE) as InputMethodManager
+                    inputMethodManager.hideSoftInputFromWindow(v.applicationWindowToken, 0)
                     true
                 }
                 else -> false

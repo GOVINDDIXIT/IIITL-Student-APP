@@ -88,10 +88,10 @@ public class PostAdapter extends RecyclerView.Adapter<PostAdapter.PostViewHolder
     }
 
     class PostViewHolder extends RecyclerView.ViewHolder{
-        ShimmerFrameLayout shimmerFrameLayout;
-        ImageView postImage;
-        TextView postTitle;
-        TextView postDescription;
+        private ShimmerFrameLayout shimmerFrameLayout;
+        private ImageView postImage;
+        private TextView postTitle;
+        private TextView postDescription;
 
         PostViewHolder(View itemView){
             super(itemView);

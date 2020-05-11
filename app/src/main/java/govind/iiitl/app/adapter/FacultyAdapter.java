@@ -68,7 +68,7 @@ public class FacultyAdapter extends RecyclerView.Adapter<FacultyAdapter.ViewHold
         private TextView name;
         private TextView description;
         private TextView ResearchAreas;
-        ShimmerFrameLayout shimmerFrameLayout;
+        private ShimmerFrameLayout shimmerFrameLayout;
 
         ViewHolder(View itemView) {
             super(itemView);

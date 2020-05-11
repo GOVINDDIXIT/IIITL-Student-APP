@@ -20,7 +20,7 @@ class VerifyActivity : AppCompatActivity() {
         }
 
         verifyText.setOnEditorActionListener { v, actionId, event ->
-            return@setOnEditorActionListener when (actionId) {
+             when (actionId) {
                 EditorInfo.IME_ACTION_DONE -> {
                     submit()
                     true

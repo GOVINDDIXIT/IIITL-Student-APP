@@ -37,10 +37,10 @@ public class TimeTableActivity extends AppCompatActivity {
         viewPager.setAdapter(pagerViewAdapter);
 
         Mon.setOnClickListener( (View view) -> viewPager.setCurrentItem(0));
-        Tue.setOnClickListener( (View view) -> viewPager.setCurrentItem(0));
-        Wed.setOnClickListener( (View view) -> viewPager.setCurrentItem(0));
-        Thu.setOnClickListener( (View view) -> viewPager.setCurrentItem(0));
-        Fri.setOnClickListener( (View view) -> viewPager.setCurrentItem(0));
+        Tue.setOnClickListener( (View view) -> viewPager.setCurrentItem(1));
+        Wed.setOnClickListener( (View view) -> viewPager.setCurrentItem(2));
+        Thu.setOnClickListener( (View view) -> viewPager.setCurrentItem(3));
+        Fri.setOnClickListener( (View view) -> viewPager.setCurrentItem(4));
 
 
         viewPager.addOnPageChangeListener(new ViewPager.OnPageChangeListener() {

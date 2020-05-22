@@ -58,68 +58,68 @@ public class TimeTableActivity extends AppCompatActivity {
             private void onChangeTab(int position) {
                 if(position==0)
                 {
-                    Mon.setTextSize(28);
-                    Mon.getResources().getColor(R.color.bright);
-                    Tue.setTextSize(20);
-                    Tue.getResources().getColor(R.color.light_color);
-                    Wed.setTextSize(20);
-                    Wed.getResources().getColor(R.color.light_color);
-                    Thu.setTextSize(20);
-                    Thu.getResources().getColor(R.color.light_color);
-                    Fri.setTextSize(20);
-                    Fri.getResources().getColor(R.color.light_color);
+                    Mon.setTextSize(32);
+                    Mon.setTextColor(getResources().getColor(R.color.colorAccent));
+                    Tue.setTextSize(25);
+                    Tue.setTextColor(getResources().getColor(R.color.white));
+                    Wed.setTextSize(25);
+                    Wed.setTextColor(getResources().getColor(R.color.white));
+                    Thu.setTextSize(25);
+                    Thu.setTextColor(getResources().getColor(R.color.white));
+                    Fri.setTextSize(25);
+                    Fri.setTextColor(getResources().getColor(R.color.white));
                 }
                 if(position==1)
                 {
-                    Mon.setTextSize(20);
-                    Mon.getResources().getColor(R.color.light_color);
-                    Tue.setTextSize(28);
-                    Tue.getResources().getColor(R.color.bright);
-                    Wed.setTextSize(20);
-                    Wed.getResources().getColor(R.color.light_color);
-                    Thu.setTextSize(20);
-                    Thu.getResources().getColor(R.color.light_color);
-                    Fri.setTextSize(20);
-                    Fri.getResources().getColor(R.color.light_color);
+                    Mon.setTextSize(25);
+                    Mon.setTextColor(getResources().getColor(R.color.white));
+                    Tue.setTextSize(32);
+                    Tue.setTextColor(getResources().getColor(R.color.colorAccent));
+                    Wed.setTextSize(25);
+                    Wed.setTextColor(getResources().getColor(R.color.white));
+                    Thu.setTextSize(25);
+                    Thu.setTextColor(getResources().getColor(R.color.white));
+                    Fri.setTextSize(25);
+                    Fri.setTextColor(getResources().getColor(R.color.white));
                 }
                 if(position==2)
                 {
-                    Mon.setTextSize(20);
-                    Mon.getResources().getColor(R.color.light_color);
-                    Tue.setTextSize(20);
-                    Tue.getResources().getColor(R.color.light_color);
-                    Wed.setTextSize(28);
-                    Wed.getResources().getColor(R.color.bright);
-                    Thu.setTextSize(20);
-                    Thu.getResources().getColor(R.color.light_color);
-                    Fri.setTextSize(20);
-                    Fri.getResources().getColor(R.color.light_color);
+                    Mon.setTextSize(25);
+                    Mon.setTextColor(getResources().getColor(R.color.white));
+                    Tue.setTextSize(25);
+                    Tue.setTextColor(getResources().getColor(R.color.white));
+                    Wed.setTextSize(32);
+                    Wed.setTextColor(getResources().getColor(R.color.colorAccent));
+                    Thu.setTextSize(25);
+                    Thu.setTextColor(getResources().getColor(R.color.white));
+                    Fri.setTextSize(25);
+                    Fri.setTextColor(getResources().getColor(R.color.white));
                 }
                 if(position==3)
                 {
-                    Mon.setTextSize(20);
-                    Mon.getResources().getColor(R.color.light_color);
-                    Tue.setTextSize(20);
-                    Tue.getResources().getColor(R.color.light_color);
-                    Wed.setTextSize(20);
-                    Wed.getResources().getColor(R.color.light_color);
-                    Thu.setTextSize(28);
-                    Thu.getResources().getColor(R.color.bright);
-                    Fri.setTextSize(20);
-                    Fri.getResources().getColor(R.color.light_color);
+                    Mon.setTextSize(25);
+                    Mon.setTextColor(getResources().getColor(R.color.white));
+                    Tue.setTextSize(25);
+                    Tue.setTextColor(getResources().getColor(R.color.white));
+                    Wed.setTextSize(25);
+                    Wed.setTextColor(getResources().getColor(R.color.white));
+                    Thu.setTextSize(32);
+                    Thu.setTextColor(getResources().getColor(R.color.colorAccent));
+                    Fri.setTextSize(25);
+                    Fri.setTextColor(getResources().getColor(R.color.white));
                 }
                 if(position==4)
                 {
-                    Mon.setTextSize(20);
-                    Mon.getResources().getColor(R.color.light_color);
-                    Tue.setTextSize(20);
-                    Tue.getResources().getColor(R.color.light_color);
-                    Wed.setTextSize(20);
-                    Wed.getResources().getColor(R.color.light_color);
-                    Thu.setTextSize(20);
-                    Thu.getResources().getColor(R.color.light_color);
-                    Fri.setTextSize(28);
-                    Fri.getResources().getColor(R.color.bright);
+                    Mon.setTextSize(25);
+                    Mon.setTextColor(getResources().getColor(R.color.white));
+                    Tue.setTextSize(25);
+                    Tue.setTextColor(getResources().getColor(R.color.white));
+                    Wed.setTextSize(25);
+                    Wed.setTextColor(getResources().getColor(R.color.white));
+                    Thu.setTextSize(25);
+                    Thu.setTextColor(getResources().getColor(R.color.white));
+                    Fri.setTextSize(32);
+                    Fri.setTextColor(getResources().getColor(R.color.colorAccent));
                 }
             }
 

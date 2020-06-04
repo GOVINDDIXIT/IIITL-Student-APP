@@ -11,8 +11,8 @@
         android:layout_weight="1"
         android:gravity="center"
         android:text="Mon"
-        android:textColor="@color/white"
-        android:textSize="25dp"
+        android:textColor="@color/colorAccent"
+        android:textSize="32dp"
         android:textStyle="bold" />
 
     <TextView

@@ -68,7 +68,7 @@ dependencies {
 
     //In-App Messaging and Analytics dependencies:
     implementation 'com.google.firebase:firebase-inappmessaging-display:19.0.7'
-    implementation 'com.google.firebase:firebase-analytics:17.4.3'
+    implementation 'com.google.firebase:firebase-analytics:17.4.4'
 
     //Chrome tabs
     implementation 'com.android.support:customtabs:28.0.0'

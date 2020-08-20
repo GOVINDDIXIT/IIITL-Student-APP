@@ -53,7 +53,7 @@ public class Login extends AppCompatActivity {
         startActivityForResult(
                 AuthUI.getInstance().createSignInIntentBuilder()
                         .setAvailableProviders(providers)
-                        .setTheme(R.style.MyTheme)
+                        .setTheme(R.style.FirebaseUITheme)
                         .setLogo(R.drawable.graduate)
                         .build(), MY_REQUEST_CODE
         );

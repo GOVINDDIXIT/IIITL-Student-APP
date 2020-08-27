@@ -84,6 +84,7 @@
                     android:layout_below="@+id/faculty_research_areas"
                     android:layout_marginTop="16dp"
                     android:fontFamily="@font/ps"
+                    android:textAllCaps="true"
                    />
 
             </RelativeLayout>

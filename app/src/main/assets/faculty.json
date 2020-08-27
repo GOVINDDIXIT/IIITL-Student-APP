@@ -2,49 +2,91 @@
   {
     "name": "Dr. Arun Mohan Sherry",
     "imgSrc": "https://iiitl.ac.in/wp-content/uploads/2019/09/dr-arun-sherry-dp-300x285.jpg",
-    "description": "DIRECTOR, IIITL, M.SC. (GOLD MEDALIST), M.TECH. (COMPUTER SCIENCE -IIT KHARAGPUR), PH.D.",
+    "description": "Director, IIITL, M.Sc. (Gold Medalist), M.Tech. (Computer Science -IIT Kharagpur), Ph.D.",
     "ResearchAreas": "Higher Education and Research, CGI, eLearning Industry"
   },
   {
     "name": "Dr. Ashutosh Mishra",
-    "imgSrc": "https://scontent.fdel1-2.fna.fbcdn.net/v/t1.15752-9/82343493_168894037696182_7164413304117395456_n.jpg?_nc_cat=104&_nc_ohc=gyVaxNUSGAwAX_KCliM&_nc_ht=scontent.fdel1-2.fna&oh=9cc0a4a2369f2660e08488662f7202e1&oe=5ECE8F41",
-    "description": "PH. D. (OLD DOMINION UNIVERSITY, NORFOLK)",
+    "imgSrc": "https://iiitl.ac.in/wp-content/uploads/2020/08/Dr.-Ashutosh-Mishra-289x300.png",
+    "description": "Ph.D. (Old Dominion University, Norfolk), Interim Head (Academic)",
     "ResearchAreas": "Bioelectrics, Biomechanics, Machine Learning"
+  },
+  {
+    "name": "Dr. Bindu Singh",
+    "imgSrc": "https://iiitl.ac.in/wp-content/uploads/2020/08/Dr.-Neelu1-e1596543205323-269x300.jpg",
+    "description": "Ph.D. (IIT Roorkee)",
+    "ResearchAreas": "Intellectual Capital, Knowledge Management, Dynamic Capabilities, Creativity and Innovation, Business Ethics, HR Management Practices, etc."
   },
   {
     "name": "Dr. Brijesh Kumar Chaurasia",
     "imgSrc": "https://iiitl.ac.in/wp-content/uploads/2019/09/brijesh-300x270.png",
-    "description": "PH. D. FROM IIIT ALLAHABAD INTERIM HEAD",
+    "description": "Ph.D. (IIIT Allahabad), Interim HOD(IT)",
     "ResearchAreas": "Network Security, Vehicular Ad hoc Networks, Sensor Ad hoc Networks, Trust Management in Wireless Ad-hoc Networks, Internet of Vehicles, Cloud Computing etc."
   },
   {
+    "name": "Dr. Deepak Kumar Singh",
+    "imgSrc": "https://iiitl.ac.in/wp-content/uploads/2020/07/Deepak-e1593950448489.jpg",
+    "description": "Ph.D. (IIT Kanpur)",
+    "ResearchAreas": "Artificial Intelligence, IoT, Data Security and Privacy, Cloud Computing"
+  },
+  {
+    "name": "Dr. Dhananjoy Dey",
+    "imgSrc": "https://iiitl.ac.in/wp-content/uploads/2020/07/Dr.-Dhananjay-Dey.png",
+    "description": "Ph.D. (IIT Kanpur), Dean(IPR)",
+    "ResearchAreas": "Design and analysis of block ciphers, Multivariate public key cryptography, Post quantum cryptography, Quantum computing"
+  },
+  {
+    "name": "Dr. Indira Mishra",
+    "imgSrc": "https://iiitl.ac.in/wp-content/uploads/2020/07/Dr.-Indira-Mishra-236x300.jpg",
+    "description": "Ph.D. (IIT Kanpur)",
+    "ResearchAreas": "Homogenization theory, Elliptic partial differential equations, Optimal controls, Almost periodic solutions"
+  },
+  {
     "name": "Dr. Mary Samuel",
-    "imgSrc": "https://iiitl.ac.in/wp-content/uploads/2019/09/mary-211x300.jpg",
-    "description": "PH.D FROM MAHATMA GANDHI UNIVERSITY, KERALA, FACULTY IN-CHARGE STUDENT ACTIVITIES",
+    "imgSrc": "https://iiitl.ac.in/wp-content/uploads/2020/07/Dr.-Mary-Samuel-e1594805645324-300x298.jpg",
+    "description": "Ph.D (Mahatma Gandhi University, Kerala), Faculty In-Charge Student Activities",
     "ResearchAreas": "Fractal Geometry"
   },
   {
+    "name": "Dr. Neelu",
+    "imgSrc": "https://iiitl.ac.in/wp-content/uploads/2020/08/Dr.-Neelu1-e1596543205323-269x300.jpg",
+    "description": "PH.D (JNU New Delhi)",
+    "ResearchAreas": "Public Speaking Anxiety, English Language Teaching, Forensic Linguistics, Acoustics and Experimental Phonetics"
+  },
+  {
     "name": "Dr. Niharika Anand",
-    "imgSrc": "https://iiitl.ac.in/wp-content/uploads/2019/09/niharika-e1569760305721-550x500.jpeg",
-    "description": "PH. D. FROM IIIT ALLAHABAD, FACULTY INCHARGE LIBRARY",
-    "ResearchAreas": "Wireless Sensor Networks,4G and 5G technologies,Internet of Things,Security in Wireless Sensor Networks,Distributed Networks"
+    "imgSrc": "https://iiitl.ac.in/wp-content/uploads/2019/09/niharika-e1569760305721-300x300.jpeg",
+    "description": "Ph. D. (IIIT Allahabad), Faculty In-Charge Library & Exam cell",
+    "ResearchAreas": "Wireless Sensor Networks, 4G and 5G technologies, IoT, Security in Wireless Sensor Networks, Distributed Networks"
   },
   {
     "name": "Dr. Soumendu Chakraborty",
     "imgSrc": "https://iiitl.ac.in/wp-content/uploads/2019/09/somendu-e1569767856595-300x300.jpg",
-    "description": "PH. D. FROM IIIT ALLAHABAD, FACULTY IN-CHARGE TECHNICAL COMMITTEE",
+    "description": "Ph. D. (IIIT Allahabad), Interim HOD(CS), Faculty In-Charge Technical Committee",
     "ResearchAreas": "Image processing, Computer Vision, Pattern recognition, Steganography, Machine Learning."
+  },
+  {
+    "name": "Dr. Vinod Kumar",
+    "imgSrc": "https://iiitl.ac.in/wp-content/uploads/2020/08/Dr.-Vinod-Kumar-300x225.jpg",
+    "description": "Ph.D. (IIT Roorkee), Interim Head(Management and Humanities",
+    "ResearchAreas": "Sustainability Reporting, Sustainable Marketing, Green Marketing, E-Service Consumption, Destination Branding, Digital and Social Media Marketing"
+  },
+  {
+    "name": "Dr. Vishal Krishna Singh",
+    "imgSrc": "https://iiitl.ac.in/wp-content/uploads/2019/09/vks-1.jpg",
+    "description": "Ph. D. (IIIT Allahabad, Faculty In-Charge Training and Placements",
+    "ResearchAreas": "Wireless Sensor Networks, In-network Inference, Data Mining Database Management, Data Analytics, Internet of Things"
+  },
+  {
+    "name": "Mr. Bibek Singh",
+    "imgSrc": "https://iiitl.ac.in/wp-content/uploads/2020/07/Bibek_Singh.png",
+    "description": "M.Sc. (IIT Kanpur)",
+    "ResearchAreas": ""
   },
   {
     "name": "Mr. Sushil Tiwari",
     "imgSrc": "https://iiitl.ac.in/wp-content/uploads/2019/09/sushil-e1569765104867-300x300.jpg",
-    "description": "PH. D. FROM IIITDM, JABALPUR",
+    "description": "PH. D. (IIITDM, Jabalpur)",
     "ResearchAreas": "Wireless Indoor Localization, Machine Learning, Ad-hoc Network"
-  },
-  {
-    "name": "Dr. Vishal Krishna Singh",
-    "imgSrc": "https://images.ctfassets.net/e6ot1k2ihxg2/4VirhRAiSdcabNouCglotN/d9e2445e949c0f0e12e752963ca639cf/VKS.jpg",
-    "description": "PH. D. FROM IIIT ALLAHABAD, FACULTY IN-CHARGE TRAINING AND PLACEMENTS",
-    "ResearchAreas": "RESEARCH AREAS: Wireless Sensor Networks, In-network Inference, Data Mining Database Management, Data Analytics, Internet of Things"
   }
 ]

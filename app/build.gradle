@@ -45,7 +45,7 @@ dependencies {
     implementation 'com.android.support:appcompat-v7:28.0.0'
     implementation 'com.android.support:design:28.0.0'
     implementation 'com.google.firebase:firebase-messaging:20.3.0'
-    implementation 'com.google.firebase:firebase-core:17.5.0'
+    implementation 'com.google.firebase:firebase-core:17.5.1'
     implementation 'com.github.bumptech.glide:glide:4.8.0'
     implementation 'com.android.support.constraint:constraint-layout:2.0.2'
     implementation 'androidx.appcompat:appcompat:1.2.0'
@@ -59,7 +59,7 @@ dependencies {
     implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
 
     //Storeage
-    implementation 'com.google.firebase:firebase-core:17.5.0'
+    implementation 'com.google.firebase:firebase-core:17.5.1'
     implementation 'com.google.firebase:firebase-database:19.5.0'
     //Google Sign In
     implementation 'com.google.firebase:firebase-auth:19.4.0'

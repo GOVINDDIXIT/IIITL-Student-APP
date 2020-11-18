@@ -6,6 +6,7 @@ import android.view.View;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.content.ContextCompat;
 import androidx.viewpager.widget.ViewPager;
 
 import govind.iiitl.app.R;
@@ -56,37 +57,39 @@ public class TimeTableActivity extends AppCompatActivity {
             }
 
             private void onChangeTab(int position) {
+                int white = ContextCompat.getColor(getBaseContext(), R.color.white);
+                int accentColor = ContextCompat.getColor(getBaseContext(), R.color.colorAccent);
                 Mon.setTextSize(20);
-                Mon.getResources().getColor(R.color.light_color);
+                Mon.setTextColor(white);
                 Tue.setTextSize(20);
-                Tue.getResources().getColor(R.color.light_color);
+                Tue.setTextColor(white);
                 Wed.setTextSize(20);
-                Wed.getResources().getColor(R.color.light_color);
+                Wed.setTextColor(white);
                 Thu.setTextSize(20);
-                Thu.getResources().getColor(R.color.light_color);
+                Thu.setTextColor(white);
                 Fri.setTextSize(20);
-                Fri.getResources().getColor(R.color.light_color);
+                Fri.setTextColor(white);
 
                 switch(position){
                     case 0:
                         Mon.setTextSize(28);
-                        Mon.getResources().getColor(R.color.bright);
+                        Mon.setTextColor(accentColor);
                         break;
                     case 1:
                         Tue.setTextSize(28);
-                        Tue.getResources().getColor(R.color.bright);
+                        Tue.setTextColor(accentColor);
                         break;
                     case 2:
                         Wed.setTextSize(28);
-                        Wed.getResources().getColor(R.color.bright);
+                        Wed.setTextColor(accentColor);
                         break;
                     case 3:
                         Thu.setTextSize(28);
-                        Thu.getResources().getColor(R.color.bright);
+                        Thu.setTextColor(accentColor);
                         break;
                     default:
                         Fri.setTextSize(28);
-                        Fri.getResources().getColor(R.color.bright);
+                        Fri.setTextColor(accentColor);
                         break;
                 }
             }

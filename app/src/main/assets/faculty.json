@@ -6,15 +6,9 @@
     "ResearchAreas": "Higher Education and Research, CGI, eLearning Industry"
   },
   {
-    "name": "Dr. Ashutosh Mishra",
-    "imgSrc": "https://iiitl.ac.in/wp-content/uploads/2020/08/Dr.-Ashutosh-Mishra-289x300.png",
-    "description": "Ph.D. (Old Dominion University, Norfolk), Interim Head (Academic)",
-    "ResearchAreas": "Bioelectrics, Biomechanics, Machine Learning"
-  },
-  {
     "name": "Dr. Bindu Singh",
     "imgSrc": "https://iiitl.ac.in/wp-content/uploads/2020/08/Dr.-Neelu1-e1596543205323-269x300.jpg",
-    "description": "Ph.D. (IIT Roorkee)",
+    "description": "Ph.D. (IIT Roorkee), Assistant Professor",
     "ResearchAreas": "Intellectual Capital, Knowledge Management, Dynamic Capabilities, Creativity and Innovation, Business Ethics, HR Management Practices, etc."
   },
   {
@@ -26,19 +20,19 @@
   {
     "name": "Dr. Deepak Kumar Singh",
     "imgSrc": "https://iiitl.ac.in/wp-content/uploads/2020/07/Deepak-e1593950448489.jpg",
-    "description": "Ph.D. (IIT Kanpur)",
+    "description": "Ph.D. (IIT Kanpur), Visiting Faculty",
     "ResearchAreas": "Artificial Intelligence, IoT, Data Security and Privacy, Cloud Computing"
   },
   {
     "name": "Dr. Dhananjoy Dey",
     "imgSrc": "https://iiitl.ac.in/wp-content/uploads/2020/07/Dr.-Dhananjay-Dey.png",
-    "description": "Ph.D. (IIT Kanpur), Dean(IPR)",
+    "description": "Ph.D. (IIT Kanpur), Interim Dean(IPR) & Dean(A), Associate Professor",
     "ResearchAreas": "Design and analysis of block ciphers, Multivariate public key cryptography, Post quantum cryptography, Quantum computing"
   },
   {
     "name": "Dr. Indira Mishra",
     "imgSrc": "https://iiitl.ac.in/wp-content/uploads/2020/07/Dr.-Indira-Mishra-236x300.jpg",
-    "description": "Ph.D. (IIT Kanpur)",
+    "description": "Ph.D. (IIT Kanpur), Assistant Professor",
     "ResearchAreas": "Homogenization theory, Elliptic partial differential equations, Optimal controls, Almost periodic solutions"
   },
   {
@@ -50,20 +44,50 @@
   {
     "name": "Dr. Neelu",
     "imgSrc": "https://iiitl.ac.in/wp-content/uploads/2020/08/Dr.-Neelu1-e1596543205323-269x300.jpg",
-    "description": "PH.D (JNU New Delhi)",
+    "description": "PH.D (JNU New Delhi), Assistant Professor",
     "ResearchAreas": "Public Speaking Anxiety, English Language Teaching, Forensic Linguistics, Acoustics and Experimental Phonetics"
   },
   {
     "name": "Dr. Niharika Anand",
     "imgSrc": "https://iiitl.ac.in/wp-content/uploads/2019/09/niharika-e1569760305721-300x300.jpeg",
-    "description": "Ph. D. (IIIT Allahabad), Faculty In-Charge Library & Exam cell",
+    "description": "Ph. D. (IIIT Allahabad), Assistant Professor",
     "ResearchAreas": "Wireless Sensor Networks, 4G and 5G technologies, IoT, Security in Wireless Sensor Networks, Distributed Networks"
+  },
+  {
+    "name": "Dr. Prosenjit Gupta",
+    "imgSrc": "https://iiitl.ac.in/wp-content/uploads/2020/10/Dr.-Prosenjit-Gupta-e1602524826677-276x300.jpg",
+    "description": "Ph. D. (University of Minnesota (USA)), Algorithms Faculty",
+    "ResearchAreas": "Experience: Professor at IIITH, Architect at Yahoo! Bangalore, MTS at Bell Laboratories, Senior member of ACM"
+  },
+  {
+    "name": "Dr. Rajiv Bajpai",
+    "imgSrc": "https://iiitl.ac.in/wp-content/uploads/2020/10/Dr.-Rajiv-Bajpai-261x300.jpg",
+    "description": "Ph. D. (University of Genova, Italy), Visiting Faculty",
+    "ResearchAreas": "Highly Efficient Adaptive Multicore Processor Framework"
   },
   {
     "name": "Dr. Soumendu Chakraborty",
     "imgSrc": "https://iiitl.ac.in/wp-content/uploads/2019/09/somendu-e1569767856595-300x300.jpg",
-    "description": "Ph. D. (IIIT Allahabad), Interim HOD(CS), Faculty In-Charge Technical Committee",
+    "description": "Ph. D. (IIIT Allahabad), Interim HOD(CS), Faculty In-Charge Technical Committee, Assistant Professor",
     "ResearchAreas": "Image processing, Computer Vision, Pattern recognition, Steganography, Machine Learning."
+  },
+  {
+    "name": "Dr. Srinivas Padmanabhuni",
+    "imgSrc": "https://iiitl.ac.in/wp-content/uploads/2020/10/Dr.-Srinivas.jpg",
+    "description": "Ph. D. (University of Alberta, Edmonton, Canada), Visiting Faculty",
+    "ResearchAreas": "Artificial Intelligence, Web Services, SOA."
+  },
+  {
+    "name": "Dr. Suhas Rautmare",
+    "imgSrc": "https://iiitl.ac.in/wp-content/uploads/2020/10/Mr.-Suhas-Rautmare-288x300.png",
+    "description": "Ph. D., Visiting Faculty",
+    "ResearchAreas": "Security Risk Assessments, Security Product Implementation and Management, Security Operations Center and Network Security"
+  },
+  {
+    "name": "Mr. Sushil Tiwari",
+    "imgSrc": "https://iiitl.ac.in/wp-content/uploads/2019/09/sushil-e1569765104867-300x300.jpg",
+    "description": "PH. D. (IIITDM, Jabalpur)",
+    "ResearchAreas": "Wireless Indoor Localization, Machine Learning, Ad-hoc Network"
   },
   {
     "name": "Dr. Vinod Kumar",
@@ -81,12 +105,36 @@
     "name": "Mr. Bibek Singh",
     "imgSrc": "https://iiitl.ac.in/wp-content/uploads/2020/07/Bibek_Singh.png",
     "description": "M.Sc. (IIT Kanpur)",
-    "ResearchAreas": ""
+    "ResearchAreas": "Project Management, Agile Project Management, Certified Software Quality Analyst"
   },
   {
-    "name": "Mr. Sushil Tiwari",
-    "imgSrc": "https://iiitl.ac.in/wp-content/uploads/2019/09/sushil-e1569765104867-300x300.jpg",
-    "description": "PH. D. (IIITDM, Jabalpur)",
-    "ResearchAreas": "Wireless Indoor Localization, Machine Learning, Ad-hoc Network"
+    "name": "Mr. Sandeep Srivastava",
+    "imgSrc": "https://iiitl.ac.in/wp-content/uploads/2020/10/Mr.-Sandeep-Srivastava.jpg",
+    "description": "MS (IIT Kanpur)",
+    "ResearchAreas": "Experience: Project leader and Senior SW/HW Engineer in EDA/VLSI industries, Associate Prof./Assistant Prof. of CS"
+  },
+  {
+    "name": "Mr. Satish Kulkarni",
+    "imgSrc": "https://iiitl.ac.in/wp-content/uploads/2020/10/Mr.-Satish-Kulkarni-scaled-e1602567118578-257x300.jpg",
+    "description": "ME, MBA",
+    "ResearchAreas": "Security Governance, Risk and Compliance(GRC), Infrastructure and application security, Security Risk Assessment"
+  },
+  {
+    "name": "Mr. S. Chandramouleeswaran",
+    "imgSrc": "https://iiitl.ac.in/wp-content/uploads/2020/10/S.-Chandramouleeswaran-Mouli-e1602653577824-300x294.jpg",
+    "description": "M.Tech. (IIT Madras), Visiting Faculty",
+    "ResearchAreas": "Embedded and networking SW engineering professional with experience in defining, designing, and delivering high quality software systems"
+  },
+  {
+    "name": "Shahla Khan",
+    "imgSrc": "https://iiitl.ac.in/wp-content/uploads/2020/10/Shahla-Khan.png",
+    "description": "Cyber Security Manager at TCS",
+    "ResearchAreas": "Governance, Risk and Compliance, Data Privacy, Information Security Audit, Application Security"
+  },
+  {
+    "name": "Shri Saurabh Srivastava",
+    "imgSrc": "https://iiitl.ac.in/wp-content/uploads/2020/10/Shri-Saurabh-Srivastava-291x300.jpg",
+    "description": "Ph.D Scholar (IIT Kanpur), M.Tech. (IIT Kanpur)",
+    "ResearchAreas": ""
   }
 ]

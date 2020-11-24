@@ -50,7 +50,7 @@ public class ArchiveActivity extends AppCompatActivity {
                 questionPaperAdapter.shimmer = false;
                 questionPaperAdapter.notifyDataSetChanged();
             }
-        },1000);
+        },3000);
 
         swipeRefreshLayout.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
             @Override

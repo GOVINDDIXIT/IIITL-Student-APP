@@ -1,6 +1,5 @@
 package govind.iiitl.app.activities;
 
-import android.content.ActivityNotFoundException;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.graphics.Color;
@@ -18,31 +17,22 @@ import govind.iiitl.app.R;
 
 public class AboutPageActivity extends AppCompatActivity implements View.OnClickListener {
 
-    private LinearLayout fork;
-    private LinearLayout developers;
-    private LinearLayout rateApp;
-    private LinearLayout sendArticle;
-    private ImageView dsc_about;
-    private TextView versionTextView;
-
     String versionName = "1.0";
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setTitle("About");
         setContentView(R.layout.activity_about_page);
-        fork = findViewById(R.id.Star_on_github);
-        developers = findViewById(R.id.developers);
-        rateApp = findViewById(R.id.rate_the_app);
-        dsc_about = findViewById(R.id.dsc_about);
-        sendArticle = findViewById(R.id.Submit_article);
-        versionTextView = findViewById(R.id.app_version);
+
+        LinearLayout fork = findViewById(R.id.Star_on_github);
+        LinearLayout developers = findViewById(R.id.developers);
+        LinearLayout rateApp = findViewById(R.id.rate_the_app);
+        ImageView dsc_about = findViewById(R.id.dsc_about);
+        TextView versionTextView = findViewById(R.id.app_version);
+
         fork.setOnClickListener(this);
         developers.setOnClickListener(this);
         rateApp.setOnClickListener(this);
-        sendArticle.setOnClickListener(this);
         dsc_about.setOnClickListener(this);
 
         try {
@@ -68,38 +58,11 @@ public class AboutPageActivity extends AppCompatActivity implements View.OnClick
             case R.id.rate_the_app:
                 rateApp();
                 break;
-            case R.id.Submit_article:
-                sendArticle();
-                break;
             case R.id.dsc_about:
                 chromeCustomTabs(getResources().getString(R.string.dsc_website));
                 break;
             default:
                 break;
-        }
-    }
-
-//    private void sendMail() {
-//        String mailto = "mailto:dsc@iiitl.ac.in?subject=Feedback Submission";
-//
-//        Intent emailIntent = new Intent(Intent.ACTION_SENDTO);
-//        emailIntent.setData(Uri.parse(mailto));
-//        try {
-//            startActivity(emailIntent);
-//        } catch (ActivityNotFoundException e) {
-//            //TODO: Handle case where no email app is available
-//        }
-//    }
-
-    private void sendArticle() {
-        String mailto = "mailto:dsc@iiitl.ac.in?subject=Article submission for Student App";
-
-        Intent emailIntent = new Intent(Intent.ACTION_SENDTO);
-        emailIntent.setData(Uri.parse(mailto));
-        try {
-            startActivity(emailIntent);
-        } catch (ActivityNotFoundException e) {
-            //TODO: Handle case where no email app is available
         }
     }
 

@@ -1,4 +1,4 @@
-package govind.iiitl.app.fragments
+package govind.iiitl.app.fragments.timetable
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -16,24 +16,24 @@ import org.json.JSONException
 import org.json.JSONObject
 import java.util.*
 
-class Fri : Fragment() {
+class Thu : Fragment() {
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
-        val v = LayoutInflater.from(context).inflate(R.layout.fragment_fri, null)
+        val v = LayoutInflater.from(context).inflate(R.layout.fragment_thu, null)
         val activity = (activity as TimeTableActivity?)!!
         val s = activity.SendData()
         try {
             val obj = JSONObject(getActivity()?.let { loadJsonFromAsset(s, it) })
-            val fri = obj.getJSONObject("Friday")
+            val thu = obj.getJSONObject("Thursday")
             val recyclerView: RecyclerView = v.findViewById(R.id.rec_timetable)
             val list = ArrayList<Schedule>()
-            val keysToCopyIterator: Iterator<*> = fri.keys()
+            val keysToCopyIterator: Iterator<*> = thu.keys()
             val keysList: MutableList<String> = ArrayList()
             while (keysToCopyIterator.hasNext()) {
                 val key = keysToCopyIterator.next() as String
                 keysList.add(key)
             }
             for (i in keysList.indices) {
-                val morning9 = fri.getString(keysList[i])
+                val morning9 = thu.getString(keysList[i])
                 //  txt = txt + keysList.get(i)+ morning9 + "\n";
                 list.add(Schedule(keysList[i], morning9))
             }

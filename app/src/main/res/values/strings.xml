@@ -1,6 +1,6 @@
 <resources>
     <string name="app_name">IIITL</string>
-    <string name="hello">hello</string>
+    <string name="posts">Posts</string>
     <string name="drawer_menu">Drawer Menu</string>
     <string name="title_activity_flutter">flutter</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>

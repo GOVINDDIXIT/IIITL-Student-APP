@@ -3,7 +3,11 @@ package govind.iiitl.app.adapter
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentPagerAdapter
-import govind.iiitl.app.fragments.*
+import govind.iiitl.app.fragments.timetable.Fri
+import govind.iiitl.app.fragments.timetable.Mon
+import govind.iiitl.app.fragments.timetable.Thu
+import govind.iiitl.app.fragments.timetable.Tue
+import govind.iiitl.app.fragments.timetable.Wed
 
 class PagerViewAdapter(fm: FragmentManager?) : FragmentPagerAdapter(fm!!) {
     override fun getItem(position: Int): Fragment {

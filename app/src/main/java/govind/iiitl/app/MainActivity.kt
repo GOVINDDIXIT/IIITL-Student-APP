@@ -90,6 +90,7 @@ class MainActivity : AppCompatActivity() {
 
     private fun setUpToolbar() {
         //To give backward Compatibility
+        toolbar.title = resources.getString(R.string.posts)
         setSupportActionBar(toolbar)
         //To sync Drawer and Toolbar
         actionBarDrawerToggle = ActionBarDrawerToggle(this, drawerLayout, toolbar, R.string.app_name, R.string.app_name)

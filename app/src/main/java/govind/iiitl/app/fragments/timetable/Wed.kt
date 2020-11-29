@@ -1,4 +1,4 @@
-package govind.iiitl.app.fragments
+package govind.iiitl.app.fragments.timetable
 
 import android.os.Bundle
 import android.view.LayoutInflater

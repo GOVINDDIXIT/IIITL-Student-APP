@@ -33,9 +33,9 @@
                 </item>
 
                 <item
-                    android:id="@+id/nav_GetSetFoss"
-                    android:icon="@drawable/get_set_foss"
-                    android:title="Get Set FOSS">
+                    android:id="@+id/nav_eduthon"
+                    android:icon="@drawable/eduthon"
+                    android:title="Eduthon">
 
                 </item>
             </menu>

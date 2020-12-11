@@ -58,7 +58,7 @@ class MainActivity : AppCompatActivity() {
                 R.id.nav_axios -> openWebPage(this, resources.getString(R.string.axios_website))
                 R.id.nav_dsc -> openWebPage(this, resources.getString(R.string.dsc_website))
                 R.id.nav_equinox -> openWebPage(this, resources.getString(R.string.equinox_website))
-                R.id.nav_GetSetFoss -> openWebPage(this, resources.getString(R.string.GetSetFOSS_website))
+                R.id.nav_eduthon -> openWebPage(this, resources.getString(R.string.eduthon_website))
                 R.id.nav_mess_menu -> {
                     val intent = Intent(this, MessMenuActivity::class.java)
                     intent.putExtra("ViewType", "assets")

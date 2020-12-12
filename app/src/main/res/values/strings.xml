@@ -19,7 +19,7 @@
     <string name="axios_website">https://axios-iiitl.github.io/</string>
     <string name="dsc_website">https://dsciiitl.netlify.com/</string>
     <string name="equinox_website">http://equinox-iiitl.tech/</string>
-    <string name="GetSetFOSS_website">https://getsetfoss.tech</string>
+    <string name="eduthon_website">https://eduthon.tech/</string>
 
     <!-- Strings related to login -->
     <string name="prompt_email">Email</string>

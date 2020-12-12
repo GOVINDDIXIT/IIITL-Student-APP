@@ -5,6 +5,8 @@ import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentPagerAdapter
 import govind.iiitl.app.fragments.timetable.Fri
 import govind.iiitl.app.fragments.timetable.Mon
+import govind.iiitl.app.fragments.timetable.Sat
+import govind.iiitl.app.fragments.timetable.Sun
 import govind.iiitl.app.fragments.timetable.Thu
 import govind.iiitl.app.fragments.timetable.Tue
 import govind.iiitl.app.fragments.timetable.Wed
@@ -18,11 +20,13 @@ class PagerViewAdapter(fm: FragmentManager?) : FragmentPagerAdapter(fm!!) {
             2 -> fragment = Wed()
             3 -> fragment = Thu()
             4 -> fragment = Fri()
+            5 -> fragment = Sat()
+            6 -> fragment = Sun()
         }
         return fragment!!
     }
 
     override fun getCount(): Int {
-        return 5
+        return 7
     }
 }

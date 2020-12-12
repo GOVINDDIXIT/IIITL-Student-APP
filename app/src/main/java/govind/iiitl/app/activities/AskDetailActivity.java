@@ -146,8 +146,6 @@ public class AskDetailActivity extends AppCompatActivity implements AdapterView.
 
     @Override
     public void onNothingSelected(AdapterView<?> adapterView) {
-        /*
-        Todo on nothing selected
-         */
+
     }
 }

@@ -14,10 +14,15 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.nabinbhandari.android.permissions.PermissionHandler
 import com.nabinbhandari.android.permissions.Permissions
 import govind.iiitl.app.BloggerAPI.service
-import govind.iiitl.app.activities.*
+import govind.iiitl.app.activities.AboutPageActivity
+import govind.iiitl.app.activities.AnnouncementActivity
+import govind.iiitl.app.activities.ArchiveActivity
+import govind.iiitl.app.activities.AskDetailActivity
+import govind.iiitl.app.activities.FacultyActivity
+import govind.iiitl.app.activities.MessMenuActivity
+import govind.iiitl.app.activities.signIn.LogOut
 import govind.iiitl.app.adapter.PostAdapter
 import govind.iiitl.app.models.PostList
-import govind.iiitl.app.activities.signIn.LogOut
 import govind.iiitl.app.utils.openWebPage
 import kotlinx.android.synthetic.main.activity_main.*
 import retrofit2.Call
@@ -34,27 +39,40 @@ class MainActivity : AppCompatActivity() {
         val network = isNetworkConnected
         retry_button.setOnClickListener { data }
 
-        if (network) {
-            no_network_image_view.visibility = View.GONE
-            retry_button.visibility = View.GONE
+        if (!network) {
+            ll_no_network.visibility = View.VISIBLE
+        } else {
+            ll_no_network.visibility = View.GONE
         }
 
         postList.layoutManager = LinearLayoutManager(this)
         setUpToolbar()
 
-        val permissions = arrayOf(Manifest.permission.INTERNET,
-                Manifest.permission.READ_EXTERNAL_STORAGE,
-                Manifest.permission.WRITE_EXTERNAL_STORAGE,
-                Manifest.permission.ACCESS_WIFI_STATE,
-                Manifest.permission.ACCESS_NETWORK_STATE)
-        Permissions.check(this /*context*/, permissions, null /*rationale*/, null /*options*/, object : PermissionHandler() {
-            override fun onGranted() {}
-        })
+        val permissions = arrayOf(
+            Manifest.permission.INTERNET,
+            Manifest.permission.READ_EXTERNAL_STORAGE,
+            Manifest.permission.WRITE_EXTERNAL_STORAGE,
+            Manifest.permission.ACCESS_WIFI_STATE,
+            Manifest.permission.ACCESS_NETWORK_STATE
+        )
+        Permissions.check(
+            this /*context*/,
+            permissions,
+            null /*rationale*/,
+            null /*options*/,
+            object : PermissionHandler() {
+                override fun onGranted() {}
+            })
 
         navigation_menu.itemIconTintList = null
         navigation_menu.setNavigationItemSelectedListener { item: MenuItem ->
             when (item.itemId) {
-                R.id.nav_TimeTable -> startActivity(Intent(this@MainActivity, AskDetailActivity::class.java))
+                R.id.nav_TimeTable -> startActivity(
+                    Intent(
+                        this@MainActivity,
+                        AskDetailActivity::class.java
+                    )
+                )
                 R.id.nav_axios -> openWebPage(this, resources.getString(R.string.axios_website))
                 R.id.nav_dsc -> openWebPage(this, resources.getString(R.string.dsc_website))
                 R.id.nav_equinox -> openWebPage(this, resources.getString(R.string.equinox_website))
@@ -66,12 +84,27 @@ class MainActivity : AppCompatActivity() {
                 }
                 R.id.nav_ecell -> openWebPage(this, resources.getString(R.string.ecellwebsite))
                 R.id.nav_logOut -> startActivity(Intent(this@MainActivity, LogOut::class.java))
-                R.id.nav_faculty -> startActivity(Intent(this@MainActivity, FacultyActivity::class.java))
-                R.id.nav_announcement -> startActivity(Intent(this@MainActivity, AnnouncementActivity::class.java))
+                R.id.nav_faculty -> startActivity(
+                    Intent(
+                        this@MainActivity,
+                        FacultyActivity::class.java
+                    )
+                )
+                R.id.nav_announcement -> startActivity(
+                    Intent(
+                        this@MainActivity,
+                        AnnouncementActivity::class.java
+                    )
+                )
                 R.id.retry_button -> {
                     data
                 }
-                R.id.nav_archives -> startActivity(Intent(this@MainActivity, ArchiveActivity::class.java))
+                R.id.nav_archives -> startActivity(
+                    Intent(
+                        this@MainActivity,
+                        ArchiveActivity::class.java
+                    )
+                )
                 R.id.nav_about_us -> {
                     startActivity(Intent(this@MainActivity, AboutPageActivity::class.java))
                 }
@@ -93,7 +126,8 @@ class MainActivity : AppCompatActivity() {
         toolbar.title = resources.getString(R.string.posts)
         setSupportActionBar(toolbar)
         //To sync Drawer and Toolbar
-        actionBarDrawerToggle = ActionBarDrawerToggle(this, drawerLayout, toolbar, R.string.app_name, R.string.app_name)
+        actionBarDrawerToggle =
+            ActionBarDrawerToggle(this, drawerLayout, toolbar, R.string.app_name, R.string.app_name)
         drawerLayout.addDrawerListener(actionBarDrawerToggle)
         actionBarDrawerToggle.syncState()
     }
@@ -128,7 +162,11 @@ class MainActivity : AppCompatActivity() {
                 }
 
                 override fun onFailure(call: Call<PostList?>, t: Throwable) {
-                    Toast.makeText(this@MainActivity, "No Internet Connection Found", Toast.LENGTH_SHORT).show()
+                    Toast.makeText(
+                        this@MainActivity,
+                        "No Internet Connection Found",
+                        Toast.LENGTH_SHORT
+                    ).show()
                 }
             })
         }

@@ -1,5 +1,6 @@
 package govind.iiitl.app.activities;
 
+import android.content.ActivityNotFoundException;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.graphics.Color;
@@ -27,6 +28,7 @@ public class AboutPageActivity extends AppCompatActivity implements View.OnClick
         LinearLayout fork = findViewById(R.id.Star_on_github);
         LinearLayout developers = findViewById(R.id.developers);
         LinearLayout rateApp = findViewById(R.id.rate_the_app);
+        LinearLayout sendMail = findViewById(R.id.send_mail);
         ImageView dsc_about = findViewById(R.id.dsc_about);
         TextView versionTextView = findViewById(R.id.app_version);
 
@@ -34,6 +36,7 @@ public class AboutPageActivity extends AppCompatActivity implements View.OnClick
         developers.setOnClickListener(this);
         rateApp.setOnClickListener(this);
         dsc_about.setOnClickListener(this);
+        sendMail.setOnClickListener(this);
 
         try {
             versionName = getApplicationContext().getPackageManager()
@@ -61,8 +64,21 @@ public class AboutPageActivity extends AppCompatActivity implements View.OnClick
             case R.id.dsc_about:
                 chromeCustomTabs(getResources().getString(R.string.dsc_website));
                 break;
+            case R.id.send_mail:
+                sendArticle();
+                break;
             default:
                 break;
+        }
+    }
+
+    private void sendArticle() {
+        String mailto = "mailto:dsc@iiitl.ac.in?subject=Question Paper submission";
+        Intent emailIntent = new Intent(Intent.ACTION_SENDTO);
+        emailIntent.setData(Uri.parse(mailto));
+        try {
+            startActivity(emailIntent);
+        } catch (ActivityNotFoundException e) {
         }
     }
 

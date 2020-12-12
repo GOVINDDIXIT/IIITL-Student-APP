@@ -26,9 +26,10 @@ class Login : AppCompatActivity() {
         } else {
             //Init Providers
             providers = listOf(
-                EmailBuilder().build(),  //  new AuthUI.IdpConfig.PhoneBuilder().build(),
+                EmailBuilder().build()
+                //  new AuthUI.IdpConfig.PhoneBuilder().build(),
                 //  new AuthUI.IdpConfig.FacebookBuilder().build(),
-                GoogleBuilder().build()
+                // GoogleBuilder().build()
             )
             showSignInOptions()
         }

@@ -224,23 +224,87 @@
             </LinearLayout>
 
         </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="8dp"
+            app:cardCornerRadius="8dp"
+            app:cardUseCompatPadding="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginLeft="32dp"
+                    android:orientation="vertical"
+                    android:paddingBottom="8dp">
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/send_mail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/background"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:gravity="center_vertical"
+                    android:minHeight="@dimen/md_listitem_height"
+                    android:orientation="horizontal"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp">
+
+                    <ImageView
+                        android:id="@+id/Submit_email_image"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        app:srcCompat="@drawable/ic_email"
+                        tools:ignore="ContentDescription,UnusedAttribute,VectorDrawableCompat" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="32dp"
+                        android:layout_marginLeft="32dp"
+                        android:fontFamily="@font/qs"
+                        android:paddingTop="8dp"
+                        android:paddingBottom="8dp"
+                        android:text="Submit Your Question Paper"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Subhead" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_alignParentBottom="true"
         android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
         android:gravity="center"
-        android:padding="10dp"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:padding="10dp">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textColor="#ffffff"
-            android:textSize="16sp"
             android:fontFamily="@font/qs"
-            android:text="Made with" />
+            android:text="Made with"
+            android:textColor="#ffffff"
+            android:textSize="16sp" />
 
         <ImageView
             android:layout_width="22dp"
@@ -251,26 +315,26 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:fontFamily="@font/qs"
-            android:textSize="16sp"
             android:layout_marginLeft="7dp"
+            android:fontFamily="@font/qs"
+            android:text="by"
             android:textColor="#ffffff"
-            android:text="by" />
+            android:textSize="16sp" />
 
         <ImageView
+            android:id="@+id/dsc_about"
             android:layout_width="48dp"
             android:layout_height="48dp"
-            android:id="@+id/dsc_about"
             android:src="@drawable/dsc_logo" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="@font/qs"
-            android:textSize="16sp"
+            android:text="DSC IIITL"
             android:textColor="#ffffff"
-            android:textStyle="bold"
-            android:text="DSC IIITL" />
+            android:textSize="16sp"
+            android:textStyle="bold" />
     </LinearLayout>
 
 </RelativeLayout>

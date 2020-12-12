@@ -118,7 +118,7 @@ class MainActivity : AppCompatActivity() {
     private val isNetworkConnected: Boolean
         get() {
             val cm = (getSystemService(CONNECTIVITY_SERVICE) as ConnectivityManager)
-            return cm.activeNetworkInfo != null && cm.activeNetworkInfo.isConnected
+            return cm.activeNetworkInfo != null && cm.activeNetworkInfo!!.isConnected
         }
 
     private fun setUpToolbar() {

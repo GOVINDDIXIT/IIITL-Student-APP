@@ -53,6 +53,7 @@
     </string-array>
 
     <string-array name="branch">
+        <item>CSAI (B.Tech)</item>
         <item>CSE (B.Tech)</item>
         <item>IT (B.Tech)</item>
         <item>CSE (M.Tech)</item>

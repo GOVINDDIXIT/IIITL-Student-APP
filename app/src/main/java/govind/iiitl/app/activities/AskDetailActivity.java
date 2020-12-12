@@ -90,7 +90,34 @@ public class AskDetailActivity extends AppCompatActivity implements AdapterView.
                             conc = "it8sem.json";
                             break;
                     }
-                }else {
+                }else if(course.equals("CSAI (B.Tech)")){
+                    switch (yearse) {
+                        case "1":
+                            conc = "csai1sem.json";
+                            break;
+//                        case "2":
+//                            conc = "csai2sem.json";
+//                            break;
+//                        case "3":
+//                            conc = "csai3sem.json";
+//                            break;
+//                        case "4":
+//                            conc = "csai4sem.json";
+//                            break;
+//                        case "5":
+//                            conc = "csai5sem.json";
+//                            break;
+//                        case "6":
+//                            conc = "csai6sem.json";
+//                            break;
+//                        case "7":
+//                            conc = "csai7sem.json";
+//                            break;
+                        default:
+                            conc = "cs2sem.json";
+                            break;
+                    }
+                } else{
                     switch (yearse) {
                         case "1":
                             conc = "mcs1sem.json";

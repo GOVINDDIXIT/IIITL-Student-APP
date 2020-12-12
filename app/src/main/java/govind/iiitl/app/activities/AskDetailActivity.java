@@ -7,6 +7,7 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.Spinner;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -14,7 +15,8 @@ import govind.iiitl.app.R;
 
 public class AskDetailActivity extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
 
-    private Spinner yearone ;
+    private Spinner yearone;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -29,24 +31,34 @@ public class AskDetailActivity extends AppCompatActivity implements AdapterView.
         yearone = findViewById(R.id.year);
 
         Button button = findViewById(R.id.ok_button);
-        button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                String conc = null;
-                String course = branch.getSelectedItem().toString();
-                String yearse = yearone.getSelectedItem().toString();
+        button.setOnClickListener(view -> {
+            String conc = null;
+            String course = branch.getSelectedItem().toString();
+            String yearse = yearone.getSelectedItem().toString();
 
-                if(course.equals("CSE (B.Tech)")){
+            switch (course) {
+                case "CS-AI (B.Tech)":
+                    switch (yearse) {
+                        case "1":
+                            conc = "csai1sem.json";
+                            break;
+                        default:
+                            conc = "csai1sem.json";
+                            Toast.makeText(this, "Not available", Toast.LENGTH_SHORT).show();
+                            break;
+                    }
+                    break;
+                case "CS (B.Tech)":
                     switch (yearse) {
                         case "1":
                             conc = "cs1sem.json";
                             break;
-//                        case "2":
-//                            conc = "cs2sem.json";
-//                            break;
-//                        case "3":
-//                            conc = "cs3sem.json";
-//                            break;
+                        case "2":
+                            conc = "cs2sem.json";
+                            break;
+                        case "3":
+                            conc = "cs3sem.json";
+                            break;
 //                        case "4":
 //                            conc = "cs4sem.json";
 //                            break;
@@ -61,9 +73,11 @@ public class AskDetailActivity extends AppCompatActivity implements AdapterView.
 //                            break;
                         default:
                             conc = "cs2sem.json";
+                            Toast.makeText(this, "Not available", Toast.LENGTH_SHORT).show();
                             break;
                     }
-                }else if(course.equals("IT (B.Tech)")){
+                    break;
+                case "IT (B.Tech)":
                     switch (yearse) {
                         case "1":
                             conc = "it1sem.json";
@@ -90,27 +104,26 @@ public class AskDetailActivity extends AppCompatActivity implements AdapterView.
                             conc = "it8sem.json";
                             break;
                     }
-                }else {
+                    break;
+                default:
                     switch (yearse) {
                         case "1":
                             conc = "mcs1sem.json";
                             break;
-//                        case "2":
-//                            conc = "cs2sem.json";
-//                            break;
-//                        case "3":
-//                            conc = "cs3sem.json";
-//                            break;
-                        default:
+                        case "2":
                             conc = "mcs2sem.json";
                             break;
+                        default:
+                            conc = "mcs2sem.json";
+                            Toast.makeText(this, "Not available", Toast.LENGTH_SHORT).show();
+                            break;
                     }
-                }
-
-                Intent intent = new Intent(AskDetailActivity.this, TimeTableActivity.class);
-                intent.putExtra("cs2sem.json",conc);
-                startActivity(intent);
+                    break;
             }
+
+            Intent intent = new Intent(AskDetailActivity.this, TimeTableActivity.class);
+            intent.putExtra("cs2sem.json", conc);
+            startActivity(intent);
         });
     }
 

@@ -1,14 +1,17 @@
-package govind.iiitl.app.signIn
+package govind.iiitl.app.activities.signIn
 
 import android.app.AlertDialog
 import android.content.Intent
 import android.content.SharedPreferences
 import android.os.Bundle
+import android.view.View
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.bumptech.glide.Glide
 import com.bumptech.glide.load.DecodeFormat
 import com.bumptech.glide.request.RequestOptions
 import com.bumptech.glide.request.target.Target
+import com.firebase.ui.auth.AuthUI
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.FirebaseAuth.AuthStateListener
 import com.google.firebase.auth.FirebaseUser
@@ -32,19 +35,31 @@ class LogOut : AppCompatActivity() {
                 val editor = sp.edit()
                 editor.clear()
                 editor.apply()
-                startActivity(Intent(this@LogOut, Login::class.java))
-                finish()
+                goToLoginActivity()
             }
         }
         LogOutBtn.setOnClickListener { showLogoutDialog() }
+    }
+
+    private fun goToLoginActivity() {
+        val intent = Intent(this@LogOut, Login::class.java)
+        intent.flags =
+            Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK or Intent.FLAG_ACTIVITY_CLEAR_TOP
+        startActivity(intent)
+        finish()
     }
 
     private fun showLogoutDialog() {
         val builder = AlertDialog.Builder(this@LogOut)
         builder.setMessage("Are you sure want to logout?")
         builder.setCancelable(true)
-        builder.setPositiveButton("Yes") {dialog, id ->
-            sp.edit().putBoolean("logged", false).apply()
+        builder.setPositiveButton("Yes") { dialog, id ->
+            AuthUI.getInstance()
+                .signOut(this)
+                .addOnCompleteListener {
+                    sp.edit().putBoolean("logged", false).apply()
+                    Toast.makeText(this, "User is successfully logged out", Toast.LENGTH_LONG)
+                }
             mAuth!!.signOut()
         }
         builder.setNegativeButton("No") { dialog, id -> dialog.cancel() }
@@ -70,7 +85,11 @@ class LogOut : AppCompatActivity() {
         options.circleCrop()
         options.format(DecodeFormat.PREFER_ARGB_8888)
         options.override(Target.SIZE_ORIGINAL)
-        Glide.with(this).load(newUrl).apply(options).into(user_image)
+        if (newUrl.isNotEmpty()) {
+            Glide.with(this).load(newUrl).apply(options).into(user_image)
+        } else {
+            user_name.visibility = View.GONE
+        }
     }
 
     override fun onStart() {

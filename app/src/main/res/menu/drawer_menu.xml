@@ -67,8 +67,8 @@
         android:id="@+id/group3"
         android:checkableBehavior="single">
         <item
-            android:id="@+id/nav_extras"
-            android:title="Extras">
+            android:id="@+id/nav_announcement"
+            android:title="Announcements">
 
         </item>
         <item
@@ -80,7 +80,7 @@
         android:id="@+id/group2"
         android:checkableBehavior="single">
         <item
-            android:id="@+id/nav_aboutus"
+            android:id="@+id/nav_about_us"
             android:title="About Us">
 
         </item>

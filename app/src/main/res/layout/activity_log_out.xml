@@ -6,12 +6,13 @@
     android:background="#202020"
     android:gravity="center_horizontal"
     android:orientation="vertical"
-    tools:context=".signIn.LogOut">
+    tools:context=".activities.signIn.LogOut">
 
     <ImageView
         android:id="@+id/user_image"
         android:layout_width="124dp"
         android:layout_marginTop="100dp"
+        android:src="@drawable/ic_user"
         android:layout_height="148dp" />
 
     <TextView

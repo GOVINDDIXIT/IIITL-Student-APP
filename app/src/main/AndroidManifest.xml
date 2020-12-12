@@ -54,10 +54,10 @@
             android:resource="@color/colorAccent" />
 
         <activity android:name=".activities.AboutPageActivity" />
-        <activity android:name=".signIn.Login" />
-        <activity android:name=".signIn.LogOut" />
+        <activity android:name="govind.iiitl.app.activities.signIn.Login" />
+        <activity android:name="govind.iiitl.app.activities.signIn.LogOut" />
         <activity android:name=".activities.TimeTableActivity" />
-        <activity android:name=".activities.ExtrasActivity" />
+        <activity android:name=".activities.AnnouncementActivity" />
     </application>
 
 </manifest>

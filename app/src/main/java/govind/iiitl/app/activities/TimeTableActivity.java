@@ -16,7 +16,6 @@ public class TimeTableActivity extends AppCompatActivity {
     ViewPager viewPager;
     TextView Mon,Tue,Wed,Thu,Fri;
 
-
     PagerViewAdapter pagerViewAdapter;
     String s = null;
 

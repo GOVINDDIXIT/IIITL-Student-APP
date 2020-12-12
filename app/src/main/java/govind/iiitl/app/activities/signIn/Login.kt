@@ -1,4 +1,4 @@
-package govind.iiitl.app.signIn
+package govind.iiitl.app.activities.signIn
 
 import android.content.Intent
 import android.content.SharedPreferences
@@ -26,26 +26,29 @@ class Login : AppCompatActivity() {
         } else {
             //Init Providers
             providers = listOf(
-                    EmailBuilder().build(),  //  new AuthUI.IdpConfig.PhoneBuilder().build(),
-                    //  new AuthUI.IdpConfig.FacebookBuilder().build(),
-                    GoogleBuilder().build()
+                EmailBuilder().build(),  //  new AuthUI.IdpConfig.PhoneBuilder().build(),
+                //  new AuthUI.IdpConfig.FacebookBuilder().build(),
+                GoogleBuilder().build()
             )
             showSignInOptions()
         }
     }
 
     private fun goToMainActivity() {
-        startActivity(Intent(this@Login, MainActivity::class.java))
+        val intent = Intent(this@Login, MainActivity::class.java)
+        intent.flags =
+            Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK or Intent.FLAG_ACTIVITY_CLEAR_TOP
+        startActivity(intent)
         finish()
     }
 
     private fun showSignInOptions() {
         startActivityForResult(
-                AuthUI.getInstance().createSignInIntentBuilder()
-                        .setAvailableProviders(providers!!)
-                        .setTheme(R.style.FirebaseUITheme)
-                        .setLogo(R.drawable.graduate)
-                        .build(), MY_REQUEST_CODE
+            AuthUI.getInstance().createSignInIntentBuilder()
+                .setAvailableProviders(providers!!)
+                .setTheme(R.style.FirebaseUITheme)
+                .setLogo(R.drawable.graduate)
+                .build(), MY_REQUEST_CODE
         )
     }
 
@@ -56,11 +59,21 @@ class Login : AppCompatActivity() {
             if (resultCode == RESULT_OK) {
                 //Get Current User
                 val user = FirebaseAuth.getInstance().currentUser!!
-                Toast.makeText(this, "Welcome " + user.displayName + "!", Toast.LENGTH_LONG).show()
+                Toast.makeText(
+                    this, "Welcome " + if (user.displayName != null) {
+                        user.displayName
+                    } else {
+                        ""
+                    } + "!", Toast.LENGTH_LONG
+                ).show()
                 sp.edit().putBoolean("logged", true).apply()
                 goToMainActivity()
             } else {
-                Toast.makeText(this, "Service unavailable. Try login using email", Toast.LENGTH_LONG).show()
+                Toast.makeText(
+                    this,
+                    "Service unavailable. Try login using email",
+                    Toast.LENGTH_LONG
+                ).show()
             }
         }
     }

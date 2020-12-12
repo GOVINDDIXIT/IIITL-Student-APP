@@ -15,14 +15,6 @@
       },
       "oauth_client": [
         {
-          "client_id": "205156740979-eqa4g41ue19lufk2a6d3snn97pllp4vi.apps.googleusercontent.com",
-          "client_type": 1,
-          "android_info": {
-            "package_name": "govind.iiitl.app",
-            "certificate_hash": "34493d70651edb379ac9e8e24350682c792a6968"
-          }
-        },
-        {
           "client_id": "205156740979-3gi98g567mul7k4j8756dvqbro3v8oah.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
@@ -31,11 +23,19 @@
           }
         },
         {
-          "client_id": "205156740979-s80vnqvvdp0rdnmja1pu8862ebtl4uah.apps.googleusercontent.com",
+          "client_id": "205156740979-dgq4l0f305epuq2bpvfg8uhvch91pj7i.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
             "package_name": "govind.iiitl.app",
-            "certificate_hash": "6caa7e2fa0a1391bfbea4bf1417d2370909a59be"
+            "certificate_hash": "8edbc82fa5c5d9a23a00fbc572b4a5e0fca1109e"
+          }
+        },
+        {
+          "client_id": "205156740979-eqa4g41ue19lufk2a6d3snn97pllp4vi.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "govind.iiitl.app",
+            "certificate_hash": "34493d70651edb379ac9e8e24350682c792a6968"
           }
         },
         {
@@ -44,6 +44,14 @@
           "android_info": {
             "package_name": "govind.iiitl.app",
             "certificate_hash": "73a8a0dd7ed721d7804e0747d745b75bfb6265bf"
+          }
+        },
+        {
+          "client_id": "205156740979-s80vnqvvdp0rdnmja1pu8862ebtl4uah.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "govind.iiitl.app",
+            "certificate_hash": "6caa7e2fa0a1391bfbea4bf1417d2370909a59be"
           }
         },
         {

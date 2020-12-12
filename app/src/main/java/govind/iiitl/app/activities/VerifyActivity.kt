@@ -5,7 +5,7 @@ import android.os.Bundle
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import govind.iiitl.app.R
-import govind.iiitl.app.signIn.Login
+import govind.iiitl.app.activities.signIn.Login
 import kotlinx.android.synthetic.main.activity_verify.*
 
 class VerifyActivity : AppCompatActivity() {

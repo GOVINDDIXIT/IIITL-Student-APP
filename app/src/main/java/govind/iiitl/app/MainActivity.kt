@@ -17,7 +17,7 @@ import govind.iiitl.app.BloggerAPI.service
 import govind.iiitl.app.activities.*
 import govind.iiitl.app.adapter.PostAdapter
 import govind.iiitl.app.models.PostList
-import govind.iiitl.app.signIn.LogOut
+import govind.iiitl.app.activities.signIn.LogOut
 import govind.iiitl.app.utils.openWebPage
 import kotlinx.android.synthetic.main.activity_main.*
 import retrofit2.Call
@@ -67,12 +67,12 @@ class MainActivity : AppCompatActivity() {
                 R.id.nav_ecell -> openWebPage(this, resources.getString(R.string.ecellwebsite))
                 R.id.nav_logOut -> startActivity(Intent(this@MainActivity, LogOut::class.java))
                 R.id.nav_faculty -> startActivity(Intent(this@MainActivity, FacultyActivity::class.java))
-                R.id.nav_extras -> startActivity(Intent(this@MainActivity, ExtrasActivity::class.java))
+                R.id.nav_announcement -> startActivity(Intent(this@MainActivity, AnnouncementActivity::class.java))
                 R.id.retry_button -> {
                     data
                 }
                 R.id.nav_archives -> startActivity(Intent(this@MainActivity, ArchiveActivity::class.java))
-                R.id.nav_aboutus -> {
+                R.id.nav_about_us -> {
                     startActivity(Intent(this@MainActivity, AboutPageActivity::class.java))
                 }
             }

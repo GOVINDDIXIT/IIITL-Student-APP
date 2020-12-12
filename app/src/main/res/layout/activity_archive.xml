@@ -37,7 +37,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginTop="12dp"
-        android:text="Note: You can also contribute by submitting you question paper"
+        android:text="Note: You can also contribute by submitting your question paper"
         android:textAlignment="center"
         android:textColor="#FFD700"
         android:textSize="16sp" />

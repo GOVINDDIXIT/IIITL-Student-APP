@@ -55,8 +55,8 @@
     </string-array>
 
     <string-array name="branch">
-        <item>CS-AI (B.Tech)</item>
-        <item>CS (B.Tech)</item>
+        <item>CSAI (B.Tech)</item>
+        <item>CSE (B.Tech)</item>
         <item>IT (B.Tech)</item>
         <item>CS (M.Tech)</item>
     </string-array>

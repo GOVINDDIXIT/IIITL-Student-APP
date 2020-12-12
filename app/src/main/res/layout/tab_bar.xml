@@ -12,7 +12,7 @@
         android:gravity="center"
         android:text="Mon"
         android:textColor="@color/colorAccent"
-        android:textSize="32dp"
+        android:textSize="25dp"
         android:textStyle="bold" />
 
     <TextView
@@ -23,7 +23,7 @@
         android:gravity="center"
         android:text="Tue"
         android:textColor="@color/white"
-        android:textSize="25dp"
+        android:textSize="20dp"
         android:textStyle="bold" />
 
     <TextView
@@ -34,7 +34,7 @@
         android:gravity="center"
         android:text="Wed"
         android:textColor="@color/white"
-        android:textSize="25dp"
+        android:textSize="20dp"
         android:textStyle="bold" />
 
     <TextView
@@ -45,7 +45,7 @@
         android:gravity="center"
         android:text="Thu"
         android:textColor="@color/white"
-        android:textSize="25dp"
+        android:textSize="20dp"
         android:textStyle="bold" />
 
     <TextView
@@ -56,7 +56,29 @@
         android:gravity="center"
         android:text="Fri"
         android:textColor="@color/white"
-        android:textSize="25dp"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/Sat"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="Sat"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/Sun"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="Sun"
+        android:textColor="@color/white"
+        android:textSize="20dp"
         android:textStyle="bold" />
 
 </LinearLayout>

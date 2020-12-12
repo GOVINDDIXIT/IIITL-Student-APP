@@ -36,89 +36,64 @@ public class AskDetailActivity extends AppCompatActivity implements AdapterView.
             String course = branch.getSelectedItem().toString();
             String yearse = yearone.getSelectedItem().toString();
 
-            switch (course) {
-                case "CS-AI (B.Tech)":
-                    switch (yearse) {
-                        case "1":
-                            conc = "csai1sem.json";
-                            break;
-                        default:
-                            conc = "csai1sem.json";
-                            Toast.makeText(this, "Not available", Toast.LENGTH_SHORT).show();
-                            break;
-                    }
-                    break;
-                case "CS (B.Tech)":
-                    switch (yearse) {
-                        case "1":
-                            conc = "cs1sem.json";
-                            break;
-                        case "2":
-                            conc = "cs2sem.json";
-                            break;
-                        case "3":
-                            conc = "cs3sem.json";
-                            break;
-//                        case "4":
-//                            conc = "cs4sem.json";
-//                            break;
-//                        case "5":
-//                            conc = "cs5sem.json";
-//                            break;
-//                        case "6":
-//                            conc = "cs6sem.json";
-//                            break;
-//                        case "7":
-//                            conc = "cs7sem.json";
-//                            break;
-                        default:
-                            conc = "cs2sem.json";
-                            Toast.makeText(this, "Not available", Toast.LENGTH_SHORT).show();
-                            break;
-                    }
-                    break;
-                case "IT (B.Tech)":
-                    switch (yearse) {
-                        case "1":
-                            conc = "it1sem.json";
-                            break;
-                        case "2":
-                            conc = "it2sem.json";
-                            break;
-                        case "3":
-                            conc = "it3sem.json";
-                            break;
-                        case "4":
-                            conc = "it4sem.json";
-                            break;
-                        case "5":
-                            conc = "it5sem.json";
-                            break;
-                        case "6":
-                            conc = "it6sem.json";
-                            break;
-                        case "7":
-                            conc = "it7sem.json";
-                            break;
-                        default:
-                            conc = "it8sem.json";
-                            break;
-                    }
-                    break;
-                default:
-                    switch (yearse) {
-                        case "1":
-                            conc = "mcs1sem.json";
-                            break;
-                        case "2":
-                            conc = "mcs2sem.json";
-                            break;
-                        default:
-                            conc = "mcs2sem.json";
-                            Toast.makeText(this, "Not available", Toast.LENGTH_SHORT).show();
-                            break;
-                    }
-                    break;
+            if (course.equals("CSE (B.Tech)")) {
+                switch (yearse) {
+                    case "1":
+                        conc = "cs1sem.json";
+                        break;
+                    default:
+                        Toast.makeText(AskDetailActivity.this, "Not available", Toast.LENGTH_SHORT).show();
+                        conc = "cs2sem.json";
+                        break;
+                }
+            } else if (course.equals("IT (B.Tech)")) {
+                switch (yearse) {
+                    case "1":
+                        conc = "it1sem.json";
+                        break;
+                    case "2":
+                        conc = "it2sem.json";
+                        break;
+                    case "3":
+                        conc = "it3sem.json";
+                        break;
+                    case "4":
+                        conc = "it4sem.json";
+                        break;
+                    case "5":
+                        conc = "it5sem.json";
+                        break;
+                    case "6":
+                        conc = "it6sem.json";
+                        break;
+                    case "7":
+                        conc = "it7sem.json";
+                        break;
+                    default:
+                        Toast.makeText(AskDetailActivity.this, "Not available", Toast.LENGTH_SHORT).show();
+                        conc = "it8sem.json";
+                        break;
+                }
+            } else if (course.equals("CSAI (B.Tech)")) {
+                switch (yearse) {
+                    case "1":
+                        conc = "csai1sem.json";
+                        break;
+                    default:
+                        Toast.makeText(AskDetailActivity.this, "Not available", Toast.LENGTH_SHORT).show();
+                        conc = "cs2sem.json";
+                        break;
+                }
+            } else {
+                switch (yearse) {
+                    case "1":
+                        conc = "mcs1sem.json";
+                        break;
+                    default:
+                        Toast.makeText(AskDetailActivity.this, "Not available", Toast.LENGTH_SHORT).show();
+                        conc = "mcs2sem.json";
+                        break;
+                }
             }
 
             Intent intent = new Intent(AskDetailActivity.this, TimeTableActivity.class);
@@ -146,6 +121,5 @@ public class AskDetailActivity extends AppCompatActivity implements AdapterView.
 
     @Override
     public void onNothingSelected(AdapterView<?> adapterView) {
-
     }
 }

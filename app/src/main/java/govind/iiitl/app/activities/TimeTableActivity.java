@@ -14,7 +14,7 @@ import govind.iiitl.app.adapter.PagerViewAdapter;
 
 public class TimeTableActivity extends AppCompatActivity {
     ViewPager viewPager;
-    TextView Mon,Tue,Wed,Thu,Fri;
+    TextView Mon,Tue,Wed,Thu,Fri,Sat,Sun;
 
     PagerViewAdapter pagerViewAdapter;
     String s = null;
@@ -29,6 +29,8 @@ public class TimeTableActivity extends AppCompatActivity {
         Wed = findViewById(R.id.Wed);
         Thu = findViewById(R.id.Thu);
         Fri = findViewById(R.id.Fri);
+        Sat = findViewById(R.id.Sat);
+        Sun = findViewById(R.id.Sun);
 
         Intent intent = getIntent();
         s = intent.getStringExtra("cs2sem.json");
@@ -41,6 +43,8 @@ public class TimeTableActivity extends AppCompatActivity {
         Wed.setOnClickListener( (View view) -> viewPager.setCurrentItem(2));
         Thu.setOnClickListener( (View view) -> viewPager.setCurrentItem(3));
         Fri.setOnClickListener( (View view) -> viewPager.setCurrentItem(4));
+        Sat.setOnClickListener( (View view) -> viewPager.setCurrentItem(5));
+        Sun.setOnClickListener( (View view) -> viewPager.setCurrentItem(6));
 
 
         viewPager.addOnPageChangeListener(new ViewPager.OnPageChangeListener() {
@@ -68,27 +72,39 @@ public class TimeTableActivity extends AppCompatActivity {
                 Thu.setTextColor(white);
                 Fri.setTextSize(20);
                 Fri.setTextColor(white);
+                Sat.setTextSize(20);
+                Sat.setTextColor(white);
+                Sun.setTextSize(20);
+                Sun.setTextColor(white);
 
                 switch(position){
                     case 0:
-                        Mon.setTextSize(28);
+                        Mon.setTextSize(25);
                         Mon.setTextColor(accentColor);
                         break;
                     case 1:
-                        Tue.setTextSize(28);
+                        Tue.setTextSize(25);
                         Tue.setTextColor(accentColor);
                         break;
                     case 2:
-                        Wed.setTextSize(28);
+                        Wed.setTextSize(25);
                         Wed.setTextColor(accentColor);
                         break;
                     case 3:
-                        Thu.setTextSize(28);
+                        Thu.setTextSize(25);
                         Thu.setTextColor(accentColor);
                         break;
-                    default:
-                        Fri.setTextSize(28);
+                    case 4:
+                        Fri.setTextSize(25);
                         Fri.setTextColor(accentColor);
+                        break;
+                    case 5:
+                        Sat.setTextSize(25);
+                        Sat.setTextColor(accentColor);
+                        break;
+                    case 6:
+                        Sun.setTextSize(25);
+                        Sun.setTextColor(accentColor);
                         break;
                 }
             }

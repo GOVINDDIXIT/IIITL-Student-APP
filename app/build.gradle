@@ -61,7 +61,7 @@ dependencies {
 
     //Storage
     implementation 'com.google.firebase:firebase-core:17.5.1'
-    implementation 'com.google.firebase:firebase-database:19.5.1'
+    implementation 'com.google.firebase:firebase-database:19.6.0'
 
     //Google Sign In
     implementation 'com.google.firebase:firebase-auth:19.4.0'

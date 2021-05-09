@@ -13,7 +13,7 @@ _The Complete App for IIITL Students._
 - [x] Complete Timetable for students
 - [x] Add Mess Menu
 - [x] Add Clubs and Events
-- [ ] Add feature to access past year papers
+- [x] Add feature to access past year papers
 
 ### Blog
 Link: http://iiitlblog.blogspot.com/

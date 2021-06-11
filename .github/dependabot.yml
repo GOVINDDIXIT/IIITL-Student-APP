@@ -1,0 +1,30 @@
+version: 2
+updates:
+- package-ecosystem: gradle
+  directory: "/"
+  schedule:
+    interval: daily
+  open-pull-requests-limit: 10
+  ignore:
+  - dependency-name: com.android.tools.build:gradle
+    versions:
+    - "> 3.6.3"
+  - dependency-name: com.google.firebase:firebase-auth
+    versions:
+    - 20.0.2
+    - 20.0.3
+  - dependency-name: com.google.firebase:firebase-analytics
+    versions:
+    - 18.0.2
+  - dependency-name: com.google.firebase:firebase-core
+    versions:
+    - 18.0.2
+  - dependency-name: com.google.firebase:firebase-inappmessaging-display
+    versions:
+    - 19.1.4
+  - dependency-name: com.google.firebase:firebase-messaging
+    versions:
+    - 21.0.1
+  - dependency-name: com.google.firebase:firebase-database
+    versions:
+    - 19.6.0

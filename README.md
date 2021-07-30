@@ -3,7 +3,7 @@
 </a>
 
 # IIITL Student APP
-_The Complete App for IIITL Students._
+_The Complete App for IIITL Students, made to onboard beginners in android development_
 
 ### Roadmap
 - [x] Authentication (Google + Email based)

@@ -88,7 +88,7 @@ dependencies {
     implementation 'com.github.medyo:android-about-page:1.2.5'
 
     //Lottie Animation
-    implementation "com.airbnb.android:lottie:3.6.0"
+    implementation "com.airbnb.android:lottie:5.0.3"
 
     //Glide
     implementation 'com.github.bumptech.glide:glide:4.8.0'
